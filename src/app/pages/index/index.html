@@ -1,0 +1,133 @@
+<div class="min-h-screen bg-white font-sans">
+    <!-- HERO HEADER -->
+    <div class="relative h-64 overflow-hidden">
+        <img type="image/jpg" src="/images/alberca.jpg" alt="Hotel"
+            class="w-full h-full object-cover" />
+        <!-- Overlay oscuro -->
+        <div class="absolute inset-0 bg-black/40"></div>
+        <!-- Botón back -->
+        <button class="absolute top-4 left-4 text-white bg-white/20 backdrop-blur-sm rounded-full p-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg>
+        </button>
+        <!-- Logo centrado -->
+        <div class="absolute inset-0 flex flex-col items-center justify-center">
+            <div class="text-white text-center">
+                <p class="italic text-base tracking-[0.3em] uppercase opacity-80">Las Mañanitas</p>
+                <h1 class="text-xl font-light tracking-widest uppercase">Hotel Garden Restaurant & Spa</h1>
+            </div>
+        </div>
+        <!-- Icono usuario -->
+        <button class="absolute top-4 right-4 text-white bg-white/20 backdrop-blur-sm rounded-full p-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+            </svg>
+        </button>
+    </div>
+
+    <!-- BOTONES DE ACCIÓN -->
+    <div class="px-4 py-5">
+        <div class="flex bg-teal-500 rounded-full overflow-hidden shadow-lg">
+            <!-- <button
+                class="flex-1 flex items-center justify-center gap-2 py-3 text-white font-medium text-sm border-r border-teal-400">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                </svg> #00633a
+                Solicitudes
+            </button> -->
+            <button class="flex-1 flex items-center justify-center gap-2 py-3 text-white font-medium text-sm bg-[#00633a]">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                Mapa del hotel
+            </button>
+        </div>
+    </div>
+
+    <!-- GRID DE SECCIONES -->
+    <div class="px-4 pb-6">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">Nuestro Hotel</h2>
+
+        <div class="grid grid-cols-2 gap-3">
+
+            <!-- Habitaciones -->
+            <div class="relative rounded-2xl overflow-hidden h-60 cursor-pointer group">
+                <img src="/images/cuarto.jpg"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    alt="Habitaciones" />
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end p-3">
+                    <span class="text-white font-semibold text-sm">Habitaciones</span>
+                </div>
+            </div>
+
+            <!-- Acerca de la propiedad -->
+            <div class="relative rounded-2xl overflow-hidden h-60 cursor-pointer group">
+                <img src="/images/restaurante.jpg"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    alt="Propiedad" />
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end p-3">
+                    <span class="text-white font-semibold text-sm">Restaurante</span>
+                </div>
+            </div>
+
+            <!-- World of Hyatt - ocupa 2 columnas -->
+            <div class="relative rounded-2xl overflow-hidden h-100 cursor-pointer group col-span-2">
+                <img src="/images/spa.jpg"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    alt="Spa Orlane" />
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end p-3">
+                    <span class="text-white font-semibold text-base">Spa Orlane</span>
+                </div>
+            </div>
+
+            <!-- My Favorite Club -->
+            <div class="relative rounded-2xl overflow-hidden h-36 cursor-pointer group">
+                <img src="https://images.unsplash.com/photo-1540541338537-1220059af400?w=400"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    alt="Club" />
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end p-3">
+                    <span class="text-white font-semibold text-sm">My Favorite Club</span>
+                </div>
+            </div>
+
+            <!-- Piscinas -->
+            <div class="relative rounded-2xl overflow-hidden h-36 cursor-pointer group">
+                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    alt="Piscinas" />
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end p-3">
+                    <span class="text-white font-semibold text-sm">Piscinas</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- PROMO BANNER -->
+    <div class="px-4 pb-8">
+        <div class="relative rounded-2xl overflow-hidden bg-gray-900 h-28 flex items-center px-5 gap-4">
+            <div class="flex-1">
+                <p class="text-white text-lg font-light leading-tight">Embrace the Moment</p>
+                <p class="text-orange-400 font-semibold text-sm mt-1">DeepakChopra.AI</p>
+                <button class="mt-2 bg-teal-500 text-white text-xs px-4 py-1.5 rounded-full font-medium">
+                    Más información
+                </button>
+            </div>
+            <div class="w-20 h-full flex items-center justify-end overflow-hidden">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Deepak_Chopra_2019.jpg/220px-Deepak_Chopra_2019.jpg"
+                    class="h-full object-cover object-top opacity-80" alt="Deepak" />
+            </div>
+        </div>
+    </div>
+
+</div>
