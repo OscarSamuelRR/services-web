@@ -1,0 +1,91 @@
+<!-- habitacion-detalle.component.html -->
+
+<div class="min-h-screen bg-gray-50 font-sans">
+
+    <!-- HERO CON IMAGEN -->
+    <div class="relative h-64 md:h-96 overflow-hidden">
+        <img src="/images/suite.jpg" loading="lazy" alt="Doble estándar"
+            class="w-full h-full object-cover" />
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/40"></div>
+
+        <!-- Botón back -->
+        <button
+            class="absolute top-4 left-4 text-white bg-white/20 backdrop-blur-sm rounded-full p-2 hover:bg-white/30 transition-colors" [routerLink]="'/rooms'">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg>
+        </button>
+
+        <!-- Título sobre imagen -->
+        <div class="absolute bottom-4 left-4 md:left-12">
+            <h1 class="text-white text-2xl md:text-4xl font-bold">Las Mañanitas Suite</h1>
+        </div>
+    </div>
+
+    <!-- CONTENIDO -->
+    <div class="px-4 md:px-12 lg:px-32 xl:px-64">
+
+        <!-- DESCRIPCIÓN -->
+        <div class="bg-white py-5 border-b border-gray-100">
+            <p class="text-gray-600 text-sm md:text-base leading-relaxed line-clamp-4">
+                Nuestra gran suite Las Mañanitas es única en su clase; ofrece amplio espacio en interiores, su sala con chimenea cuenta
+                con una hermosa vista hacia el jardín principal del restaurante. Esta suite dispone de dos habitaciones, cada una con 1
+                cama King size, baño con tina y closet.
+            </p>
+            <button class="text-[#00633a] text-sm font-medium mt-3 hover:underline">Ver más</button>
+        </div>
+
+        <!-- TAMAÑO -->
+        <div class="bg-white py-5 border-b border-gray-100">
+            <div class="flex items-center gap-3 mb-2">
+                <!-- Icono tamaño -->
+                <svg class="w-8 h-8 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5v-4m0 4h-4m4 0l-5-5" />
+                </svg>
+                <span class="text-gray-800 font-semibold text-base md:text-lg">Tamaño</span>
+            </div>
+            <p class="text-gray-500 text-sm md:text-base ml-11">27 - 42 m²</p>
+        </div>
+
+        <!-- AMENIDADES -->
+        <div class="bg-white py-2">
+
+            <div class="flex items-center gap-3 py-4 border-b border-gray-100">
+                <span class="w-2 h-2 rounded-full bg-gray-400 ml-1 flex-shrink-0"></span>
+                <p class="text-gray-600 text-sm md:text-base">1 Cama King Size</p>
+            </div>
+
+            <div class="flex items-center gap-3 py-4 border-b border-gray-100">
+                <span class="w-2 h-2 rounded-full bg-gray-400 ml-1 flex-shrink-0"></span>
+                <p class="text-gray-600 text-sm md:text-base">Ocupación: 4</p>
+            </div>
+
+            <div class="flex items-center gap-3 py-4 border-b border-gray-100">
+                <span class="w-2 h-2 rounded-full bg-gray-400 ml-1 flex-shrink-0"></span>
+                <p class="text-gray-600 text-sm md:text-base">Aire acondicionado</p>
+            </div>
+
+            <div class="flex items-center gap-3 py-4 border-b border-gray-100">
+                <span class="w-2 h-2 rounded-full bg-gray-400 ml-1 flex-shrink-0"></span>
+                <p class="text-gray-600 text-sm md:text-base">Servicio Telefónico</p>
+            </div>
+
+            <div class="flex items-center gap-3 py-4 border-b border-gray-100">
+                <span class="w-2 h-2 rounded-full bg-gray-400 ml-1 flex-shrink-0"></span>
+                <p class="text-gray-600 text-sm md:text-base">Cafetera Nespresso</p>
+            </div>
+
+            <div class="flex items-center gap-3 py-4 border-b border-gray-100">
+                <span class="w-2 h-2 rounded-full bg-gray-400 ml-1 flex-shrink-0"></span>
+                <p class="text-gray-600 text-sm md:text-base">Caja de seguridad</p>
+            </div>
+
+            <div class="flex items-center gap-3 py-4">
+                <span class="w-2 h-2 rounded-full bg-gray-400 ml-1 flex-shrink-0"></span>
+                <p class="text-gray-600 text-sm md:text-base">Internet</p>
+            </div>
+        </div>
+    </div>
+</div>
+<footer-component/>

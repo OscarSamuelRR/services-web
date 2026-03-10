@@ -1,7 +1,7 @@
 <div class="min-h-screen bg-white font-sans">
     <!-- HERO HEADER -->
     <div class="relative h-64 overflow-hidden">
-        <img type="image/jpg" src="/images/alberca.jpg" alt="Hotel"
+        <img type="image/jpg" src="/images/alberca.jpg" loading="lazy" alt="Hotel"
             class="w-full h-full object-cover" />
         <!-- Overlay oscuro -->
         <div class="absolute inset-0 bg-black/40"></div>
@@ -37,15 +37,15 @@
                 </svg> #00633a
                 Solicitudes
             </button> -->
-            <button class="flex-1 flex items-center justify-center gap-2 py-3 text-white font-medium text-sm bg-[#00633a]">
+            <a [href]="url_maps()" target="_blank"
+                class="flex-1 flex items-center justify-center gap-2 py-3 text-white font-medium text-sm bg-[#00633a] cursor-pointer hover:bg-[#004d2d] active:scale-95 transition-all duration-200">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
                 Como llegar al hotel
-            </button>
+            </a>
         </div>
     </div>
 
@@ -56,30 +56,14 @@
         <div class="grid grid-cols-2 gap-3">
 
             <!-- Habitaciones -->
-            <div class="relative rounded-2xl overflow-hidden h-60 cursor-pointer group">
-                <img src="/images/cuarto.jpg"
-                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    alt="Habitaciones" />
-                <div
-                    class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end p-3">
-                    <span class="text-white font-semibold text-sm">Habitaciones</span>
-                </div>
-            </div>
+            <div-sections [url_img]="'/images/cuarto.jpg'" [route]="'/rooms'" [span_text]="'Hotel'"/>
 
-            <!-- Acerca de la propiedad -->
-            <div class="relative rounded-2xl overflow-hidden h-60 cursor-pointer group">
-                <img src="/images/restaurante.jpg"
-                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    alt="Restaurante" />
-                <div
-                    class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end p-3">
-                    <span class="text-white font-semibold text-sm">Restaurante</span>
-                </div>
-            </div>
+            <!-- Restaurante -->
+            <div-sections [url_img]="'/images/restaurante.jpg'" [route]="''" [span_text]="'Alimentos y Bebidas'" />
 
-            <!-- World of Hyatt - ocupa 2 columnas -->
+            <!-- Spa Orlane - ocupa 2 columnas -->
             <div class="relative rounded-2xl overflow-hidden h-90 cursor-pointer group col-span-2">
-                <img src="/images/spa.jpg"
+                <img src="/images/spa.jpg" loading="lazy"
                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     alt="Spa Orlane" />
                 <div
@@ -88,27 +72,11 @@
                 </div>
             </div>
 
-            <!-- My Favorite Club -->
-            <div class="relative rounded-2xl overflow-hidden h-60 cursor-pointer group">
-                <img src="/images/ofertas.jpg"
-                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    alt="Ofertas" />
-                <div
-                    class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end p-3">
-                    <span class="text-white font-semibold text-sm">Ofertas</span>
-                </div>
-            </div>
+            <!-- Ofertas -->
+            <div-sections [url_img]="'/images/ofertas.jpg'" [route]="''" [span_text]="'Ofertas y experiencias'" />
 
-            <!-- Piscinas -->
-            <div class="relative rounded-2xl overflow-hidden h-60 cursor-pointer group">
-                <img src="/images/instalaciones.jpg"
-                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    alt="Instalaciones" />
-                <div
-                    class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end p-3">
-                    <span class="text-white font-semibold text-sm">Instalaciones</span>
-                </div>
-            </div>
+            <!-- Instalaciones -->
+            <div-sections [url_img]="'/images/instalaciones.jpg'" [route]="''" [span_text]="'Instalaciones'" />
 
         </div>
     </div>
@@ -128,6 +96,6 @@
             </div>
         </div>
     </div> -->
-    <footer-component/>
+    <footer-component />
 </div>
 
