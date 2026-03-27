@@ -1,0 +1,44 @@
+<div class="min-h-screen bg-gray-50 font-sans">
+    <header-list [h1_text]="'Amenidades del hotel'" [url_site]="'/hotel-services'"></header-list>
+
+    <div class="px-4 md:px-12 lg:px-32 xl:px-64 pb-10">
+
+        <!-- ENCABEZADO -->
+        <div class="pt-8 mb-6 text-center">
+            <h2 class="text-3xl font-semibold text-gray-800">Amenidades</h2>
+            <p class="text-gray-400 text-base mt-2">Tomaremos su orden.</p> <p><strong>Ext. 201</strong></p>
+            <div class="w-12 h-px bg-[#00633a] mx-auto mt-3"></div>
+        </div>
+
+        <!-- LISTADO -->
+        <div class="bg-white rounded-2xl shadow-sm overflow-hidden">
+
+            @for (amenitie of amenities; track amenitie.id; let last = $last) {
+            <div class="flex items-center justify-between px-6 py-5 hover:bg-gray-50 transition-colors cursor-pointer"
+                [class.border-b]="!last" [class.border-gray-100]="!last">
+                <div class="flex items-center gap-4">
+                    <span class="w-2.5 h-2.5 rounded-full bg-[#00633a] flex-shrink-0"></span>
+                    <p class="text-gray-700 text-base md:text-lg">{{ amenitie.name }}</p>
+                </div>
+                <span class="text-[#00633a] font-bold text-base md:text-lg">
+                    ${{ amenitie.price.toFixed(2) }}
+                </span>
+            </div>
+            }
+
+        </div>
+
+        <!-- NOTA INFORMATIVA -->
+        <div class="mt-6 bg-[#00633a]/10 rounded-2xl px-6 py-5 flex flex-col items-center text-center gap-3">
+            <svg class="w-6 h-6 text-[#00633a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <p class="text-[#00633a] text-base">
+                Para ordenar alguna amenidad comuníquese a la extensión <strong>201</strong> y con gusto le atenderemos.
+            </p>
+        </div>
+
+    </div>
+</div>
+<footer-component />

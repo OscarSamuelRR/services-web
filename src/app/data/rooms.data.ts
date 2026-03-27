@@ -35,5 +35,61 @@ export const ROOMS: RoomData[] = [
             'Internet'
         ],
         moreInfoUrl: 'https://lasmananitas.com.mx/es/garden'
+    },
+    {
+        id: 'patio-suite',
+        title: 'Patio Suite',
+        image: '/images/patio.jpg',
+        description: 'Encuentre la privacidad que requiere en esta suite, con amplio patio privado y desayunador para una mañana perfecta. Que hará de su estancia algo inolvidable. Cuenta también con amplio baño con tina, closet y vestidor. Puede elegir entre una cama King size o 2 matrimoniales, amplia sala de estar con chimenea.',
+        size: '27 - 42 m²',
+        amenities: [
+            'Con opción a habitaciones conectadas.',
+            'Aire acondicionado',
+            'Tipo de cama: 1 king size o 2 matrimoniales.',
+            'Ocupación: 2',
+            'Máximo cama extra: 1 (costo adicional)',
+            'Servicio Telefónico',
+            'Cafetera Nespresso',
+            'Caja de seguridad',
+            'Internet'
+        ],
+        moreInfoUrl: 'https://lasmananitas.com.mx/es/patio'
+    },
+    {
+        id: 'terraza-suite',
+        title: 'Terraza Suite',
+        image: '/images/terraza.jpg',
+        description: 'Ubicadas en el corazón de Las Mañanitas. Suite con terraza privada para una estancia inolvidable. Disfrute de una hermosa vista hacia el jardín principal del restaurante. Puede elegir entre una cama King size o dos matrimoniales, y baño con tina y closet.',
+        size: '27 - 42 m²',
+        amenities: [
+            'Con opción a habitaciones conectadas (Solo para algunas habitaciones).',
+            'Aire acondicionado',
+            'Tipo de cama: 1 king size o 2 matrimoniales.',
+            'Ocupación: 2',
+            'Máximo cama extra: N/A',
+            'Servicio Telefónico',
+            'Cafetera Nespresso',
+            'Caja de seguridad',
+            'Internet'
+        ],
+        moreInfoUrl: 'https://lasmananitas.com.mx/es/terraza'
+    },
+    {
+        id: 'ventana-suite',
+        title: 'Ventana Suite',
+        image: '/images/ventana.jpg',
+        description: 'Decoradas con el sello característico de las mañanitas, combinando lo colonial, el buen gusto y la elegancia. Disfruta de nuestra suite estándar, llena de confort. Con dos camas matrimoniales, baño con regadera y closet.',
+        size: '27 - 42 m²',
+        amenities: [
+            'Aire acondicionado',
+            'Tipo de cama: 2 Camas matrimoniales',
+            'Ocupación: 2',
+            'Máximo cama extra: N/A',
+            'Servicio Telefónico',
+            'Cafetera Nespresso',
+            'Caja de seguridad',
+            'Internet'
+        ],
+        moreInfoUrl: 'https://lasmananitas.com.mx/es/ventana'
     }
 ];

@@ -1,7 +1,7 @@
 <!-- habitaciones.component.html -->
 
 <div class="min-h-screen bg-gray-50 font-sans">
-    <header-list [h1_text] = "'Habitaciones'"></header-list>
+    <header-list [h1_text] = "'Habitaciones'" [url_site] = "'/hotel-services'"></header-list>
     <!-- LISTA DE HABITACIONES -->
     <div class="px-4 md:px-12 lg:px-32 xl:px-64 py-4 flex flex-col gap-4">
 
@@ -9,11 +9,11 @@
 
         <div-list-opc [h3_text]="'Garden Suite'" [p_text]="'Habitación'" [route]="'/rooms/garden-suite'" [url_img]="'/images/garden.jpg'"></div-list-opc>
 
-        <div-list-opc [h3_text]="'Patio Suite'" [p_text]="'Habitación'" [route]="'/rooms/details-room'" [url_img]="'/images/patio.jpg'"></div-list-opc>
+        <div-list-opc [h3_text]="'Patio Suite'" [p_text]="'Habitación'" [route]="'/rooms/patio-suite'" [url_img]="'/images/patio.jpg'"></div-list-opc>
 
-        <div-list-opc [h3_text]="'Terraza Suite'" [p_text]="'Habitación'" [route]="'/rooms/details-room'" [url_img]="'/images/terraza.jpg'"></div-list-opc>
+        <div-list-opc [h3_text]="'Terraza Suite'" [p_text]="'Habitación'" [route]="'/rooms/terraza-suite'" [url_img]="'/images/terraza.jpg'"></div-list-opc>
        
-        <div-list-opc [h3_text]="'Ventana Suite'" [p_text]="'Habitación'" [route]="'/rooms/details-room'" [url_img]="'/images/ventana.jpg'"></div-list-opc>
+        <div-list-opc [h3_text]="'Ventana Suite'" [p_text]="'Habitación'" [route]="'/rooms/ventana-suite'" [url_img]="'/images/ventana.jpg'"></div-list-opc>
     </div>
 </div>
 <footer-component/>

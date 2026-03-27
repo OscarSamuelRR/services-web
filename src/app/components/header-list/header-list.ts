@@ -9,4 +9,5 @@ import { RouterLink } from '@angular/router';
 })
 export class HeaderList {
   h1_text = input.required<string>();
+  url_site = input.required<string>();
 }
