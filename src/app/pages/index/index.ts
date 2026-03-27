@@ -2,10 +2,11 @@ import { Component, signal } from '@angular/core';
 import { Footer } from '../../components/footer/footer';
 import { RouterLink } from '@angular/router';
 import { DivSections } from '../../components/div-sections/div-sections';
+import { DivSectionBig } from '../../components/div-section-big/div-section-big';
 
 @Component({
   selector: 'index',
-  imports: [Footer, RouterLink, DivSections],
+  imports: [Footer, RouterLink, DivSections, DivSectionBig],
   templateUrl: './index.html',
   styleUrl: './index.css',
 })

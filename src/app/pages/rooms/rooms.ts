@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { Footer } from '../../components/footer/footer';
-import { RouterLink } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
+import { DivListOpc } from '../../components/div-list-opc/div-list-opc';
+import { HeaderList } from '../../components/header-list/header-list';
 
 @Component({
   selector: 'app-rooms',
-  imports: [Footer, RouterLink],
+  imports: [Footer, RouterLink, DivListOpc, HeaderList,RouterOutlet],
   templateUrl: './rooms.html',
   styleUrl: './rooms.css',
 })

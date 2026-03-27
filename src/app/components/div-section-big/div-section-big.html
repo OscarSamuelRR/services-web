@@ -1,0 +1,7 @@
+<div class="relative rounded-2xl overflow-hidden h-90 cursor-pointer group col-span-2">
+    <img [src]="url_img()" loading="lazy"
+        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" alt="" />
+    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end p-3">
+        <span class="text-white font-semibold text-base">{{ span_text() }}</span>
+    </div>
+</div>

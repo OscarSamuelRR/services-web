@@ -1,137 +1,19 @@
 <!-- habitaciones.component.html -->
 
 <div class="min-h-screen bg-gray-50 font-sans">
-
-    <!-- HEADER -->
-    <div class="bg-[#00633a] px-4 md:px-12 py-4 flex items-center gap-4 sticky top-0 z-10" [routerLink]="''">
-        <button class="text-white bg-white/20 backdrop-blur-sm rounded-full p-2 hover:bg-white/30 transition-colors">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-            </svg>
-        </button>
-        <h1 class="text-lg text-white flex-1 text-center pr-9 font-light tracking-widest uppercase">Habitaciones</h1>
-    </div>
-
-    <!-- TABS -->
-    <div class="bg-[#00633a] border-b border-white/20 px-4 md:px-12">
-        <div class="flex gap-6 md:justify-center">
-
-            <!-- Tab activo -->
-            <button
-                class="flex flex-col items-center gap-1 py-3 border-b-2 border-white text-white md:px-8 font-semibold">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-                <span class="text-xs font-semibold">Ver todos</span>
-            </button>
-
-            <!-- Tab inactivo -->
-            <!-- <button
-                class="flex flex-col items-center gap-1 py-3 border-b-2 border-transparent text-white/60 hover:text-white hover:border-white/60 transition-colors md:px-8">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                        d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                </svg>
-                <span class="text-xs">Habitaciones</span>
-            </button>
-
-            <!-- Tab inactivo -->
-            <!--<button
-                class="flex flex-col items-center gap-1 py-3 border-b-2 border-transparent text-white/60 hover:text-white hover:border-white/60 transition-colors md:px-8">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                </svg>
-                <span class="text-xs">Habitaciones...</span>
-            </button> -->
-
-        </div>
-    </div>
-
+    <header-list [h1_text] = "'Habitaciones'"></header-list>
     <!-- LISTA DE HABITACIONES -->
     <div class="px-4 md:px-12 lg:px-32 xl:px-64 py-4 flex flex-col gap-4">
 
-        <!-- Card -->
-        <div class="bg-white rounded-2xl overflow-hidden shadow-sm flex cursor-pointer hover:shadow-md transition-shadow" [routerLink]="'/details'">
-            <img src="/images/suite.jpg"
-                class="w-36 md:w-64 h-28 md:h-40 object-cover flex-shrink-0" alt="Doble estándar" />
-            <div class="flex-1 p-4 md:p-6 flex flex-col justify-center">
-                <p class="text-xs text-gray-400 mb-1">Habitación</p>
-                <h3 class="text-base md:text-xl font-semibold text-gray-800">Las Mañanitas Suite</h3>
-            </div>
-            <div class="flex items-center pr-3 md:pr-6 text-gray-300">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                </svg>
-            </div>
-        </div>
+        <div-list-opc [h3_text] = "'Las Mañanitas Suite'" [p_text] = "'Habitación'" [route] = "'/rooms/mananitas-suite'" [url_img] = "'/images/suite.jpg'"></div-list-opc>
 
-        <!-- Card -->
-        <div
-            class="bg-white rounded-2xl overflow-hidden shadow-sm flex cursor-pointer hover:shadow-md transition-shadow">
-            <img src="/images/garden.jpg"
-                class="w-36 md:w-64 h-28 md:h-40 object-cover flex-shrink-0" alt="Doble Vista Jardín" />
-            <div class="flex-1 p-4 md:p-6 flex flex-col justify-center">
-                <p class="text-xs text-gray-400 mb-1">Habitación</p>
-                <h3 class="text-base md:text-xl font-semibold text-gray-800">Garden Suite</h3>
-            </div>
-            <div class="flex items-center pr-3 md:pr-6 text-gray-300">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                </svg>
-            </div>
-        </div>
+        <div-list-opc [h3_text]="'Garden Suite'" [p_text]="'Habitación'" [route]="'/rooms/garden-suite'" [url_img]="'/images/garden.jpg'"></div-list-opc>
 
-        <!-- Card -->
-        <div
-            class="bg-white rounded-2xl overflow-hidden shadow-sm flex cursor-pointer hover:shadow-md transition-shadow">
-            <img src="/images/patio.jpg"
-                class="w-36 md:w-64 h-28 md:h-40 object-cover flex-shrink-0" alt="Doble Vista Océano" />
-            <div class="flex-1 p-4 md:p-6 flex flex-col justify-center">
-                <p class="text-xs text-gray-400 mb-1">Habitación</p>
-                <h3 class="text-base md:text-xl font-semibold text-gray-800">Patio Suite</h3>
-            </div>
-            <div class="flex items-center pr-3 md:pr-6 text-gray-300">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                </svg>
-            </div>
-        </div>
+        <div-list-opc [h3_text]="'Patio Suite'" [p_text]="'Habitación'" [route]="'/rooms/details-room'" [url_img]="'/images/patio.jpg'"></div-list-opc>
 
-        <!-- Card -->
-        <div
-            class="bg-white rounded-2xl overflow-hidden shadow-sm flex cursor-pointer hover:shadow-md transition-shadow">
-            <img src="/images/terraza.jpg"
-                class="w-36 md:w-64 h-28 md:h-40 object-cover flex-shrink-0" alt="Duplex" />
-            <div class="flex-1 p-4 md:p-6 flex flex-col justify-center">
-                <p class="text-xs text-gray-400 mb-1">Habitación</p>
-                <h3 class="text-base md:text-xl font-semibold text-gray-800">Terraza Suite</h3>
-            </div>
-            <div class="flex items-center pr-3 md:pr-6 text-gray-300">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                </svg>
-            </div>
-        </div>
-
-        <!-- Card -->
-        <div
-            class="bg-white rounded-2xl overflow-hidden shadow-sm flex cursor-pointer hover:shadow-md transition-shadow">
-            <img src="/images/ventana.jpg"
-                class="w-36 md:w-64 h-28 md:h-40 object-cover flex-shrink-0" alt="Suite" />
-            <div class="flex-1 p-4 md:p-6 flex flex-col justify-center">
-                <p class="text-xs text-gray-400 mb-1">Habitación</p>
-                <h3 class="text-base md:text-xl font-semibold text-gray-800">Ventana Suite</h3>
-            </div>
-            <div class="flex items-center pr-3 md:pr-6 text-gray-300">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                </svg>
-            </div>
-        </div>
+        <div-list-opc [h3_text]="'Terraza Suite'" [p_text]="'Habitación'" [route]="'/rooms/details-room'" [url_img]="'/images/terraza.jpg'"></div-list-opc>
+       
+        <div-list-opc [h3_text]="'Ventana Suite'" [p_text]="'Habitación'" [route]="'/rooms/details-room'" [url_img]="'/images/ventana.jpg'"></div-list-opc>
     </div>
 </div>
 <footer-component/>

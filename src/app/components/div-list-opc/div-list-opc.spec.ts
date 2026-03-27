@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Details } from './details';
+import { DivListOpc } from './div-list-opc';
 
-describe('Details', () => {
-  let component: Details;
-  let fixture: ComponentFixture<Details>;
+describe('DivListOpc', () => {
+  let component: DivListOpc;
+  let fixture: ComponentFixture<DivListOpc>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Details]
+      imports: [DivListOpc]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Details);
+    fixture = TestBed.createComponent(DivListOpc);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

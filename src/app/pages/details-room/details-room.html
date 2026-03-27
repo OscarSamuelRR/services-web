@@ -1,0 +1,74 @@
+<div class="min-h-screen bg-gray-50 font-sans">
+    @if (room) {
+    <div class="relative h-64 md:h-96 overflow-hidden">
+        <img [src]="room.image" loading="lazy" alt="Doble estándar" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-black/40"></div>
+
+        <button
+            class="absolute top-4 left-4 text-white bg-white/20 backdrop-blur-sm rounded-full p-2 hover:bg-white/30 transition-colors"
+            [routerLink]="'/rooms'">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg>
+        </button>
+
+        <div class="absolute bottom-4 left-4 md:left-12">
+            <h1 class="text-white text-2xl md:text-4xl font-bold">{{ room.title }}</h1>
+        </div>
+    </div>
+
+    <!-- CONTENIDO -->
+    <div class="px-4 md:px-12 lg:px-32 xl:px-64">
+        <!-- DESCRIPCIÓN -->
+        <div class="bg-white py-5 border-b border-gray-100">
+            <p class="text-gray-600 text-sm md:text-base leading-relaxed">{{ room.description }}</p>
+            <!-- Texto extra solo visible cuando showMore es true -->
+            <!-- @if (showMore) {
+        <p class="text-gray-600 text-sm md:text-base leading-relaxed mt-2">
+        
+        </p>
+      } -->
+            <!-- Botón toggle -->
+            <!-- <button (click)="toggleMore()" class="text-[#00633a] text-sm font-medium mt-3 hover:underline">
+        {{ showMore ? 'Ver menos' : 'Ver más' }}
+      </button> -->
+        </div>
+        @if (room.size) {
+            <div class="bg-white py-5 border-b border-gray-100">
+                <div class="flex items-center gap-3 mb-2">
+                    <svg class="w-8 h-8 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5v-4m0 4h-4m4 0l-5-5" />
+                    </svg>
+                    <span class="text-gray-800 font-semibold text-base md:text-lg">Tamaño</span>
+                </div>
+                <p class="text-gray-500 text-sm md:text-base ml-11">{{ room.size }}</p>
+            </div>
+        }
+        <!-- AMENIDADES -->
+        <div class="bg-white py-2">
+            @for (amenitie of room.amenities; track $index) {
+                <div class="flex items-center gap-3 py-4 border-b border-gray-100">
+                    <span class="w-2 h-2 rounded-full bg-gray-400 ml-1 flex-shrink-0"></span>
+                    <p class="text-gray-600 text-sm md:text-base">{{ amenitie }}</p>
+                </div>
+            } @empty {
+                <p class="text-gray-400 text-sm py-4">No hay amenidades disponibles.</p>
+            }
+        </div>
+        @if (room.moreInfoUrl) {
+            <div class="bg-white py-6 flex justify-center">
+                <a [href]="room.moreInfoUrl" target="_blank"
+                    class="bg-[#00633a] text-white px-8 py-3 rounded-full text-sm font-medium hover:bg-[#004d2d] active:scale-95 transition-all duration-200">
+                    Más información
+                </a>
+            </div>
+        }
+    </div>
+    } @else {
+        <div class="flex items-center justify-center min-h-screen">
+            <p class="text-gray-400">Habitación no encontrada.</p>
+        </div>
+    }
+</div>
+<footer-component />
