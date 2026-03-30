@@ -8,6 +8,9 @@ import { ServicesReception } from './pages/services-reception/services-reception
 import { Assistance } from './pages/assistance/assistance';
 import { Laundry } from './pages/laundry/laundry';
 import { TvChannels } from './pages/tv-channels/tv-channels';
+import { HotelRules } from './pages/hotel-rules/hotel-rules';
+import { Pool } from './pages/pool/pool';
+import { FoodDrinks } from './pages/food-drinks/food-drinks';
 
 export const routes: Routes = [
     { path: '', component: Index },
@@ -17,7 +20,10 @@ export const routes: Routes = [
     { path: 'assistance', component: Assistance },
     { path: 'laundry', component: Laundry },
     { path: 'tv-channels', component: TvChannels },
+    { path: 'hotel-rules', component: HotelRules },
+    { path: 'pool', component: Pool },
     { path: 'rooms', component: Rooms },
+    { path: 'food-drinks', component: FoodDrinks },
     { path: 'rooms/:id', component: DetailsRoom },
     { path: '**', redirectTo: '' }
 ];
