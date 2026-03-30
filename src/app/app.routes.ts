@@ -5,12 +5,18 @@ import { DetailsRoom } from './pages/details-room/details-room';
 import { HotelServices } from './pages/hotel-services/hotel-services';
 import { Amenities } from './pages/amenities/amenities';
 import { ServicesReception } from './pages/services-reception/services-reception';
+import { Assistance } from './pages/assistance/assistance';
+import { Laundry } from './pages/laundry/laundry';
+import { TvChannels } from './pages/tv-channels/tv-channels';
 
 export const routes: Routes = [
     { path: '', component: Index },
     { path: 'hotel-services', component: HotelServices },
     { path: 'amenities', component: Amenities },
     { path: 'services-reception', component: ServicesReception },
+    { path: 'assistance', component: Assistance },
+    { path: 'laundry', component: Laundry },
+    { path: 'tv-channels', component: TvChannels },
     { path: 'rooms', component: Rooms },
     { path: 'rooms/:id', component: DetailsRoom },
     { path: '**', redirectTo: '' }
