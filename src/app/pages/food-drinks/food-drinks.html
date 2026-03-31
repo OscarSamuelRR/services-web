@@ -5,15 +5,17 @@
     <div class="px-4 pb-6">
         <h2 class="pt-6 text-xl font-semibold text-gray-800 mb-4">Alimentos y bebidas del hotel</h2>
         <div class="grid grid-cols-2 gap-3">
-            <div-sections [url_img]="'/images/restaurante.jpg'" [route]="'/rooms'" [span_text]="'Restaurante'" />
+            <div-sections [url_img]="'/images/restaurante.jpg'" [span_text]="'Menú Restaurante'" href="https://lasmananitas.mx"/>
 
-            <div-sections [url_img]="'/images/menu_bar.jpg'" [route]="'/amenities'" [span_text]="'Bar'" class="object-bottom" />
+            <div-sections [url_img]="'/images/menu_bar.jpg'" href="https://lasmananitas.mx/indexbebidas" [span_text]="'Menú Bar'"/>
 
-            <div-sections [url_img]="'/images/servicio_habitacion.jpg'" [route]="'/services-reception'" [span_text]="'Servicio de habitación'" />
+            <div-sections [url_img]="'/images/servicio_habitacion.jpg'" [route]="'/room-service'" [span_text]="'Servicio a la habitación'" />
+
+            <div-sections [url_img]="'/images/atrio.jpg'" [span_text]="'Menú Atrio'" href="https://cigarbar.lasmananitas.com.mx/es/menu"/>
             
-            <div-sections [url_img]="'/images/alberca.jpg'" [route]="'/services-reception'" [span_text]="'Menú Alberca'" />
+            <div-sections [url_img]="'/images/alberca.jpg'" [route]="'/pool-menu'" [span_text]="'Menú Alberca'" />
 
-            <div-section-big  [url_img]="'/images/spa_menu.jpg'" [route]="'/services-reception'" [span_text]="'Menú Spa'" />
+            <div-sections  [url_img]="'/images/spa_menu.jpg'" [route]="'/spa-menu'" [span_text]="'Menú Spa'" />
         </div>
     </div>
 </div>

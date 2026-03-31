@@ -11,6 +11,10 @@ import { TvChannels } from './pages/tv-channels/tv-channels';
 import { HotelRules } from './pages/hotel-rules/hotel-rules';
 import { Pool } from './pages/pool/pool';
 import { FoodDrinks } from './pages/food-drinks/food-drinks';
+import { RoomService } from './pages/room-service/room-service';
+import { PoolMenu } from './pages/pool-menu/pool-menu';
+import { SpaMenu } from './pages/spa-menu/spa-menu';
+import { LoyaltyProgram } from './pages/loyalty-program/loyalty-program';
 
 export const routes: Routes = [
     { path: '', component: Index },
@@ -24,6 +28,10 @@ export const routes: Routes = [
     { path: 'pool', component: Pool },
     { path: 'rooms', component: Rooms },
     { path: 'food-drinks', component: FoodDrinks },
+    { path: 'room-service', component: RoomService },
+    { path: 'pool-menu', component: PoolMenu },
+    { path: 'spa-menu', component: SpaMenu },
+    { path: 'loyalty-program', component: LoyaltyProgram },
     { path: 'rooms/:id', component: DetailsRoom },
     { path: '**', redirectTo: '' }
 ];

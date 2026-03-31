@@ -9,6 +9,7 @@ import { RouterLink } from '@angular/router';
 })
 export class DivSections {
   url_img = input.required<string>();
-  route = input.required<string>();
+  route = input<string>();
   span_text = input.required<string>();
+  href = input<string>('');
 }
