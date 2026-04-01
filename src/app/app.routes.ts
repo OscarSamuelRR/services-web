@@ -15,6 +15,10 @@ import { RoomService } from './pages/room-service/room-service';
 import { PoolMenu } from './pages/pool-menu/pool-menu';
 import { SpaMenu } from './pages/spa-menu/spa-menu';
 import { LoyaltyProgram } from './pages/loyalty-program/loyalty-program';
+import { SpaOrlane } from './pages/spa-orlane/spa-orlane';
+import { SpaRules } from './pages/spa-rules/spa-rules';
+import { SpaAesthetic } from './pages/spa-aesthetic/spa-aesthetic';
+import { LoyaltyProgramSpa } from './pages/loyalty-program-spa/loyalty-program-spa';
 
 export const routes: Routes = [
     { path: '', component: Index },
@@ -32,6 +36,10 @@ export const routes: Routes = [
     { path: 'pool-menu', component: PoolMenu },
     { path: 'spa-menu', component: SpaMenu },
     { path: 'loyalty-program', component: LoyaltyProgram },
+    { path: 'spa-orlane', component: SpaOrlane },
+    { path: 'spa-rules', component: SpaRules },
+    { path: 'spa-aesthetic', component: SpaAesthetic },
+    { path: 'loyalty-program-spa', component: LoyaltyProgramSpa },
     { path: 'rooms/:id', component: DetailsRoom },
     { path: '**', redirectTo: '' }
 ];

@@ -1,0 +1,17 @@
+<div class="min-h-screen bg-gray-50 font-sans">
+    <header-list [h1_text]="'Spa Orlane'" [url_site]="''"></header-list>
+    <!-- GRID DE SECCIONES -->
+    <div class="px-4 pb-6">
+        <h2 class="pt-6 text-xl font-semibold text-gray-800 mb-4">Servicios del Spa Orlane</h2>
+        <div class="grid grid-cols-2 gap-3">
+            <div-sections [url_img]="'/images/spapool.jpg'" [route]="'/spa-rules'" [span_text]="'Reglamento'" />
+
+            <div-sections [url_img]="'/images/estetica.jpg'" [route]="'/spa-aesthetic'" [span_text]="'Estética'" />
+
+            <div-sections [url_img]="'/images/servspa.jpg'" href="https://spaorlane.com/es/servicios" [span_text]="'Servicios y Gimnasio'" />
+
+            <div-sections [url_img]="'/images/lealtadspa.jpg'" [route]="'/loyalty-program-spa'" [span_text]="'Programa de lealtad Orlane'" />
+        </div>
+    </div>
+</div>
+<footer-component />

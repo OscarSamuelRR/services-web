@@ -10,6 +10,6 @@ import { HeaderList } from '../../components/header-list/header-list';
   styleUrl: './spa-menu.css',
 })
 export class SpaMenu {
-  selectedPdf: string = '/pdfs/caja.pdf';
+  selectedPdf: string = '/pdfs/menuroomold.pdf';
   selectedTitle: string = 'Menú del Spa Orlane';
 }

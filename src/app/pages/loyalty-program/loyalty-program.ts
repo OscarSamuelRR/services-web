@@ -10,6 +10,7 @@ import { LOYALTY_LEVELS } from '../../data/loyalty-levels.data';
   templateUrl: './loyalty-program.html',
   styleUrl: './loyalty-program.css',
 })
+
 export class LoyaltyProgram {
   levels: LoyaltyLevel[] = LOYALTY_LEVELS;
 }

@@ -10,6 +10,6 @@ import { PdfViewer } from '../../components/pdf-viewer/pdf-viewer';
   styleUrl: './pool-menu.css',
 })
 export class PoolMenu {
-  selectedPdf: string = '/pdfs/caja.pdf';
+  selectedPdf: string = '/pdfs/menuroomold.pdf';
   selectedTitle: string = 'Menú de la alberca';
 }
