@@ -12,4 +12,5 @@ export class DivSections {
   route = input<string>();
   span_text = input.required<string>();
   href = input<string>('');
+  sub_text = input<string>('');
 }

@@ -19,6 +19,10 @@ import { SpaOrlane } from './pages/spa-orlane/spa-orlane';
 import { SpaRules } from './pages/spa-rules/spa-rules';
 import { SpaAesthetic } from './pages/spa-aesthetic/spa-aesthetic';
 import { LoyaltyProgramSpa } from './pages/loyalty-program-spa/loyalty-program-spa';
+import { OffersExperiences } from './pages/offers-experiences/offers-experiences';
+import { OffersExperiencesContent } from './pages/offers-experiences-content/offers-experiences-content';
+import { ExperiencesTours } from './pages/experiences-tours/experiences-tours';
+import { TourPage } from './pages/tour-page/tour-page';
 
 export const routes: Routes = [
     { path: '', component: Index },
@@ -40,6 +44,10 @@ export const routes: Routes = [
     { path: 'spa-rules', component: SpaRules },
     { path: 'spa-aesthetic', component: SpaAesthetic },
     { path: 'loyalty-program-spa', component: LoyaltyProgramSpa },
+    { path: 'offers-experiences', component: OffersExperiences },
+    { path: 'experiences-tours', component: ExperiencesTours },
+    { path: 'offers-experiences-content/:id', component: OffersExperiencesContent },
     { path: 'rooms/:id', component: DetailsRoom },
+    { path: 'tour-page/:id', component: TourPage },
     { path: '**', redirectTo: '' }
 ];
