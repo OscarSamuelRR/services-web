@@ -13,4 +13,5 @@ export class DivSections {
   span_text = input.required<string>();
   href = input<string>('');
   sub_text = input<string>('');
+  imagePosition = input<string>();
 }

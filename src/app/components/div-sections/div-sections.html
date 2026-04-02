@@ -1,6 +1,6 @@
 @if (href()) {
-    <a [href]="href()" target="_blank" class="relative rounded-2xl overflow-hidden h-70 cursor-pointer group block">
-        <img [src]="url_img()" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" alt="" />
+    <a [href]="href()" target="_blank" class="relative rounded-2xl overflow-hidden h-85 cursor-pointer group block">
+        <img [src]="url_img()" loading="lazy" [class]="'w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ' + (imagePosition() ?? 'object-center')"  alt="" />
         <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex flex-col items-start justify-end p-3">
             <span class="text-white font-semibold text-sm">{{ span_text() }}</span>
             @if (sub_text()) {
@@ -9,8 +9,8 @@
         </div>
     </a>
 } @else {
-    <div class="relative rounded-2xl overflow-hidden h-70 cursor-pointer group" [routerLink]="route()">
-        <img [src]="url_img()" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" alt="" />
+    <div class="relative rounded-2xl overflow-hidden h-85 cursor-pointer group" [routerLink]="route()">
+        <img [src]="url_img()" loading="lazy" [class]="'w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ' + (imagePosition() ?? 'object-center')"  alt="" />
         <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex flex-col items-start justify-end p-3">
             <span class="text-white font-semibold text-sm">{{ span_text() }}</span>
             @if (sub_text()) {

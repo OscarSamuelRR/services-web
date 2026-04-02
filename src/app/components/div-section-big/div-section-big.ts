@@ -14,4 +14,5 @@ export class DivSectionBig {
   url_img = input.required<string>();
   route = input.required<string>();
   span_text = input.required<string>();
+  imagePosition = input<string>();
 }
