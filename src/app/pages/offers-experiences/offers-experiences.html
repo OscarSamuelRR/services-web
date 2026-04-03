@@ -4,18 +4,15 @@
     <header-list [h1_text]="'Ofertas y experiencias'" [url_site]="''"></header-list>
 
     <div class="px-4 md:px-12 lg:px-32 xl:px-48 pb-10">
-
         <!-- SECCIÓN OFERTAS -->
         <div class="pt-8 mb-6">
             <h2 class="text-2xl font-semibold text-gray-800 text-center mb-6">Ofertas</h2>
             <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
-
                 <div-sections [url_img]="'/images/ofertas.jpg'" href="https://be.synxis.com/?adult=1&arrive=2026-04-01&chain=18578&child=0&currency=MXN&depart=2026-04-02&hotel=97806&level=hotel&locale=es-MX&productcurrency=MXN&rooms=1" [span_text]="'Noche en cortesía'" [sub_text]="'Cuarta noche de cortesía. Disfruten de una estadía más larga en este paraíso, obteniendo la cuarta noche en cortesía.'" />
 
                 <div-sections [url_img]="'/images/instalaciones.jpg'" href="https://be.synxis.com/?adult=1&arrive=2026-04-01&chain=18578&child=0&currency=MXN&depart=2026-04-02&hotel=97806&level=hotel&locale=es-MX&productcurrency=MXN&rooms=1" [span_text]="'Estadía inolvidable'" [sub_text]="'Hospédese 7 noches al precio de 5. Reserve una estadía de 7 noches con el beneficio extra de la sexta y séptima noche en cortesía.'" />
 
-                <div-sections [url_img]="'/images/pavo.jpg'" [route]="'/offers-experiences-content/oferta-temporada'" [span_text]="'Compra anticipada'" [sub_text]="''" />
-
+                <div-sections [url_img]="'/images/pavo.jpg'" [route]="'/offers-experiences-content/seasonal-offer'" [span_text]="'Compra anticipada'" [sub_text]="''" />
             </div>
         </div>
         <!--Hasta un 35% de descuento. Anticipe sus vacaciones de ensueño y reciba tarifas preferenciales. Obtenga hasta el 35% de descuento reservando con anticipación su estadía. 
@@ -25,18 +22,15 @@
         -->
         <!-- DIVIDER -->
         <div class="w-full h-px bg-gray-200 my-6"></div>
-
         <!-- SECCIÓN EXPERIENCIAS -->
         <div class="mb-6">
             <h2 class="text-2xl font-semibold text-gray-800 text-center mb-6">Experiencias</h2>
             <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+                <div-sections [url_img]="'/images/offer3.jpg'"  [route]="'/offers-experiences-content/unique-stay'" [span_text]="'Disfrute de una estancia única en este paraíso incomparable'" [sub_text]="''" />
 
-                <div-sections [url_img]="'/images/offer3.jpg'"  [route]="'/offers-experiences-content/estancia-unica'" [span_text]="'Disfrute de una estancia única en este paraíso incomparable'" [sub_text]="''" />
+                <div-sections [url_img]="'/images/romantico.jpg'" [route]="'/offers-experiences-content/two-experience'" [span_text]="'Una experiencia para dos'" [sub_text]="''"/>
 
-                <div-sections [url_img]="'/images/romantico.jpg'" [route]="'/offers-experiences-content/experiencia-dos'" [span_text]="'Una experiencia para dos'" [sub_text]="''"/>
-
-                <div-sections [url_img]="'/images/picnic.jpg'" [route]="'/offers-experiences-content/dia-campo'" [span_text]="'Dia de campo en Las Mañanitas'" [sub_text]="''" />
-
+                <div-sections [url_img]="'/images/picnic.jpg'" [route]="'/offers-experiences-content/picnic-day'" [span_text]="'Dia de campo en Las Mañanitas'" [sub_text]="''" />
             </div>
         </div>
         <div class="w-full h-px bg-gray-200 my-6"></div>

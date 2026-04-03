@@ -4,85 +4,26 @@
     <header-list [h1_text]="'Tours'" [url_site]="'/offers-experiences'"></header-list>
 
     <div class="px-4 md:px-12 lg:px-20 xl:px-32 pb-10">
-
         <!-- ENCABEZADO -->
         <div class="pt-8 mb-8 text-center">
             <h2 class="text-3xl font-semibold text-gray-800 uppercase tracking-widest">Tours</h2>
             <p class="text-gray-400 text-sm mt-2 uppercase tracking-widest"><strong>Ext. 205/206</strong></p>
             <div class="w-12 h-px bg-[#00633a] mx-auto mt-3"></div>
         </div>
-
         <!-- GRID DE DESTINOS -->
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3">
+            <div-section-tour [url_img]="'/images/cuernavaca.jpg'" [route]="'/tour-page/cuernavaca'" [span_text]="'Cuernavaca'" />
 
-            <!-- Card Cuernavaca -->
-            <div class="relative rounded-2xl overflow-hidden h-64 cursor-pointer group" routerLink="/tour-page/cuernavaca">
-                <img src="/images/cuernavaca.jpg" loading="lazy"
-                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    alt="Cuernavaca" />
-                <div
-                    class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end p-3">
-                    <span class="text-white font-semibold text-sm uppercase tracking-wide">Cuernavaca</span>
-                </div>
-            </div>
+            <div-section-tour [url_img]="'/images/tepoztlan.jpg'" [route]="'/tour-page/tepoztlan'" [span_text]="'Tepoztlán'" />
 
-            <!-- Card Tepoztlán -->
-            <div class="relative rounded-2xl overflow-hidden h-64 cursor-pointer group" routerLink="/tour-page/tepoztlan">
-                <img src="/images/tepoztlan.jpg" loading="lazy"
-                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    alt="Tepoztlán" />
-                <div
-                    class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end p-3">
-                    <span class="text-white font-semibold text-sm uppercase tracking-wide">Tepoztlán</span>
-                </div>
-            </div>
+            <div-section-tour [url_img]="'/images/xochicalco.jpg'" [route]="'/tour-page/xochicalco'" [span_text]="'Xochicalco'" />
+            
+            <div-section-tour [url_img]="'/images/taxco.jpg'" [route]="'/tour-page/taxco'" [span_text]="'Ciudad de Taxco'" />
 
-            <!-- Card Xochicalco -->
-            <div class="relative rounded-2xl overflow-hidden h-64 cursor-pointer group" routerLink="/tour-page/xochicalco">
-                <img src="/images/xochicalco.jpg" loading="lazy"
-                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    alt="Xochicalco" />
-                <div
-                    class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end p-3">
-                    <span class="text-white font-semibold text-sm uppercase tracking-wide">Xochicalco</span>
-                </div>
-            </div>
+            <div-section-tour [url_img]="'/images/tours4.jpg'" [route]="'/tour-page/grutas'" [span_text]="'Grutas de Cacahuamilpa'" />
 
-            <!-- Card Ciudad de Taxco -->
-            <div class="relative rounded-2xl overflow-hidden h-64 cursor-pointer group" routerLink="/tour-page/taxco">
-                <img src="/images/taxco.jpg" loading="lazy"
-                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    alt="Ciudad de Taxco" />
-                <div
-                    class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end p-3">
-                    <span class="text-white font-semibold text-sm uppercase tracking-wide">Ciudad de Taxco</span>
-                </div>
-            </div>
-
-            <!-- Card Grutas de Cacahuamilpa -->
-            <div class="relative rounded-2xl overflow-hidden h-64 cursor-pointer group" routerLink="/tour-page/grutas">
-                <img src="/images/tours4.jpg" loading="lazy"
-                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    alt="Grutas de Cacahuamilpa" />
-                <div
-                    class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end p-3">
-                    <span class="text-white font-semibold text-sm uppercase tracking-wide">Grutas de Cacahuamilpa</span>
-                </div>
-            </div>
-
-            <!-- Card Casa Resiú Nayaá -->
-            <div class="relative rounded-2xl overflow-hidden h-64 cursor-pointer group" routerLink="/tour-page/casaresiu">
-                <img src="/images/nayaa.jpg" loading="lazy"
-                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    alt="Casa Resiú Nayaá" />
-                <div
-                    class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end p-3">
-                    <span class="text-white font-semibold text-sm uppercase tracking-wide">Casa Resiú Nayaá</span>
-                </div>
-            </div>
-
+            <div-section-tour [url_img]="'/images/nayaa.jpg'" [route]="'/tour-page/casaresiu'" [span_text]="'Casa Resiú Nayaá'"/>
         </div>
-
         <!-- NOTA INFORMATIVA -->
         <div class="mt-8 bg-[#00633a]/10 rounded-2xl px-6 py-5 flex flex-col items-center text-center gap-3">
             <svg class="w-6 h-6 text-[#00633a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -93,7 +34,6 @@
                 Para contratar algún tour comuníquese a la <strong>Ext. 205/206</strong> y con gusto le atenderemos.
             </p>
         </div>
-
     </div>
 </div>
 <footer-component />
