@@ -2,9 +2,9 @@
     <a [href]="href()" target="_blank" class="relative rounded-2xl overflow-hidden h-85 cursor-pointer group block">
         <img [src]="url_img()" loading="lazy" [class]="'w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ' + (imagePosition() ?? 'object-center')"  alt="" />
         <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex flex-col items-start justify-end p-3">
-            <span class="text-white font-semibold text-sm font-title italic uppercase">{{ span_text() }}</span>
+            <span class="text-white font-semibold text-sm font-[family-name:--font-body]">{{ span_text() }}</span>
             @if (sub_text()) {
-                <span class="text-white/80 text-xs mt-1 font-body italic">{{ sub_text() }}</span>
+                <span class="text-white/80 text-xs mt-1 font-[family-name:--font-body]">{{ sub_text() }}</span>
             }
         </div>
     </a>
@@ -12,9 +12,9 @@
     <div class="relative rounded-2xl overflow-hidden h-85 cursor-pointer group" [routerLink]="route()">
         <img [src]="url_img()" loading="lazy" [class]="'w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ' + (imagePosition() ?? 'object-center')"  alt="" />
         <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex flex-col items-start justify-end p-3">
-            <span class="text-white font-semibold text-sm font-title italic uppercase">{{ span_text() }}</span>
+            <span class="text-white font-semibold text-sm font-[family-name:--font-body]">{{ span_text() }}</span>
             @if (sub_text()) {
-                <span class="text-white/80 text-xs mt-1 font-body italic">{{ sub_text() }}</span>
+                <span class="text-white/80 text-xs mt-1 font-[family-name:--font-body]">{{ sub_text() }}</span>
             }
         </div>
     </div>

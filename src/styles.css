@@ -57,7 +57,10 @@ h6 {
     font-family: 'Playfair Display', serif;
     font-style: italic;
 } */
-
+@theme {
+    --font-title: "English 111 BT", serif;
+    --font-body: "Caslon 540 BT", Georgia, serif;
+}
 /* English 111 BT Vivace - Títulos */
 @font-face {
     font-family: 'English 111 BT';
