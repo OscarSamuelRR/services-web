@@ -15,7 +15,7 @@
                     <!-- <span class="w-2.5 h-2.5 rounded-full bg-[#00633a] flex-shrink-0"></span> -->
                     <p class="text-gray-700 text-base md:text-lg">{{ service.name }}</p>
                 </div>
-                <span class="font-bold text-base md:text-lg" [class]="service.cost === 'Sin costo' ? 'text-[#00633a]' :
+                <span class="font-bold text-base md:text-lg font-body italic" [class]="service.cost === 'Sin costo' ? 'text-[#00633a]' :
                                  service.cost === 'Solicitar' ? 'text-blue-500' :
                                  'text-orange-500'">
                     {{ service.cost }}
