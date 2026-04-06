@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
 import { HeaderList } from '../../components/header-list/header-list';
 import { Footer } from '../../components/footer/footer';
-import { PdfViewer } from '../../components/pdf-viewer/pdf-viewer';
+import { SPA_AESTHETIC_SERVICES, SPA_FOOTER_NOTE } from '../../data/spa-aesthetic.data';
 
 @Component({
   selector: 'app-spa-aesthetic',
-  imports: [HeaderList, Footer, PdfViewer],
+  imports: [HeaderList, Footer],
   templateUrl: './spa-aesthetic.html',
   styleUrl: './spa-aesthetic.css',
 })
 export class SpaAesthetic {
-  selectedPdf: string = '/pdfs/menu_estetica.pdf';
-  selectedTitle: string = 'Precios estética';
-} 
+  services = SPA_AESTHETIC_SERVICES;
+  footerNote = SPA_FOOTER_NOTE;
+}

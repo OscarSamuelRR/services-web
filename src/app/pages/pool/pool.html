@@ -1,18 +1,33 @@
 <div class="min-h-screen bg-gray-50 font-sans">
     <header-list [h1_text]="'Alberca'" [url_site]="'/hotel-services'"></header-list>
-
     <div class="px-4 md:px-12 lg:px-32 xl:px-64 pb-10">
-        <div class="pt-8 mb-10 text-center">
+        <div class="pt-8 mb-6 text-center">
             <h2 class="text-3xl font-semibold text-gray-800">Reglas de uso de alberca</h2>
-            <!-- <p class="text-gray-400 text-base mt-2">Tomaremos su orden.</p> -->
-            <p>Mas información en la <strong>Ext. 201</strong></p>
+            <p class="text-gray-400 text-base mt-2">Más información en la <strong class="text-gray-700">Ext.
+                    201</strong></p>
             <div class="w-12 h-px bg-[#00633a] mx-auto mt-3"></div>
-            <p class="text-black mt-1">La siguiente hoja muestra el reglamento de la alberca dentro del hotel.</p>
         </div>
-        <!-- VISTA PDF -->
-        <div class="px-4 md:px-12 lg:px-32 xl:px-64 pb-10">
-            <pdf-viewer [src]="selectedPdf" [title]="selectedTitle" [showBack]="false">
-            </pdf-viewer>
+        <div class="mb-8">
+            <h3 class="text-2xl font-semibold text-[#00633a] mb-4 text-center">Reglas del uso de Alberca</h3>
+            <div class="bg-white rounded-2xl shadow-sm overflow-hidden">
+                @for (rule of rulesEs; track $index; let last = $last) {
+                <div class="flex items-start gap-4 px-6 py-5" [class.border-b]="!last" [class.border-gray-100]="!last">
+                    <!-- <span class="w-2 h-2 rounded-full bg-[#00633a] flex-shrink-0 mt-2"></span> -->
+                    <p class="text-gray-700 text-base md:text-base">{{ rule.text }}</p>
+                </div>
+                }
+            </div>
+        </div>
+        <div class="mb-8">
+            <h3 class="text-2xl font-semibold text-[#00633a] mb-4 text-center">Pool Regulation</h3>
+            <div class="bg-white rounded-2xl shadow-sm overflow-hidden">
+                @for (rule of rulesEn; track $index; let last = $last) {
+                <div class="flex items-start gap-4 px-6 py-5" [class.border-b]="!last" [class.border-gray-100]="!last">
+                    <!-- <span class="w-2 h-2 rounded-full bg-[#00633a] flex-shrink-0 mt-2"></span> -->
+                    <p class="text-gray-700 text-base md:text-base">{{ rule.text }}</p>
+                </div>
+                }
+            </div>
         </div>
         <div class="mt-10 bg-[#00633a]/10 rounded-2xl px-6 py-5 flex flex-col items-center text-center gap-3">
             <svg class="w-6 h-6 text-[#00633a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">

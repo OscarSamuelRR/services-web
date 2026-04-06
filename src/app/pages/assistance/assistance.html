@@ -1,6 +1,7 @@
 <div class="min-h-screen bg-gray-50 font-sans">
     <header-list [h1_text]="'Asistencia'" [url_site]="'/hotel-services'"></header-list>
-    @if (!selectedPdf) {
+
+    @if (!selectedInstruction()) {
     <div class="px-4 md:px-12 lg:px-32 xl:px-64 pb-10">
         <div class="pt-8 mb-10 text-center">
             <h2 class="text-3xl font-semibold text-gray-800">Servicio de asistencia</h2>
@@ -10,61 +11,55 @@
         </div>
 
         <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mt-8">
-            <!-- Card Caja Fuerte -->
-            <div class="relative bg-white rounded-2xl shadow-sm px-5 pb-6 pt-10 flex flex-col items-center text-center hover:shadow-md transition-shadow">
-                <div class="absolute -top-5 w-11 h-11 rounded-full bg-[#00633a] flex items-center justify-center shadow-md">
-                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                    </svg>
+            @for (instruction of instructions; track instruction.id) {
+            <div
+                class="relative bg-white rounded-2xl shadow-sm px-5 pb-6 pt-10 flex flex-col items-center text-center hover:shadow-md transition-shadow">
+                <div
+                    class="absolute -top-5 w-11 h-11 rounded-full bg-[#00633a] flex items-center justify-center shadow-md">
+                    @if (instruction.icon === 'lock') {
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                        </svg>
+                    }
+                    @if (instruction.icon === 'coffee') {
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8zm4-7v3M8 1v3m4-3v3" />
+                        </svg>
+                    }
+                    @if (instruction.icon === 'wind') {
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9.59 4.59A2 2 0 1111 8H2m10.59 11.41A2 2 0 1010 16H2m15.73-8.27A2 2 0 1119 12H2" />
+                        </svg>
+                    }
                 </div>
-                <h3 class="text-gray-800 font-semibold text-base md:text-lg mb-1">Caja Fuerte</h3>
-                <p class="text-gray-400 text-sm mb-4">Instructivo</p>
-                <button (click)="showPdf('Caja Fuerte', '/pdfs/caja.pdf')" class="text-[#00633a] text-sm font-medium hover:underline cursor-pointer">
+                <h3 class="text-gray-800 font-semibold text-xl md:text-xl lg:text-2xl mb-1">{{ instruction.title }}</h3>
+                <p class="text-gray-400 text-xl md:text-xl lg:text-xl mb-4">{{ instruction.subtitle }}</p>
+                <button (click)="showInstructions(instruction)"
+                    class="text-[#00633a] text-md font-medium hover:underline cursor-pointer">
                     Ver ahora
                 </button>
             </div>
-            <!-- Card Cafetera -->
-            <div class="relative bg-white rounded-2xl shadow-sm px-5 pb-6 pt-10 flex flex-col items-center text-center hover:shadow-md transition-shadow">
-                <div class="absolute -top-5 w-11 h-11 rounded-full bg-[#00633a] flex items-center justify-center shadow-md">
-                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8zm4-7v3M8 1v3m4-3v3" />
-                    </svg>
-                </div>
-                <h3 class="text-gray-800 font-semibold text-base md:text-lg mb-1">Cafetera</h3>
-                <p class="text-gray-400 text-sm mb-4">Instructivo</p>
-                <button (click)="showPdf('Cafetera', '/pdfs/cafetera.pdf')" class="text-[#00633a] text-sm font-medium hover:underline cursor-pointer">
-                    Ver ahora
-                </button>
-            </div>
-            <!-- Card Aire Acondicionado -->
-            <div class="relative bg-white rounded-2xl shadow-sm px-5 pb-6 pt-10 flex flex-col items-center text-center hover:shadow-md transition-shadow">
-                <div class="absolute -top-5 w-11 h-11 rounded-full bg-[#00633a] flex items-center justify-center shadow-md">
-                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M9.59 4.59A2 2 0 1111 8H2m10.59 11.41A2 2 0 1010 16H2m15.73-8.27A2 2 0 1119 12H2" />
-                    </svg>
-                </div>
-                <h3 class="text-gray-800 font-semibold text-base md:text-lg mb-1">Aire Acondicionado</h3>
-                <p class="text-gray-400 text-sm mb-4">Instructivo</p>
-                <button (click)="showPdf('Aire Acondicionado', '/pdfs/aire.pdf')" class="text-[#00633a] text-sm font-medium hover:underline cursor-pointer">
-                    Ver ahora
-                </button>
-            </div>
-            <!-- Card WiFi -->
-            <div class="relative bg-white rounded-2xl shadow-sm px-5 pb-6 pt-10 flex flex-col items-center text-center hover:shadow-md transition-shadow">
-                <div class="absolute -top-5 w-11 h-11 rounded-full bg-[#00633a] flex items-center justify-center shadow-md">
+            }
+
+            <!-- Card WiFi (sin cambios) -->
+            <div
+                class="relative bg-white rounded-2xl shadow-sm px-5 pb-6 pt-10 flex flex-col items-center text-center hover:shadow-md transition-shadow">
+                <div
+                    class="absolute -top-5 w-11 h-11 rounded-full bg-[#00633a] flex items-center justify-center shadow-md">
                     <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0" />
                     </svg>
                 </div>
-                <h3 class="text-gray-800 font-semibold text-base md:text-lg mb-1">WiFi</h3>
-                <p class="text-gray-400 text-sm">Solicita la contraseña</p>
-                <p class="text-gray-700 font-bold text-sm mt-1">Ext. 201</p>
+                <h3 class="text-gray-800 font-semibold text-xl md:text-xl lg:text-2xl mb-1">WiFi</h3>
+                <p class="text-gray-400 text-xl md:text-xl lg:text-xl">Solicita la contraseña</p>
+                <p class="text-gray-700 font-bold text-md mt-1">Ext. 201</p>
             </div>
         </div>
+
         <div class="mt-10 bg-[#00633a]/10 rounded-2xl px-6 py-5 flex flex-col items-center text-center gap-3">
             <svg class="w-6 h-6 text-[#00633a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -77,11 +72,44 @@
         </div>
     </div>
     }
-    <!-- VISTA PDF -->
-    @if (selectedPdf) {
+
+    <!-- VISTA DE INSTRUCCIONES -->
+    @if (selectedInstruction(); as instruction) {
     <div class="px-4 md:px-12 lg:px-32 xl:px-64 pb-10">
-        <pdf-viewer [src]="selectedPdf" [title]="selectedTitle" (onBack)="goBack()">
-        </pdf-viewer>
+        <!-- Botón volver -->
+        <button (click)="goBack()" class="flex items-center gap-2 text-[#00633a] hover:text-[#004d2d] mb-6 mt-6 cursor-pointer">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+            <span class="font-medium">Volver</span>
+        </button>
+
+        <!-- ENCABEZADO -->
+        <div class="pt-2 mb-6 text-center">
+            <h2 class="text-3xl font-semibold text-gray-800">{{ instruction.title }}</h2>
+            <p class="text-gray-400 text-base mt-2">{{ instruction.subtitle }}</p>
+            <div class="w-12 h-px bg-[#00633a] mx-auto mt-3"></div>
+        </div>
+
+        <!-- LISTADO -->
+        <div class="bg-white rounded-2xl shadow-sm overflow-hidden">
+            @for (step of instruction.steps; track $index; let last = $last) {
+            <div class="flex items-start gap-4 px-6 py-5" [class.border-b]="!last" [class.border-gray-100]="!last">
+                <span
+                    class="flex-shrink-0 w-6 h-6 rounded-full bg-[#c9a961] text-white text-xs font-semibold flex items-center justify-center mt-0.5">
+                    {{ $index + 1 }}
+                </span>
+                <p class="text-gray-700 text-base md:text-base">{{ step }}</p>
+            </div>
+            }
+        </div>
+
+        <!-- NOTA FINAL -->
+        @if (instruction.note) {
+            <div class="mt-6 bg-gray-100 rounded-2xl px-6 py-5">
+                <p class="text-gray-700 text-base md:text-base">{{ instruction.note }}</p>
+            </div>
+        }
     </div>
     }
 </div>

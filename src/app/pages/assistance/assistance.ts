@@ -1,26 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { HeaderList } from '../../components/header-list/header-list';
 import { Footer } from '../../components/footer/footer';
-import { PdfViewer } from '../../components/pdf-viewer/pdf-viewer';
+import { Instruction } from '../../interfaces/instruction.interface';
+import { INSTRUCTIONS_DATA } from '../../data/instructions.data';
 
 @Component({
   selector: 'app-assistance',
-  imports: [HeaderList, Footer, PdfViewer],  // ← cambia NgxExtendedPdfViewerModule por PdfViewer
+  imports: [HeaderList, Footer],
   templateUrl: './assistance.html',
   styleUrl: './assistance.css',
 })
-
 export class Assistance {
-  selectedPdf: string | null = null;
-  selectedTitle: string = '';
+  selectedInstruction = signal<Instruction | null>(null);
+  instructions = INSTRUCTIONS_DATA;
 
-  showPdf(title: string, pdfUrl: string) {
-    this.selectedPdf = pdfUrl;
-    this.selectedTitle = title;
+  showInstructions(instruction: Instruction) {
+    this.selectedInstruction.set(instruction);
   }
 
   goBack() {
-    this.selectedPdf = null;
-    this.selectedTitle = '';
+    this.selectedInstruction.set(null);
   }
 }
