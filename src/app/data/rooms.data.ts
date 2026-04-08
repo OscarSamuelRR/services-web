@@ -4,7 +4,7 @@ export const ROOMS: RoomData[] = [
     {
         id: 'mananitas-suite',
         title: 'Las Mañanitas Suites',
-        image: '/images/suite.jpg',
+        image: '/images/suite.webp',
         description: 'Nuestra gran suite Las Mañanitas es única en su clase; ofrece amplio espacio en interiores, su sala con chimenea cuenta con una hermosa vista hacia el jardín principal del restaurante.Esta suite dispone de dos habitaciones, cada una con 1 cama King size, baño con tina y closet.',
         descriptionExtra: '',
         size: '27 - 42 m²',
@@ -22,7 +22,7 @@ export const ROOMS: RoomData[] = [
     {
         id: 'garden-suite',
         title: 'Garden Suite',
-        image: '/images/garden.jpg',
+        image: '/images/garden.webp',
         description: 'Los interiores y exteriores de una de las mejores suites garantizan una estancia perfecta. Cuenta con una amplia sala con chimenea y terraza con espectacular vista hacia la piscina y jardín privado el cual le proporcionará el entorno adecuado para cenas y desayunos íntimos. Dispone de hermoso baño con tina, adornado con talavera mexicana, amplio vestidor y closet. Puede elegir entre una cama King size o dos matrimoniales.',
         size: '27 - 42 m²',
         amenities: [
@@ -39,7 +39,7 @@ export const ROOMS: RoomData[] = [
     {
         id: 'patio-suite',
         title: 'Patio Suite',
-        image: '/images/patio.jpg',
+        image: '/images/patio.webp',
         description: 'Encuentre la privacidad que requiere en esta suite, con amplio patio privado y desayunador para una mañana perfecta. Que hará de su estancia algo inolvidable. Cuenta también con amplio baño con tina, closet y vestidor. Puede elegir entre una cama King size o 2 matrimoniales, amplia sala de estar con chimenea.',
         size: '27 - 42 m²',
         amenities: [
@@ -58,7 +58,7 @@ export const ROOMS: RoomData[] = [
     {
         id: 'terraza-suite',
         title: 'Terraza Suite',
-        image: '/images/terraza.jpg',
+        image: '/images/terraza.webp',
         description: 'Ubicadas en el corazón de Las Mañanitas. Suite con terraza privada para una estancia inolvidable. Disfrute de una hermosa vista hacia el jardín principal del restaurante. Puede elegir entre una cama King size o dos matrimoniales, y baño con tina y closet.',
         size: '27 - 42 m²',
         amenities: [
@@ -77,7 +77,7 @@ export const ROOMS: RoomData[] = [
     {
         id: 'ventana-suite',
         title: 'Ventana Suite',
-        image: '/images/ventana.jpg',
+        image: '/images/ventana.webp',
         description: 'Decoradas con el sello característico de las mañanitas, combinando lo colonial, el buen gusto y la elegancia. Disfruta de nuestra suite estándar, llena de confort. Con dos camas matrimoniales, baño con regadera y closet.',
         size: '27 - 42 m²',
         amenities: [

@@ -3,10 +3,11 @@ import { Footer } from '../../components/footer/footer';
 import { RouterLink } from '@angular/router';
 import { DivSections } from '../../components/div-sections/div-sections';
 import { DivSectionBig } from '../../components/div-section-big/div-section-big';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'index',
-  imports: [Footer, RouterLink, DivSections, DivSectionBig],
+  imports: [Footer, RouterLink, DivSections, DivSectionBig, NgOptimizedImage],
   templateUrl: './index.html',
   styleUrl: './index.css',
 })

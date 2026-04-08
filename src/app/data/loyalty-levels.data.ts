@@ -7,7 +7,7 @@ export const LOYALTY_LEVELS: LoyaltyLevel[] = [
         nights: 10,
         color: 'border-blue-700',
         headerColor: 'bg-blue-700',
-        image: '/images/vip.jpg',
+        image: '/images/vip.webp',
         benefits: [
             'Early Check In',
             'Late Check Out',
@@ -22,7 +22,7 @@ export const LOYALTY_LEVELS: LoyaltyLevel[] = [
         nights: 15,
         color: 'border-gray-400',
         headerColor: 'bg-gray-400',
-        image: '/images/premium.jpg',
+        image: '/images/premium.webp',
         benefits: [
             'Early Check In',
             'Late Check Out',
@@ -40,7 +40,7 @@ export const LOYALTY_LEVELS: LoyaltyLevel[] = [
         nights: 20,
         color: 'border-yellow-600',
         headerColor: 'bg-yellow-600',
-        image: '/images/elite.jpg',
+        image: '/images/elite.webp',
         benefits: [
             'Early Check In',
             'Late Check Out',
