@@ -90,5 +90,6 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'English 111 BT', serif;
+    /* font-family: 'English 111 BT', serif; */
+    font-family: 'Caslon 540 BT', Georgia, serif;
 }
