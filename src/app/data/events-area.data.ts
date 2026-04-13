@@ -8,15 +8,17 @@ export const EventsAreaData: EventArea[] = [
         image: '/images/empresarial.png',
         whatsappUrl: 'https://api.whatsapp.com/send?phone=527773529395&text=Hola,%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20experiencia%20de%20verano%20en%20las%20suites%20de%20lujo.%20Gracias.',
         phone: '7773620000',
-        imagePosition: 'object-center'
+        imagePosition: 'object-center',
+        type: 'empresarial',
     },
     {
-        id: 'two-experience',
-        title: 'Una experiencia para dos',
-        description: 'Viva una estancia inigualable en pareja en el hotel Las Mañanitas. Nuestra experiencia de romance incluye: una noche en suite de lujo con decoración romántica, botella de vino francés Chateaux Bernot, tabla de quesos, credito de $400 pesos para desayuno, finalizando con un relajante circuito hidrotermal en Spa Orlane Paris.',
-        image: '/images/romantico.webp',
+        id: 'eventos-sociales',
+        title: 'Las Mañanitas, una experiencia inolvidable.',
+        description: 'En Las Mañanitas Casanueva, le ofrecemos el espacio ideal para hacer realidad esa experiencia inolvidable que tanto soñó. Un lugar donde gozará de una atención personalizada y de una calidad incomparable por la que nos hemos distinguido. En el Salón Casanueva contamos con una hermosa terraza techada y una cúpula estilo colonial con hermosos decorados, además tenemos un amplio jardín con maravillosas fuentes y aves exóticas que le brindarán a su evento un ambiente único y lleno de vida. Disfruta de nuestros deliciosos platillos, que van desde grandes tradicionales de la cocina mexicana hasta exquisitas recetas de la comida internacional',
+        image: '/images/sociales2.jpg',
         imagePosition: 'object-center',
         whatsappUrl: 'https://api.whatsapp.com/send?phone=527773529395&text=Hola,%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20experiencia%20rom%C3%A1ntica%20para%20dos%20en%20Las%20Ma%C3%B1anitas.%20Gracias.',
-        phone: '7773620000'
+        phone: '7773620000',
+        type: 'social',
     }
 ];
