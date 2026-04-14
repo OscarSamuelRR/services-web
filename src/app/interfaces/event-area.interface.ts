@@ -6,5 +6,5 @@ export interface EventArea {
     whatsappUrl?: string;
     phone?: string;
     imagePosition?: string;
-    type: 'empresarial' | 'social';
+    type: 'empresariales' | 'sociales';
 }

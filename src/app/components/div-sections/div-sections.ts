@@ -14,4 +14,5 @@ export class DivSections {
   href = input<string>('');
   sub_text = input<string>('');
   imagePosition = input<string>();
+  category_text = input<string>('');
 }

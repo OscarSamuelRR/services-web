@@ -33,7 +33,7 @@
         {{ showMore ? 'Ver menos' : 'Ver más' }}
       </button> -->
         </div>
-        @if (room.size) {
+        <!-- @if (room.size) {
             <div class="bg-white py-5 border-b border-gray-100">
                 <div class="flex items-center gap-3 mb-2">
                     <svg class="w-8 h-8 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -44,12 +44,12 @@
                 </div>
                 <p class="text-gray-500 text-sm md:text-base ml-11">{{ room.size }}</p>
             </div>
-        }
+        } -->
         <!-- AMENIDADES -->
         <div class="bg-white py-2">
             @for (amenitie of room.amenities; track $index) {
                 <div class="flex items-center gap-3 py-4 border-b border-gray-100">
-                    <span class="w-2 h-2 rounded-full bg-gray-400 ml-1 flex-shrink-0 font-body italic"></span>
+                    <!-- <span class="w-2 h-2 rounded-full bg-gray-400 ml-1 flex-shrink-0 font-body italic"></span> -->
                     <p class="text-gray-600 text-sm md:text-base">{{ amenitie }}</p>
                 </div>
             } @empty {

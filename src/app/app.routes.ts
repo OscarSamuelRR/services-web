@@ -24,6 +24,7 @@ import { OffersExperiencesContent } from './pages/offers-experiences-content/off
 import { ExperiencesTours } from './pages/experiences-tours/experiences-tours';
 import { TourPage } from './pages/tour-page/tour-page';
 import { Events } from './pages/events/events';
+import { Description } from './pages/description/description';
 
 export const routes: Routes = [
     { path: '', component: Index },
@@ -51,5 +52,6 @@ export const routes: Routes = [
     { path: 'rooms/:id', component: DetailsRoom },
     { path: 'tour-page/:id', component: TourPage },
     { path: 'events/:id', component: Events },
+    { path: 'food-drinks/description/:id', component: Description },
     { path: '**', redirectTo: '' }
 ];
