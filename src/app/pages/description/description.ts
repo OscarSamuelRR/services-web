@@ -1,9 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { HeaderList } from '../../components/header-list/header-list';
 import { Footer } from '../../components/footer/footer';
 import { ActivatedRoute, RouterLink } from '@angular/router';
-import { OfferExperience } from '../../interfaces/offer-experience.interface';
-import { OFFERS_EXPERIENCES } from '../../data/offers-experiences.data';
+import { HOTEL_DESCRIPTIONS } from '../../data/hotel-description.data';
+import { HotelDescription } from '../../interfaces/hotel-description.interface';
 
 @Component({
   selector: 'app-description',
@@ -12,12 +12,12 @@ import { OFFERS_EXPERIENCES } from '../../data/offers-experiences.data';
   styleUrl: './description.css',
 })
 export class Description {
-  offer?: OfferExperience;
+  description = signal<HotelDescription | undefined>(undefined);
 
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
     const id = this.route.snapshot.paramMap.get('id');
-    this.offer = OFFERS_EXPERIENCES.find(o => o.id === id);
+    this.description.set(HOTEL_DESCRIPTIONS.find(o => o.id === id));
   }
 }
