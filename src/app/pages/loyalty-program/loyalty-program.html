@@ -3,41 +3,131 @@
     <div class="px-4 md:px-12 lg:px-32 xl:px-64 pb-10">
         <!-- ENCABEZADO -->
         <div class="pt-8 mb-10 text-center">
-            <h2 class="text-3xl font-semibold text-gray-800">Niveles disponibles</h2>
+            <h2 class="text-3xl font-semibold text-gray-800">Niveles</h2>
             <div class="w-12 h-px bg-[#00633a] mx-auto mt-3"></div>
         </div>
-        <!-- BADGES -->
-        <div class="grid grid-cols-3 gap-4 mb-0">
-            @for (level of levels; track level.id) {
-            <div class="flex justify-center">
-                <img [src]="level.image" [alt]="level.name" class="h-36 w-36 object-contain drop-shadow-lg" />
+        <div class="px-4 md:px-12 lg:px-32 xl:px-64 pb-10">
+        
+            <!-- TÍTULO -->
+            <div class="bg-white py-6 border-b border-gray-100 text-center">
+                <h1 class="text-2xl md:text-3xl font-semibold text-gray-800 leading-snug">
+                    Las Mañanitas Hotel, Garden, Restaurant & Spa
+                </h1>
             </div>
+        
+            <!-- DESCRIPCIÓN -->
+            <div class="bg-white py-1 border-b border-gray-100">
+                <p class="text-gray-600 text-base md:text-lg leading-relaxed text-justify">
+                    En Las Mañanitas reconocemos y agradecemos su preferencia a través de nuestro Programa de Lealtad, diseñado para ofrecer
+                    beneficios exclusivos a nuestros invitados más distinguidos.
+                </p>
+            </div>
+
+            <div class="bg-white py-6 border-b border-gray-100 text-center">
+                <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 leading-snug">
+                    Requisitos de participación
+                </h2>
+            </div>
+
+            <div class="bg-white py-1 border-b border-gray-100">
+                <ul class="text-gray-600 text-base md:text-lg leading-relaxed text-justify">
+                    <li>Programa exclusivo por invitación.</li>
+                    <li>Haber recibido invitación oficial por parte del hotel.</li>
+                    <li>Los beneficios aplican de acuerdo con el nivel alcanzado.</li>
+                </ul>
+            </div>
+        </div>
+        <!-- BADGES -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            @for (level of levels; track level.id) {
+                <div class="relative flex flex-col items-center">
+                    <!-- Imagen flotante -->
+                    <img [src]="level.image" [alt]="level.name" class="h-36 w-36 object-contain rounded-full drop-shadow-lg" /> <br>
+                    <!-- Card -->
+                    <div class="rounded-2xl min-h-[450px] overflow-hidden border-2 w-full" [class]="level.color">
+                        <div class="py-3 text-center" [class]="level.headerColor">
+                            <span class="text-white font-bold tracking-widest text-sm font-body italic uppercase">
+                                {{ level.name }}
+                            </span>
+                        </div>
+                        <div class="bg-white py-6 text-center border-b border-gray-100">
+                            <h3 class="uppercase">Requisitos</h3>
+                            <span class="text-5xl font-light text-gray-800 font-body italic">
+                                {{ level.nights }}
+                            </span>
+                            <span class="text-gray-400 text-base ml-1 font-body italic">
+                                Cuartos-noches acumuladas al año
+                            </span>
+                            @for (requirement of level.requirements; track requirement; let last = $last) {
+                                <p class="text-gray-400 text-base ml-1 font-body italic">
+                                   {{ requirement }}
+                                </p>
+                            }   
+                        </div>
+                        <div class="bg-white">
+                            <h3 class="uppercase text-center">Beneficios</h3>
+                            @for (benefit of level.benefits; track benefit; let last = $last) {
+                                <div class="px-4 py-3 text-center text-base text-gray-600 tracking-wide"
+                                    [class.border-b]="!last" [class.border-gray-100]="!last">
+                                    <p>{{ benefit }}</p>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
             }
         </div>
-        <!-- CARDS -->
-        <div class="grid grid-cols-3 gap-4">
-            @for (level of levels; track level.id) {
-            <div class="rounded-2xl overflow-hidden border-2" [class]="level.color">
-                <!-- Header -->
-                <div class="py-3 text-center" [class]="level.headerColor">
-                    <span class="text-white font-bold tracking-widest text-sm font-body italic">{{ level.name }}</span>
-                </div>
-                <!-- Noches -->
-                <div class="bg-white py-6 text-center border-b border-gray-100">
-                    <span class="text-5xl font-light text-gray-800 font-body italic">{{ level.nights }}</span>
-                    <span class="text-gray-400 text-sm ml-1 font-body italic">Noches</span>
-                </div>
-                <!-- Beneficios -->
-                <div class="bg-white">
-                    @for (benefit of level.benefits; track benefit; let last = $last) {
-                    <div class="px-4 py-3 text-center text-xs text-gray-600 uppercase tracking-wide"
-                        [class.border-b]="!last" [class.border-gray-100]="!last">
-                        {{ benefit }}
-                    </div>
-                    }
-                </div>
+
+        <div class="px-4 md:px-12 lg:px-32 xl:px-64 pb-10">
+            <div class="bg-white py-6 border-b border-gray-100 text-center">
+                <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 leading-snug">
+                    Amenidades y cortesías
+                </h2>
             </div>
-            }
+        
+            <div class="bg-white py-1 border-b border-gray-100">
+                <p class="text-gray-600 text-base md:text-lg leading-relaxed text-justify">
+                    Para estancias mínimas de 3 noches.
+                </p><br>
+                <ul class="text-gray-600 text-base md:text-lg leading-relaxed text-justify">
+                    <li>Gorra Las Mañanitas.</li>
+                    <li>Cubrebocas artesanales.</li>
+                    <li>Sonajas (en caso de niños).</li>
+                    <li>Postre de “Bienvenido a Casa” (clientes frecuentes).</li>
+                    <li>Cubrebocas artesanales.</li>
+                    <li>Postre de celebración para ocasiones especiales
+                    (cumpleaños, aniversarios u otros festejos).</li>
+                </ul>
+            </div>
+ 
+            <div class="bg-white py-6 border-b border-gray-100 text-center">
+                <h1 class="text-2xl md:text-3xl font-semibold text-gray-800 leading-snug">
+                    Política de Cancelación
+                </h1>
+            </div>
+
+            <div class="bg-white py-1 border-b border-gray-100">
+                <p class="text-gray-600 text-base md:text-lg leading-relaxed text-justify">
+                    Con el fin de brindar un mejor servicio y garantizar la disponibilidad durante periodos de alta demanda, <strong>el Programa de
+                    Lealtad Las Mañanitas</strong> establece la siguiente política de cancelación:
+                </p><br>
+                <ul class="text-gray-600 text-base md:text-lg leading-relaxed text-justify">
+                    <li><strong>Temporada baja:</strong><br>
+                        Las cancelaciones deberán realizarse con un mínimo de <strong>3 días de anticipación</strong> a la fecha de llegada para evitar
+                        penalización.
+                    </li>
+                    <li><strong>Temporada alta (días festivos y puentes):</strong><br>
+                        Las cancelaciones deberán realizarse con un mínimo de <strong>7 días de anticipación</strong> a la fecha de llegada.
+                    </li>
+                    <li><strong>Penalización:</strong><br>
+                        En caso de no respetar los plazos establecidos, se aplicará el <strong>cargo correspondiente a la primera noche de hospedaje.</strong>
+                    </li>
+                </ul><br>
+                <p class="text-gray-600 text-base md:text-lg leading-relaxed text-justify">
+                    Esta política aplica para todos los niveles del programa de lealtad y está sujeta a cambios sin previo aviso, de acuerdo
+                    con la disponibilidad y operación del hotel.
+                </p>
+            </div>
         </div>
     </div>
 </div>

@@ -6,4 +6,5 @@ export interface LoyaltyLevel {
     headerColor: string;
     image: string;
     benefits: string[];
+    requirements: string[];
 }

@@ -80,7 +80,7 @@ h6 {
 }
 
 /* Aplicar fuentes globalmente */
-body, p{
+body, p, ul{
     font-family: 'Caslon 540 BT', Georgia, serif;
 }
 

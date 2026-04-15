@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { HeaderList } from '../../components/header-list/header-list';
 import { Footer } from '../../components/footer/footer';
 import { LoyaltyLevel } from '../../interfaces/loyalty-level.interface';
-import { LOYALTY_LEVELS } from '../../data/loyalty-levels.data';
+import { LOYALTY_LEVELS_SPA } from '../../data/loyalty-levels.data';
 
 @Component({
   selector: 'app-loyalty-program-spa',
@@ -11,5 +11,5 @@ import { LOYALTY_LEVELS } from '../../data/loyalty-levels.data';
   styleUrl: './loyalty-program-spa.css',
 })
 export class LoyaltyProgramSpa {
-  levels: LoyaltyLevel[] = LOYALTY_LEVELS;
+  levels: LoyaltyLevel[] = LOYALTY_LEVELS_SPA;
 }
