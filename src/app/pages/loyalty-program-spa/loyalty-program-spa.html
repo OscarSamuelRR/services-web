@@ -6,10 +6,10 @@
             <h2 class="text-3xl font-semibold text-gray-800">Niveles</h2>
             <div class="w-12 h-px bg-[#00633a] mx-auto mt-3"></div>
         </div>
-        <div class="px-4 md:px-12 lg:px-32 xl:px-64 pb-10">
+        <div class="pb-0">
     
             <!-- TÍTULO -->
-            <div class="bg-white py-6 border-b border-gray-100 text-center">
+            <div class="bg-white py-6 border-b border-gray-100 text-center md:text-justify">
                 <h1 class="text-2xl md:text-3xl font-semibold text-gray-800 leading-snug">
                     Spa Orlane
                 </h1>
@@ -24,7 +24,7 @@
                 </p>
             </div>
     
-            <div class="bg-white py-6 border-b border-gray-100 text-center">
+            <div class="bg-white py-6 border-b border-gray-100 text-center md:text-justify">
                 <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 leading-snug">
                     Requisitos de participación
                 </h2>
@@ -39,27 +39,26 @@
             </div>
         </div>
         <!-- BADGES -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 [&>*:last-child]:lg:col-start-2">
             @for (level of levels; track level.id) {
                 <div class="relative flex flex-col items-center">
                     <!-- Imagen flotante -->
                     <img [src]="level.image" [alt]="level.name" class="h-64 w-64 object-contain rounded-full drop-shadow-lg" />
-                    <br>
-                    <!-- Card -->
-                    <div class="rounded-2xl min-h-[450px] overflow-hidden border-2 w-full" [class]="level.color">
-                        <div class="py-3 text-center" [class]="level.headerColor">
+                    <!-- Card [class]="level.color" [class]="level.headerColor"-->
+                    <div class="rounded-2xl min-h-[450px] overflow-hidden border-2 w-full bg-[#002368]">
+                        <div class="py-3 text-center bg-[#002368]">
                             <span class="text-white font-bold tracking-widest text-sm font-body italic uppercase">
                                 {{ level.name }}
                             </span>
                         </div>
                         <div class="bg-white py-6 text-center border-b border-gray-100">
                             <!-- <h3 class="uppercase">Requisitos de participación</h3> -->
-                            <span class="text-gray-400 text-base ml-1 font-body italic">
+                            <span class="text-gray-500 text-base ml-1 font-body italic">
                                 Durante el mes, cada visita al spa acumula beneficios especiales:
                             </span>
-                            <p class="text-5xl font-light text-gray-800 font-body italic">
+                            <!-- <p class="text-5xl font-light text-gray-800 font-body italic">
                                 {{ level.nights }} visitas max.
-                            </p>
+                            </p> -->
                             <!-- @for (requirement of level.requirements; track requirement; let last = $last) {
                                 <p class="text-gray-400 text-base ml-1 font-body italic">
                                     {{ requirement }}
@@ -80,8 +79,8 @@
             }
         </div>
     
-        <div class="px-4 md:px-12 lg:px-32 xl:px-64 pb-10">
-            <div class="bg-white py-6 border-b border-gray-100 text-center">
+        <div class="pb-10">
+            <div class="bg-white py-6 border-b border-gray-100 text-center md:text-justify">
                 <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 leading-snug">
                     Condiciones del programa
                 </h2>

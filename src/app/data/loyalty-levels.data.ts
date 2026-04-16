@@ -5,8 +5,8 @@ export const LOYALTY_LEVELS: LoyaltyLevel[] = [
         id: 1,
         name: 'Invitado Clásico',
         nights: 2,
-        color: 'border-blue-700',
-        headerColor: 'bg-blue-700',
+        color: '#002368',
+        headerColor: '#002368',
         image: '/images/vip.webp',
         benefits: [
             'Early check-in y late check-out sujetos a disponibilidad.',
@@ -19,8 +19,8 @@ export const LOYALTY_LEVELS: LoyaltyLevel[] = [
         id: 2,
         name: 'Invitado VIP',
         nights: 10,
-        color: 'border-gray-400',
-        headerColor: 'bg-gray-400',
+        color: '#808080',// gray-400
+        headerColor: '#808080',
         image: '/images/premium.webp',
         benefits: [
             'Early check-in y late check-out sujetos a disponibilidad',
@@ -37,8 +37,8 @@ export const LOYALTY_LEVELS: LoyaltyLevel[] = [
         id: 3,
         name: 'Invitado Selecto ',
         nights: 15,
-        color: 'border-yellow-600',
-        headerColor: 'bg-yellow-600',
+        color: '#b29d5f',
+        headerColor: '#b29d5f',
         image: '/images/elite.webp',
         benefits: [
             'Botella de vino Las Mañanitas por cada estancia.',
@@ -57,9 +57,9 @@ export const LOYALTY_LEVELS: LoyaltyLevel[] = [
         id: 4,
         name: 'Invitado Mañanitas',
         nights: 20,
-        color: 'border-green-600',
-        headerColor: 'bg-green-600',
-        image: '/images/invitado_mananitas.png',
+        color: '#00633a',
+        headerColor: '#00633a',
+        image: '/images/invitado_mananitas.webp',
         benefits: [
             'Botella de vino Las Mañanitas por cada estancia.',
             'Early check-in y late check-out sujetos a disponibilidad.',
@@ -85,6 +85,8 @@ export const LOYALTY_LEVELS_SPA: LoyaltyLevel[] = [
         headerColor: 'bg-blue-700',
         image: '/images/spaorlane.svg',
         benefits: [
+            '1ª visita.',
+            '2ª visita.',
             '3ª visita: Recepción con amenidad especial de bienvenida.',
             '4ª visita: Disfrute de un tratamiento de 50 minutos en cortesía, a elegir entre nuestra selección de servicios disponibles.',
         ],

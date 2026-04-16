@@ -26,28 +26,29 @@ export const HOTEL_DESCRIPTIONS: HotelDescription[] = [
     },
     {
         id: 'atrio-mananitas',
-        title: 'Descubre el Atrio, el nuevo espacio exclusivo para eventos privados en el Hotel Las Mañanitas.',
-        name: 'Atrio Las Mañanitas',
+        title: 'Espacio exclusivo para eventos privados en el Hotel Las Mañanitas.',
+        name: 'Atrio',
         description: 'Este lugar íntimo para banquetes de hasta 50 personas mantiene la elegancia y el encanto colonial que distingue a nuestro hotel, ofreciendo un ambiente cálido y sofisticado. Con detalles arquitectónicos que evocan la herencia mexicana y una decoración que combina toques contemporáneos con elementos clásicos, Atrio es ideal para celebraciones especiales, reuniones privadas o cualquier evento de su preferencia. Será un placer compartir este nuevo concepto con ustedes.',
         image: '/images/atri2.webp',
         imagePosition: 'object-center',
         whatsappUrl: 'https://api.whatsapp.com/send?phone=527773529395&text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20restaurante.',
         phone: '7773620000',
         schedules: [
-            { label: 'Contactenos', hours: 'Sujeto a disponibilidad.' },
+            { label: 'Ext. 205/206', hours: 'Sujeto a disponibilidad.' },
         ],
     },
     {
-        id: 'bar-azalia-mananitas',
-        title: 'Descubre el Bar Azale, bar al aire libre en el Hotel Las Mañanitas.',
-        name: 'Bar Azale',
+        id: 'bar-azalea-mananitas',
+        title: 'Bar al aire libre en Las Mañanitas.',
+        name: 'Bar Azalea',
         description: 'Azalea, nuestro bar al aire libre, toma su nombre de las flores que embellecen nuestros jardines. En este espacio, la tradición se refleja en una selección de bebidas clásicas, servidas en un entorno natural que invita a disfrutar con calma, en perfecta armonía con el ambiente que nos distingue.',
         image: '/images/menu_bar.webp',
         imagePosition: 'object-center',
         whatsappUrl: 'https://api.whatsapp.com/send?phone=527773529395&text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20restaurante.',
         phone: '7773620000',
         schedules: [
-            { label: 'Viernes-Domingo', hours: 'Horario sujeto a disponibilidad.' }
+            { label: 'Viernes - Sabados', hours: '12:00 p.m. - 10:00 p.m.' },
+            { label: 'Domingos', hours: '12:00 p.m. - 06:00 p.m.' },
         ],
         urlMenu: 'https://lasmananitas.mx/indexbebidas#fh5co-menus'
     },
