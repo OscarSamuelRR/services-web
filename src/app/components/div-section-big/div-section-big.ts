@@ -15,4 +15,5 @@ export class DivSectionBig {
   route = input.required<string>();
   span_text = input.required<string>();
   imagePosition = input<string>();
+  isLCP = input<boolean>(false);
 }

@@ -1,8 +1,7 @@
 <div class="min-h-screen bg-white font-sans">
     <!-- HERO HEADER -->
     <div class="relative h-64 overflow-hidden">
-        <img type="image/jpg" src="/images/alberca.webp" loading="lazy" alt="Hotel"
-            class="w-full h-full object-cover" />
+        <img type="image/jpg" src="/images/alberca.webp" width="1200" height="256" priority alt="Hotel" class="w-full h-full object-cover" />
         <!-- Overlay oscuro -->
         <div class="absolute inset-0 bg-black/40"></div>
         <!-- Botón back -->
@@ -17,7 +16,7 @@
                 <!-- <p class="italic text-base tracking-[0.3em] uppercase opacity-80">Las Mañanitas</p>
                 <h1 class="text-xl font-light tracking-widest uppercase">Hotel Garden Restaurant & Spa</h1> -->
                 <div class="flex-shrink-0">
-                    <img src="images/logo_lasmananitas_footer.png" alt="logo" class="h-32 md:h-32 lg:h-48 w-auto" />
+                    <img src="images/logo_lasmananitas_footer.png" loading="eager" alt="logo" class="h-32 md:h-32 lg:h-48 w-auto" />
                 </div>
             </div>
         </div>
@@ -29,28 +28,30 @@
             </svg>
         </button> -->
     </div>
-
-    <!-- BOTONES DE ACCIÓN -->
+    
+    <div class="h-6 bg-gradient-to-b from-black/40 to-white"></div>
+    
     <div class="px-4 py-5">
-        <div class="flex bg-teal-500 rounded-full overflow-hidden shadow-lg">
-            <!-- <button
-                class="flex-1 flex items-center justify-center gap-2 py-3 text-white font-medium text-sm border-r border-teal-400">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-                </svg> #00633a
-                Solicitudes
-            </button> -->
-            <a [href]="url_maps()" target="_blank" class="flex-1 flex items-center justify-center gap-2 py-3 text-white font-medium text-sm bg-[#00633a] cursor-pointer hover:bg-[#004d2d] active:scale-95 transition-all duration-200">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-                <h1 class="text-2xl md:text-3xl lg:text-4xl">Como llegar al hotel</h1>
-            </a>
+        <div class="flex items-center bg-[#00633a] rounded-full overflow-hidden shadow-lg px-4">
+    
+            <!-- Icono -->
+            <svg class="w-5 h-5 text-white opacity-80 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M21 21l-4.35-4.35M16 10a6 6 0 11-12 0 6 6 0 0112 0z" />
+            </svg>
+    
+            <!-- Input -->
+            <input type="text" placeholder="Buscar servicios, alimentos, experiencias..."
+                class="w-full bg-transparent text-white placeholder-white/70 py-3 text-lg md:text-xl lg:text-2xl focus:outline-none" />
+    
+            <!-- Botón opcional -->
+            <button
+                class="ml-2 bg-[#00633a] hover:bg-[#00361f] text-white px-4 py-2 rounded-full font-body text-md md:text-lg lg:text-xl active:scale-95 transition-all duration-200">
+                Buscar
+            </button>
+    
         </div>
     </div>
-
     <!-- GRID DE SECCIONES -->
     <div class="px-4 pb-6">
         <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-800 mb-4">Conoce nuestros servicios</h2>
@@ -58,13 +59,13 @@
         <div class="grid grid-cols-2 gap-3">
 
             <!-- Habitaciones -->
-            <div-sections [url_img]="'/images/opcion3.webp'" [route]="'/hotel-services'" [span_text]="'Servicios del hotel'" [imagePosition]="'object-bottom'"/>
+            <div-sections [url_img]="'/images/opcion3.webp'" [isLCP]="true" [route]="'/hotel-services'" [span_text]="'Servicios del hotel'" [imagePosition]="'object-bottom'"/>
 
             <!-- Restaurante -->
-            <div-sections [url_img]="'/images/rest112.webp'" [route]="'/food-drinks'" [span_text]="'Alimentos y Bebidas'" />
+            <div-sections [url_img]="'/images/rest112.webp'" [isLCP]="true" [route]="'/food-drinks'" [span_text]="'Alimentos y Bebidas'" />
             
             <!-- <div-section-big [url_img]="'/images/spa.webp'" [route]="''" [span_text]="'Spa Orlane'" ></div-section-big> -->
-            <div-section-big [url_img]="'/images/spa3.webp'" [route]="'/spa-orlane'" [span_text]="'Spa Orlane'" [imagePosition]="'object-center'"/>
+            <div-section-big [url_img]="'/images/spa3.webp'" [isLCP]="true" [route]="'/spa-orlane'" [span_text]="'Spa Orlane'" [imagePosition]="'object-center'"/>
             
             <!-- Ofertas -->
             <div-sections [url_img]="'/images/picnic.webp'" [route]="'/offers-experiences'" [span_text]="'Ofertas y experiencias'" />
@@ -74,7 +75,7 @@
 
             <div-sections [url_img]="'/images/empresarial.png'" [route]="'/events/eventos-empresariales'" [span_text]="'Eventos empresariales'" [imagePosition]="'object-bottom'" />
 
-            <div-sections [url_img]="'/images/sociales2.webp'" [route]="'/events/eventos-sociales'" [span_text]="'Eventos sociales'" [imagePosition]="'object-center'" />
+            <div-sections [url_img]="'/images/sociales2.jpg'" [route]="'/events/eventos-sociales'" [span_text]="'Eventos sociales'" [imagePosition]="'object-center'" />
         </div>
     </div>
     <!-- PROMO BANNER -->
@@ -93,6 +94,28 @@
             </div>
         </div>
     </div> -->
+    <!-- BOTONES DE ACCIÓN -->
+    <div class="px-4 py-5">
+        <div class="flex bg-teal-500 rounded-full overflow-hidden shadow-lg">
+            <!-- <button
+                    class="flex-1 flex items-center justify-center gap-2 py-3 text-white font-medium text-sm border-r border-teal-400">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                    </svg> #00633a
+                    Solicitudes
+                </button> -->
+            <a [href]="url_maps()" target="_blank"
+                class="flex-1 flex items-center justify-center gap-2 py-3 text-white font-medium text-sm bg-[#00633a] cursor-pointer hover:bg-[#004d2d] active:scale-95 transition-all duration-200">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <h1 class="text-2xl md:text-3xl lg:text-4xl">Como llegar al hotel</h1>
+            </a>
+        </div>
+    </div>
     <footer-component/>
 </div>
 

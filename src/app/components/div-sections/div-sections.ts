@@ -15,4 +15,5 @@ export class DivSections {
   sub_text = input<string>('');
   imagePosition = input<string>();
   category_text = input<string>('');
+  isLCP = input<boolean>(false);
 }

@@ -5,7 +5,7 @@ export const OFFERS_EXPERIENCES: OfferExperience[] = [
         id: 'unique-stay',
         title: 'Disfrute de una estancia única en este paraíso incomparable',
         description: 'Inicie la experiencia con un cálido desayuno, viva la más revitalizante sensación en nuestro spa y finalice con un descanso reparador en cualquiera de nuestras suites de lujo. La experiencia para dos personas incluye: una noche en la habitación seleccionada, credito de $400 pesos para desayuno, masaje de 50 min y un relajante circuito hidrotermal en Spa Orlane Paris.',
-        image: '/images/offer3.webp',
+        image: '/images/offer3.jpg',
         whatsappUrl: 'https://api.whatsapp.com/send?phone=527773529395&text=Hola,%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20experiencia%20de%20verano%20en%20las%20suites%20de%20lujo.%20Gracias.',
         phone: '7773620000',
         imagePosition: 'object-bottom'
@@ -32,7 +32,7 @@ export const OFFERS_EXPERIENCES: OfferExperience[] = [
         id: 'seasonal-offer',
         title: 'Oferta especial de temporada',
         description: 'HASTA 35% OFF Disfrute sus vacaciones de Semana Santa a un precio exclusivo reservando directamente con nosotros.\n\nPromoción sujeta a disponibilidad / aplican restricciones / no acumulable con otras ofertas.',
-        image: '/images/pavo.webp',
+        image: '/images/pavo.jpg',
         imagePosition: 'object-center',
         whatsappUrl: 'https://api.whatsapp.com/send?phone=527773620000&text=Hola%2C%20me%20interesa%20la%20oferta%20especial%20de%20Semana%20Santa%20con%20hasta%2035%25%20de%20descuento.%20%C2%BFPodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%20y%20c%C3%B3mo%20reservar%2C%20por%20favor%3F',
         phone: '7773620000'
