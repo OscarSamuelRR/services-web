@@ -31,26 +31,51 @@
     
     <div class="h-6 bg-gradient-to-b from-black/40 to-white"></div>
     
-    <div class="px-4 py-5">
+    <div class="px-4 py-5 relative">
         <div class="flex items-center bg-[#00633a] rounded-full overflow-hidden shadow-lg px-4">
-    
-            <!-- Icono -->
-            <svg class="w-5 h-5 text-white opacity-80 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M21 21l-4.35-4.35M16 10a6 6 0 11-12 0 6 6 0 0112 0z" />
+            <!-- Icono buscar -->
+            <svg class="w-5 h-5 text-white opacity-80 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M16 10a6 6 0 11-12 0 6 6 0 0112 0z" />
             </svg>
-    
             <!-- Input -->
-            <input type="text" placeholder="Buscar servicios, alimentos, experiencias..."
-                class="w-full bg-transparent text-white placeholder-white/70 py-3 text-lg md:text-xl lg:text-2xl focus:outline-none" />
-    
-            <!-- Botón opcional -->
-            <button
-                class="ml-2 bg-[#00633a] hover:bg-[#00361f] text-white px-4 py-2 rounded-full font-body text-md md:text-lg lg:text-xl active:scale-95 transition-all duration-200">
-                Buscar
-            </button>
-    
+            <input type="text" placeholder="Buscar servicios, alimentos, experiencias..." [value]="searchQuery()"
+                (input)="onSearch($any($event.target).value)"
+                class="w-full bg-transparent text-white placeholder-white/70 py-3 text-sm md:text-base focus:outline-none" />
+            <!-- Botón limpiar - solo aparece si hay texto -->
+            @if (searchQuery()) {
+                <button (click)="clearSearch()" class="ml-2 text-white/70 hover:text-white transition-colors">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            }
         </div>
+        <!-- Sugerencias -->
+        @if (searchResults().length > 0) {
+            <div class="absolute left-4 right-4 mt-2 bg-white rounded-2xl shadow-xl overflow-hidden z-50">
+                @for (result of searchResults(); track result.route) {
+                    <button (click)="navigateTo(result.route)" class="w-full flex items-center gap-3 px-5 py-3 text-left cursor-pointer hover:bg-gray-50 transition-colors border-b border-gray-100 last:border-0">
+                        <svg class="w-4 h-4 text-[#00633a] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-4.35-4.35M16 10a6 6 0 11-12 0 6 6 0 0112 0z" />
+                        </svg>
+                        <span class="text-gray-700 text-base">{{ result.label }}</span>
+                        <svg class="w-4 h-4 text-gray-300 ml-auto flex-shrink-0" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                }
+            </div>
+        }
+        <!-- Sin resultados -->
+        @if (searchQuery().length >= 2 && searchResults().length === 0) {
+            <div class="absolute left-4 right-4 mt-2 bg-white rounded-2xl shadow-xl overflow-hidden z-50">
+                <div class="px-5 py-4 text-gray-400 text-sm text-center">
+                    No se encontraron resultados para "{{ searchQuery() }}"
+                </div>
+            </div>
+        }
     </div>
     <!-- GRID DE SECCIONES -->
     <div class="px-4 pb-6">
