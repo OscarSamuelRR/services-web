@@ -4,9 +4,9 @@
     <div class="px-4 pb-6">
         <h2 class="pt-6 text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-800 mb-4">Servicios del Spa Orlane</h2>
         <div class="grid grid-cols-2 gap-3">
-            <div-sections [url_img]="'/images/SpaOrleane.webp'" href="https://spaorlane.com/es/servicios" [span_text]="'Servicios y Gimnasio'" />
+            <div-sections [url_img]="'/images/SpaOrleane.webp'" [isLCP]="true" href="https://spaorlane.com/es/servicios" [span_text]="'Servicios y Gimnasio'" />
 
-            <div-sections [url_img]="'/images/est.webp'" [route]="'/spa-aesthetic'" [span_text]="'Estética'" />
+            <div-sections [url_img]="'/images/est.webp'" [isLCP]="true" [route]="'/spa-aesthetic'" [span_text]="'Estética'" />
 
             <div-sections [url_img]="'/images/lealtad.webp'" [route]="'/loyalty-program-spa'" [span_text]="'Programa de lealtad Orlane'" [imagePosition]="'object-bottom'" />
 

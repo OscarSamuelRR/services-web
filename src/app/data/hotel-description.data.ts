@@ -15,13 +15,13 @@ export const HOTEL_DESCRIPTIONS: HotelDescription[] = [
             { label: 'Comidas y cenas (Dom-Jue)', hours: '1:00 p.m. - 10:00 p.m.' },
             { label: 'Comidas y cenas (Vie-Sáb)', hours: '1:00 p.m. - 11:00 p.m.' },
         ],
-        achievements: [
-            'Colección de los 25 Mejores Restaurantes del Mundo (Demitasse Cup Collection)',
-            'DiRoNa (Distinguished Restaurants of North America) desde 1993',
-            'The Gold List por Condé Nast Traveler en el año 2004',
-            'Galardonados con la distinción 4 diamantes por la "AAA" por más de una década',
-            'Distintivo H desde el año 2007',
-        ],
+        // achievements: [
+        //     'Colección de los 25 Mejores Restaurantes del Mundo (Demitasse Cup Collection)',
+        //     'DiRoNa (Distinguished Restaurants of North America) desde 1993',
+        //     'The Gold List por Condé Nast Traveler en el año 2004',
+        //     'Galardonados con la distinción 4 diamantes por la "AAA" por más de una década',
+        //     'Distintivo H desde el año 2007',
+        // ],
         urlMenu: 'https://lasmananitas.mx/#fh5co-menus'
     },
     {

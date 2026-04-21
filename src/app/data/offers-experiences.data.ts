@@ -23,7 +23,7 @@ export const OFFERS_EXPERIENCES: OfferExperience[] = [
         id: 'picnic-day',
         title: 'Día de campo en Las Mañanitas',
         description: 'Disfrute de la naturaleza con un escenario perfecto para dos, con nuestros días especiales de pícnic.\n\nOpción 1 (Para 2 personas)\nPlato de quesos - Baguette / Panini / Croissant (a elegir 2 opciones) - Fruta de mano (2 opciones) - 1 botella de vino tinto de la casa de 355 ml - agua - 1 juego de mesa.\n\nOpción 2 (Para 2 personas)\nPlato de quesos y carnes frías - Baguette / Panini / Croissant (a elegir 2 opciones) - Fruta de mano (2 opciones) - Bocadillos dulces (2 por persona) - 1 botella de Móet & Chandon 200 ml - agua - 1 juego de cerámica para pintar (gift) - 1 juego de mesa.',
-        image: '/images/picnic.webp',
+        image: '/images/experiencias.jpeg',
         imagePosition: 'object-center',
         whatsappUrl: 'https://api.whatsapp.com/send?phone=527773529395&text=Hola,%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20experiencia%20de%20p%C3%ADcnic%20en%20Las%20Ma%C3%B1anitas.%20Gracias.',
         phone: '7773620000'
