@@ -1,4 +1,4 @@
-import { Component, input, output } from '@angular/core';
+import { Component, input, output, signal } from '@angular/core';
 import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
 
 @Component({
@@ -11,6 +11,7 @@ export class PdfViewer {
   title = input.required<string>();
   onBack = output<void>();
   showBack = input<boolean>(true)
+  isLoading = signal<boolean>(true);
 
   goBack() {
     this.onBack.emit();

@@ -12,8 +12,18 @@
     {{ title() }}
 </h2>
 
+@if (isLoading()) {
+<div class="w-full h-[80vh] bg-gray-100 rounded-2xl animate-pulse flex flex-col items-center justify-center gap-3">
+    <svg class="w-12 h-12 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+    </svg>
+    <p class="text-gray-400 text-sm">Loading...</p>
+</div>
+}
+
 <ngx-extended-pdf-viewer [src]="src()" height="80vh" language="es" [showToolbar]="true" [showSidebarButton]="false"
     [showFindButton]="false" [showPrintButton]="false" [showDownloadButton]="false" [showOpenFileButton]="false"
     [showSecondaryToolbarButton]="false" [showZoomButtons]="true" [showDrawEditor]="false" [showTextEditor]="false" [showStampEditor]="false" [showHighlightEditor]="false" 
-    [showRotateButton]="false" zoom="page-width" [showPagingButtons] = "true">
+    [showRotateButton]="false" zoom="page-width" [showPagingButtons] = "true" (pdfLoaded)="isLoading.set(false)">
 </ngx-extended-pdf-viewer>
