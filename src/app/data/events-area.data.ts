@@ -2,7 +2,7 @@ import { EventArea } from '../interfaces/event-area.interface';
 
 export const EventsAreaData: EventArea[] = [
     {
-        id: 'eventos-empresariales',
+        id: 'corporate-events',
         title: 'En Las Mañanitas empresarial',
         name: 'Eventos Empresariales',
         description: 'Hemos preparado una propuesta pensada para que su equipo viva una experiencia productiva, cómoda y memorable. Integramos nuestro servicio reconocido, espacios exclusivos y la tranquilidad de Cuernavaca, con el propósito de que cada detalle fluya de manera armoniosa, permitiendo que su equipo se enfoque plenamente en alcanzar sus objetivos.',
@@ -13,7 +13,7 @@ export const EventsAreaData: EventArea[] = [
         type: 'empresariales',
     },
     {
-        id: 'eventos-sociales',
+        id: 'social-events',
         title: 'Las Mañanitas, una experiencia inolvidable.',
         name: 'Eventos Sociales',
         description: 'En Las Mañanitas Casanueva, le ofrecemos el espacio ideal para hacer realidad esa experiencia inolvidable que tanto soñó. Un lugar donde gozará de una atención personalizada y de una calidad incomparable por la que nos hemos distinguido. En el Salón Casanueva contamos con una hermosa terraza techada y una cúpula estilo colonial con hermosos decorados, además tenemos un amplio jardín con maravillosas fuentes y aves exóticas que le brindarán a su evento un ambiente único y lleno de vida. Disfruta de nuestros deliciosos platillos, que van desde grandes tradicionales de la cocina mexicana hasta exquisitas recetas de la comida internacional',

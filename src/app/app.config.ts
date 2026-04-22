@@ -16,6 +16,7 @@ export const appConfig: ApplicationConfig = {
     provideHttpClient(),
     provideTranslateService({
       fallbackLang: 'es',
+      defaultLanguage: localStorage.getItem('lang') ?? 'es',
     }),
     provideTranslateHttpLoader({
       prefix: '/i18n/',

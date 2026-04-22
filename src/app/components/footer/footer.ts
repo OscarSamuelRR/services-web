@@ -1,8 +1,9 @@
 import { Component, input, signal } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'footer-component',
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './footer.html',
   styleUrl: './footer.css',
 })

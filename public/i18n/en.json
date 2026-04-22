@@ -1,14 +1,29 @@
 {
-  "nav": {
+  "footer_contact": {
     "requests": "Requests",
     "hotel_map": "Hotel map",
-    "contact": "Contact",
-    "faq": "Help & FAQ"
+    "email": "e-mail",
+    "contact": "Contact"
+  },
+    "footer": {
+    "rights": "All rights reserved.",
+    "developed": "Developed by Desarrollo Web Las Mañanitas.",
+    "company": "© 2026 Las Mañanitas·",
+    "contact": "Contact us",
+    "related": "Related"
   },
   "home": {
     "services": "Discover our services",
     "how_to_get": "How to get to the hotel",
     "search_placeholder": "Search services, food, experiences..."
+  },
+  "div_sections_home":{
+    "hotel_services": "Hotel services",
+    "food_drinks": "Food and Drinks",
+    "spa_orlane": "Spa Orlane",
+    "corporate_events": "Corporate Events",
+    "social_events": "Social Events",
+    "offers_experiences": "Offers and experiences"
   },
   "rooms": {
     "title": "Rooms",
@@ -17,12 +32,6 @@
     "see_more": "See more",
     "see_less": "See less",
     "more_info": "More information"
-  },
-  "footer": {
-    "rights": "All rights reserved",
-    "developed": "Developed by Desarrollo Web Las Mañanitas",
-    "contact": "Contact us",
-    "related": "Related"
   },
   "common": {
     "back": "Back",

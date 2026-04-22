@@ -1,9 +1,10 @@
 import { Component, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { LangSwitcher } from '../lang-switcher/lang-switcher';
 
 @Component({
   selector: 'header-list',
-  imports: [RouterLink],
+  imports: [RouterLink, LangSwitcher],
   templateUrl: './header-list.html',
   styleUrl: './header-list.css',
 })
