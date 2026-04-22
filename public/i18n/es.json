@@ -1,0 +1,32 @@
+{
+  "nav": {
+    "requests": "Solicitudes",
+    "hotel_map": "Mapa del hotel",
+    "contact": "Contacto",
+    "faq": "Ayuda & FAQ"
+  },
+  "home": {
+    "services": "Conoce nuestros servicios",
+    "how_to_get": "Como llegar al hotel",
+    "search_placeholder": "Buscar servicios, alimentos, experiencias..."
+  },
+  "rooms": {
+    "title": "Habitaciones",
+    "size": "Tamaño",
+    "amenities": "Amenidades",
+    "see_more": "Ver más",
+    "see_less": "Ver menos",
+    "more_info": "Más información"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados",
+    "developed": "Developed by Desarrollo Web Las Mañanitas",
+    "contact": "Contáctanos",
+    "related": "Relacionado"
+  },
+  "common": {
+    "back": "Regresar",
+    "whatsapp": "Whatsapp",
+    "not_found": "No encontrado"
+  }
+}

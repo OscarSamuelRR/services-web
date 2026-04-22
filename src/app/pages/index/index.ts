@@ -6,10 +6,12 @@ import { DivSectionBig } from '../../components/div-section-big/div-section-big'
 import { NgOptimizedImage } from '@angular/common';
 import { SEARCH_ROUTES } from '../../data/search-routes.data';
 import { SearchRoutes } from '../../interfaces/search-routes.interface';
+import { TranslateModule } from '@ngx-translate/core';
+import { LangSwitcher } from '../../components/lang-switcher/lang-switcher';
 
 @Component({
   selector: 'index',
-  imports: [Footer, RouterLink, DivSections, DivSectionBig, NgOptimizedImage],
+  imports: [Footer, RouterLink, DivSections, DivSectionBig, NgOptimizedImage, TranslateModule, LangSwitcher],
   templateUrl: './index.html',
   styleUrl: './index.css',
 })
