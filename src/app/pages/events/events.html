@@ -1,5 +1,5 @@
 <div class="min-h-screen bg-gray-50 font-sans">
-    <header-list [h1_text]="'Eventos'" [url_site]="'/areas-experiences'"></header-list>
+    <header-list [h1_text]="'common.events' | translate" [url_site]="'/areas-experiences'"></header-list>
 
     @if (area()) {
         <!-- HERO -->
@@ -10,7 +10,7 @@
         </div>
 
         <div class="pt-8 mb-6 text-center">
-            <h2 class="text-3xl font-semibold text-gray-800">Eventos {{ area()!.type }}</h2>
+            <h2 class="text-3xl font-semibold text-gray-800">{{ 'common.events' | translate }} {{ area()!.type | translate }}</h2>
             <p><strong>Ext. 205/206</strong></p>
             <div class="w-12 h-px bg-[#00633a] mx-auto mt-3"></div>
         </div>
@@ -21,30 +21,30 @@
             <!-- TÍTULO -->
             <div class="bg-white py-6 border-b border-gray-100">
                 <h1 class="text-2xl md:text-3xl font-semibold text-gray-800 leading-snug">
-                    {{ area()!.title }}
+                    {{ area()!.title | translate}}
                 </h1>
             </div>
 
             <!-- DESCRIPCIÓN -->
             <div class="bg-white py-6 border-b border-gray-100">
                 <p class="text-gray-600 text-sm md:text-base leading-relaxed text-justify">
-                    {{ area()!.description }}
+                    {{ area()!.description | translate}}
                 </p>
             </div>
 
             <!-- SOLO EMPRESARIAL: PDFs -->
-            @if (area()!.type === 'empresariales') {
+            @if (area()!.typeIf === 'empresariales') {
                 <!-- Tabs -->
                 <div class="flex gap-2 mb-4 mt-4 justify-center">
                     <button (click)="changePdf(1)"
                         [class]="activePdf() === 1 ? 'bg-[#00633a] text-white' : 'bg-white text-gray-600 cursor-pointer'"
                         class="px-4 py-2 rounded-lg text-sm font-medium transition-colors">
-                        Presentación Empresarial
+                        {{ 'events.pdf_1' | translate}} 
                     </button>
                     <button (click)="changePdf(2)"
                         [class]="activePdf() === 2 ? 'bg-[#00633a] text-white' : 'bg-white text-gray-600 cursor-pointer'"
                         class="px-4 py-2 rounded-lg text-sm font-medium transition-colors">
-                        Experiencias Corporativas
+                        {{ 'events.pdf_2' | translate}}
                     </button>
                 </div>
 
@@ -58,116 +58,59 @@
                 <!-- Viewers -->
                 @if (!isChanging()) {
                     @if (activePdf() === 1) {
-                        <pdf-viewer [src]="selectedPdf()" [title]="selectedTitle()" [showBack]="false" />
+                        <pdf-viewer [src]="selectedPdf()" [title]="selectedTitle() | translate" [showBack]="false" />
                     }
                     @if (activePdf() === 2) {
-                        <pdf-viewer [src]="selectedPdf2()" [title]="selectedTitle2()" [showBack]="false" />
+                        <pdf-viewer [src]="selectedPdf2()" [title]="selectedTitle2() | translate" [showBack]="false" />
                     }
                 }
             }
 
             <!-- SOLO SOCIAL: Cards de servicios -->
-            @if (area()!.type === 'sociales') {
-            <div class="mb-6">
-                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 text-center uppercase tracking-widest py-6">
-                    Servicios
-                </h2>
-            
-                <!-- Card 1 -->
-                <div class="relative overflow-hidden mb-2 min-h-[400px]">
-                    <img src="/images/socialesinfo1.webp" loading="eager" class="w-full h-full object-cover absolute inset-0"
-                        alt="Servicios" />
-                    <div class="absolute inset-0 bg-black/50 flex items-center px-6 py-6 md:px-16">
-                        <ul class="text-white space-y-2 text-xs md:text-base">
-                            <li class="flex items-start gap-1.5">
-                                <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
-                                Lugar con capacidad de hasta 600 personas
-                            </li>
-                            <li class="flex items-start gap-1.5">
-                                <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
-                                Servicio de banquete en el lugar de su preferencia
-                            </li>
-                            <li class="flex items-start gap-1.5">
-                                <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
-                                Lugar para oficiar ceremonia religiosa y civil
-                            </li>
-                            <li class="flex items-start gap-1.5">
-                                <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
-                                Asesoría especializada
-                            </li>
-                            <li class="flex items-start gap-1.5">
-                                <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
-                                Planeación y coordinación total de su evento
-                            </li>
-                            <li class="flex items-start gap-1.5">
-                                <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
-                                Valet Parking
-                            </li>
-                            <li class="flex items-start gap-1.5">
-                                <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
-                                Mobiliario y Equipo
-                            </li>
-                            <li class="flex items-start gap-1.5">
-                                <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
-                                Menús de alta cocina (siendo reconocidos a nivel internacional por nuestra calidad y variedad)
-                            </li>
-                        </ul>
+            @if (area()!.typeIf === 'sociales') {
+                <div class="mb-6">
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-800 text-center uppercase tracking-widest py-6">
+                        {{ 'events.services_title' | translate }}
+                    </h2>
+                
+                    <!-- Card 1 -->
+                    <div class="relative overflow-hidden mb-2 min-h-[400px]">
+                        <img src="/images/socialesinfo1.webp" loading="eager" class="w-full h-full object-cover absolute inset-0"
+                            alt="Servicios" />
+                        <div class="absolute inset-0 bg-black/50 flex items-center px-6 py-6 md:px-16">
+                            <ul class="text-white space-y-2 text-xs md:text-base">
+                                @for (item of servicesCard1(); track $index) {
+                                    <li class="flex items-start gap-1.5">
+                                        <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
+                                        {{ item }}
+                                    </li>
+                                }
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            
-                <!-- Card 2 -->
-                <div class="relative overflow-hidden min-h-[400px]">
-                    <img src="/images/socialesinfo2.jpg" loading="lazy" class="w-full h-full object-cover absolute inset-0"
-                        alt="Servicios adicionales" />
-                    <div class="absolute inset-0 bg-black/50 flex items-center justify-start justify-end px-6 py-6 md:px-16">
-                        <ul class="text-white space-y-2 text-xs md:text-base">
-                            <li class="flex items-start gap-1.5">
-                                <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
-                                Personal de seguridad
-                            </li>
-                            <li class="flex items-start gap-1.5">
-                                <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
-                                Personal de apoyo para la recepción de sus invitados
-                            </li>
-                            <li class="flex items-start gap-1.5">
-                                <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
-                                Paramédico
-                            </li>
-                            <li class="flex items-start gap-1.5">
-                                <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
-                                Personal de baños
-                            </li>
-                            <li class="flex items-start gap-1.5">
-                                <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
-                                Baño exclusivo para la Novia
-                            </li>
-                            <li class="flex items-start gap-1.5">
-                                <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
-                                Salón para proveedores
-                            </li>
-                            <li class="flex items-start gap-1.5">
-                                <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
-                                Guardarropa
-                            </li>
-                            <li class="flex items-start gap-1.5">
-                                <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
-                                Planta de luz
-                            </li>
-                            <li class="flex items-start gap-1.5">
-                                <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
-                                Una habitación en cortesía para los Novios
-                            </li>
-                        </ul>
+                
+                    <!-- Card 2 -->
+                    <div class="relative overflow-hidden min-h-[400px]">
+                        <img src="/images/socialesinfo2.jpg" loading="lazy" class="w-full h-full object-cover absolute inset-0"
+                            alt="Servicios adicionales" />
+                        <div class="absolute inset-0 bg-black/50 flex items-center justify-start justify-end px-6 py-6 md:px-16">
+                            <ul class="text-white space-y-2 text-xs md:text-base">
+                                @for (item of servicesCard2(); track $index) {
+                                    <li class="flex items-start gap-1.5">
+                                        <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
+                                        {{ item }}
+                                    </li>
+                                }
+                            </ul>
+                        </div>
                     </div>
+                
                 </div>
-            
-            </div>
             }
-
             <!-- BOTONES -->
             <div class="bg-white py-6 flex flex-col md:flex-row items-center justify-between gap-4">
                 @if (area()!.whatsappUrl) {
-                    <a [href]="area()!.whatsappUrl" target="_blank"
+                    <a [href]="area()!.whatsappUrl | translate" target="_blank"
                         class="w-full md:w-auto flex items-center justify-center gap-2 bg-[#00633a] text-white px-8 py-3 rounded-lg font-medium hover:bg-[#004d2d] active:scale-95 transition-all duration-200">
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                             <path

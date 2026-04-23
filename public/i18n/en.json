@@ -25,6 +25,66 @@
     "social_events": "Social Events",
     "offers_experiences": "Offers and experiences"
   },
+  "spa": {
+    "title": "Spa Orlane",
+    "services_title": "Spa Orlane Services",
+
+    "sections": {
+      "services_gym": "Services & Gym",
+      "aesthetic": "Aesthetics",
+      "loyalty": "Orlane Loyalty Program",
+      "rules": "Rules"
+    }
+  },
+"events_area_data": {
+    "type_corporate": "corporate",
+    "type_social": "social",
+
+    "corporate": {
+      "title": "At Las Mañanitas for corporate events",
+      "name": "Corporate Events",
+      "description": "We have designed a proposal aimed at providing your team with a productive, comfortable, and memorable experience. We combine our renowned service, exclusive spaces, and the tranquility of Cuernavaca so that every detail flows seamlessly, allowing your team to fully focus on achieving its objectives.",
+      "whatsappUrl": "https://api.whatsapp.com/send?phone=527773529395&text=Hello%20I%20saw%20your%20services%20page%20and%20I%20would%20like%20to%20receive%20more%20information%20about%20your%20corporate%20events."
+    },
+
+    "social": {
+      "title": "Las Mañanitas, an unforgettable experience.",
+      "name": "Social Events",
+      "description": "At Las Mañanitas Casanueva, we offer the ideal setting to bring that unforgettable experience you have always dreamed of to life. A place where you will enjoy personalized attention and unparalleled quality that distinguishes us. At Salón Casanueva, we feature a beautiful covered terrace and a colonial-style dome with elegant décor, along with a spacious garden filled with stunning fountains and exotic birds that create a unique and vibrant atmosphere for your event. Enjoy our exquisite cuisine, ranging from traditional Mexican classics to refined international dishes.",
+      "whatsappUrl": "https://api.whatsapp.com/send?phone=527773529395&text=Hello%20I%20saw%20your%20services%20page%20and%20I%20would%20like%20to%20receive%20more%20information%20about%20your%20social%20events."
+    }
+  },
+  "events": {
+    "services_title": "Services",
+    "pdf_1": "Corporate Presentation",
+    "pdf_2": "Corporate Experiences",
+    "not_found": "Event not found",
+
+    "services": {
+      "card1": [
+        "Venue capacity for up to 600 guests",
+        "Catering service at the location of your choice",
+        "Venue for religious and civil ceremonies",
+        "Specialized advisory service",
+        "Full event planning and coordination",
+        "Valet parking",
+        "Furniture and equipment",
+        "High-end cuisine (internationally recognized for quality and variety)"
+      ],
+
+      "card2": [
+        "Security staff",
+        "Guest reception support staff",
+        "Paramedic service",
+        "Restroom attendants",
+        "Exclusive bridal suite restroom",
+        "Vendor lounge",
+        "Coat check service",
+        "Power generator",
+        "Complimentary room for the couple"
+      ]
+    }
+  },
   "rooms": {
     "title": "Rooms",
     "size": "Size",
@@ -36,6 +96,51 @@
   "common": {
     "back": "Back",
     "whatsapp": "Whatsapp",
-    "not_found": "Not found"
+    "not_found": "Not found",
+    "events": "Events"
+  },
+  "spa_rules": {
+  "header": {
+    "title": "Spa Orlane Paris by Las Mañanitas Regulations",
+    "subtitle": "Operating hours: From 08:00 to 20:00 hrs.",
+    "description": "To enjoy a unique experience in our SPA, please take the following rules into account:"
+  },
+    "rules": {
+      "1": "All SPA treatments are unisex and are available for both hotel guests and external clients.",
+      "2": "Couples (man and woman) are not allowed to enter the hydrothermal circuit, as there are separate areas for men and women.",
+      "3": "A prior reservation is mandatory and subject to availability.",
+      "4": "Entry for minors is prohibited.",
+      "5": "SPA services for pregnant women are subject to conditions. (Consult your doctor).",
+      "6": "It is mandatory to complete a clinical form indicating your health conditions, which must be filled out before accessing any SPA service.",
+      "7": "It is the client's responsibility to inform the SPA reception of any important changes.",
+      "8": "In case of delay to the treatment by the client, the establishment may limit its duration based on other existing appointments.",
+      "9": "The SPA provides clients with a locker key, where they will find a basket for belongings, slippers, a towel, and hangers for clothing. The key must be returned to the SPA reception upon leaving the facilities.",
+      "10": "The materials used during treatments are for internal use only and must be returned to the SPA.",
+      "11": "Entry is prohibited for individuals in an improper condition.",
+      "12": "The consumption or introduction of food, alcoholic beverages, or other substances not provided by our establishments is prohibited.",
+      "13": "The SPA is not responsible, civilly or criminally, for damages suffered by the client as a result of improper use of the facilities/equipment or for loss, theft, and/or damage of personal belongings.",
+      "14": "We recommend our clients remove all jewelry before any treatment.",
+      "15": "One of the characteristics of the SPA is its calm, quiet, and serene atmosphere; therefore, we ask our clients to maintain a respectful attitude to ensure a proper environment.",
+      "16": "Bringing food and drinks into the pool area is prohibited.",
+      "17": "You must shower before using any facility.",
+      "18": "Use of the pool is at the user's own risk.",
+      "19": "Smoking inside the SPA facilities is strictly prohibited.",
+      "20": "For health reasons, no more than 15 minutes is recommended in the jacuzzi, steam room, and sauna.",
+      "21": "For health and safety reasons, treatments cannot be provided under the influence of alcohol or drugs.",
+      "22": "For your safety, walking barefoot inside the SPA facilities is not allowed.",
+      "23": "Wearing a swimsuit is mandatory in wet areas.",
+      "24": "Please do not use body products in the jacuzzi, steam room, sauna, or pool.",
+      "25": "Use of the jacuzzi, sauna, or steam room is strictly prohibited for individuals with contagious diseases or open wounds.",
+      "26": "The SPA manager has the authority to deny access to the facilities to individuals who do not comply with these regulations or who, in their judgment, may pose a risk.",
+      "27": "The use of speakers or any device to play music is not allowed.",
+      "28": "Use headphones or keep music volume very low in the pool area."
+    },
+    "footer": [
+      "Please leave your personal belongings in the safety box in your room and/or locker. Keep the key with you at all times. The SPA and the hotel are not responsible for forgotten or lost items.",
+      "If no discomfort is reported to the therapist during the session, it will be understood that everything was satisfactory and the full charge for your treatment will be applied.",
+      "The treatment/massage you received is strictly professional. Any inappropriate behavior will result in termination of the session and removal from the facilities with full charge applied.",
+      "Please leave your personal belongings in the safety box in your room and/or locker. Keep the key with you at all times. The SPA and the hotel are not responsible for forgotten or lost items."
+    ],
+    "contact_note": "If you have any questions, please contact extension <strong>207</strong> and we will be happy to assist you."
   }
 }

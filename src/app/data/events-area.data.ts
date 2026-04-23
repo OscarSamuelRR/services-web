@@ -3,24 +3,26 @@ import { EventArea } from '../interfaces/event-area.interface';
 export const EventsAreaData: EventArea[] = [
     {
         id: 'corporate-events',
-        title: 'En Las Mañanitas empresarial',
-        name: 'Eventos Empresariales',
-        description: 'Hemos preparado una propuesta pensada para que su equipo viva una experiencia productiva, cómoda y memorable. Integramos nuestro servicio reconocido, espacios exclusivos y la tranquilidad de Cuernavaca, con el propósito de que cada detalle fluya de manera armoniosa, permitiendo que su equipo se enfoque plenamente en alcanzar sus objetivos.',
+        title: 'events_area_data.corporate.title',
+        name: 'events_area_data.corporate.name',
+        description: 'events_area_data.corporate.description',
         image: '/images/empresarial.png',
-        whatsappUrl: 'https://api.whatsapp.com/send?phone=527773529395&text=Hola%20vi%20su%20pagina%20de%20servicios%2C%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20eventos%20empresariales.',
+        whatsappUrl: 'events_area_data.corporate.whatsappUrl',
         phone: '7773620000',
         imagePosition: 'object-center',
-        type: 'empresariales',
+        type: 'events_area_data.type_corporate',
+        typeIf: 'empresariales'
     },
     {
         id: 'social-events',
-        title: 'Las Mañanitas, una experiencia inolvidable.',
-        name: 'Eventos Sociales',
-        description: 'En Las Mañanitas Casanueva, le ofrecemos el espacio ideal para hacer realidad esa experiencia inolvidable que tanto soñó. Un lugar donde gozará de una atención personalizada y de una calidad incomparable por la que nos hemos distinguido. En el Salón Casanueva contamos con una hermosa terraza techada y una cúpula estilo colonial con hermosos decorados, además tenemos un amplio jardín con maravillosas fuentes y aves exóticas que le brindarán a su evento un ambiente único y lleno de vida. Disfruta de nuestros deliciosos platillos, que van desde grandes tradicionales de la cocina mexicana hasta exquisitas recetas de la comida internacional',
+        title: 'events_area_data.social.title',
+        name: 'events_area_data.social.name',
+        description: 'events_area_data.social.description',
         image: '/images/sociales2.jpg',
         imagePosition: 'object-center',
-        whatsappUrl: 'https://api.whatsapp.com/send?phone=527773529395&text=Hola%20vi%20su%20pagina%20de%20servicios%2C%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20eventos%20sociales.',
+        whatsappUrl: 'events_area_data.social.whatsappUrl',
         phone: '7773620000',
-        type: 'sociales',
+        type: 'events_area_data.type_social',
+        typeIf: 'sociales',
     }
 ];

@@ -25,6 +25,64 @@
     "social_events": "Eventos sociales",
     "offers_experiences": "Ofertas y experiencias"
   },
+  "spa": {
+    "title": "Spa Orlane",
+    "services_title": "Servicios del Spa Orlane",
+
+    "sections": {
+      "services_gym": "Servicios y Gimnasio",
+      "aesthetic": "Estética",
+      "loyalty": "Programa de lealtad Orlane",
+      "rules": "Reglamento"
+    }
+  },
+  "events_area_data": {
+    "type_corporate": "empresariales",
+    "type_social": "sociales",
+
+    "corporate": {
+      "title": "En Las Mañanitas empresarial",
+      "name": "Eventos Empresariales",
+      "description": "Hemos preparado una propuesta pensada para que su equipo viva una experiencia productiva, cómoda y memorable. Integramos nuestro servicio reconocido, espacios exclusivos y la tranquilidad de Cuernavaca, con el propósito de que cada detalle fluya de manera armoniosa, permitiendo que su equipo se enfoque plenamente en alcanzar sus objetivos.",
+      "whatsappUrl": "https://api.whatsapp.com/send?phone=527773529395&text=Hola%20vi%20su%20pagina%20de%20servicios%2C%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20eventos%20empresariales."
+    },
+
+    "social": {
+      "title": "Las Mañanitas, una experiencia inolvidable.",
+      "name": "Eventos Sociales",
+      "description": "En Las Mañanitas Casanueva, le ofrecemos el espacio ideal para hacer realidad esa experiencia inolvidable que tanto soñó. Un lugar donde gozará de una atención personalizada y de una calidad incomparable por la que nos hemos distinguido. En el Salón Casanueva contamos con una hermosa terraza techada y una cúpula estilo colonial con hermosos decorados, además tenemos un amplio jardín con maravillosas fuentes y aves exóticas que le brindarán a su evento un ambiente único y lleno de vida. Disfruta de nuestros deliciosos platillos, que van desde grandes tradicionales de la cocina mexicana hasta exquisitas recetas de la comida internacional",
+      "whatsappUrl": "https://api.whatsapp.com/send?phone=527773529395&text=Hola%20vi%20su%20pagina%20de%20servicios%2C%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20eventos%20sociales."
+    }
+  },
+  "events": {
+    "services_title": "Servicios",
+    "pdf_1": "Presentación Empresarial",
+    "pdf_2": "Experiencias Corporativas",
+    "not_found": "Evento no encontrado",
+    "services": {
+      "card1": [
+        "Lugar con capacidad de hasta 600 personas",
+        "Servicio de banquete en el lugar de su preferencia",
+        "Lugar para oficiar ceremonia religiosa y civil",
+        "Asesoría especializada",
+        "Planeación y coordinación total de su evento",
+        "Valet Parking",
+        "Mobiliario y Equipo",
+        "Menús de alta cocina (siendo reconocidos a nivel internacional por nuestra calidad y variedad)"
+      ],
+      "card2": [
+        "Personal de seguridad",
+        "Personal de apoyo para la recepción de sus invitados",
+        "Paramédico",
+        "Personal de baños",
+        "Baño exclusivo para la Novia",
+        "Salón para proveedores",
+        "Guardarropa",
+        "Planta de luz",
+        "Una habitación en cortesía para los Novios"
+      ]
+    }
+  },
   "rooms": {
     "title": "Habitaciones",
     "size": "Tamaño",
@@ -36,6 +94,51 @@
   "common": {
     "back": "Regresar",
     "whatsapp": "Whatsapp",
-    "not_found": "No encontrado"
+    "not_found": "No encontrado",
+    "events": "Eventos"
+  },
+  "spa_rules": {
+    "header": {
+      "title": "Reglamento Spa Orlane Paris by Las Mañanitas",
+      "subtitle": "Horario de funcionamiento: De 08:00 a 20:00 hrs.",
+      "description": "Para disfrutar de una experiencia única en nuestro SPA, deberá tener en cuenta las siguientes normas:"
+    },
+    "rules": {
+      "1": "Todos los tratamientos del SPA son mixtos y están disponibles tanto para los huéspedes del Hotel, así como para los clientes externos.",
+      "2": "Está prohibida la entrada en pareja (hombre y mujer) al circuito hidrotermal, ya que son áreas separadas de hombres y mujeres.",
+      "3": "Es obligatorio efectuar una reservación previa, sujeta a disponibilidad.",
+      "4": "Prohibido el ingreso a menores de edad.",
+      "5": "Los servicios del SPA para mujeres embarazadas están sujetos a condiciones. (Consulte a su médico).",
+      "6": "Es obligatorio complementar una ficha clínica indicando las condiciones en las que se encuentra su salud, la cual deberá de llenar el usuario antes de ingresar a cualquier servicio del SPA.",
+      "7": "Es responsabilidad del cliente informar en la recepción del SPA de cualquier cambio importante.",
+      "8": "En caso de retraso al tratamiento por parte del cliente, el establecimiento podrá limitar el tiempo de duración del mismo en función de otras citas ya existentes.",
+      "9": "El SPA pone a disposición de sus clientes la llave de un casillero, donde encontrarán una canasta para pertenencias, unas sandalias, una toalla, y ganchos para colocar su ropa. La llave deberá ser devuelta en la recepción del SPA al abandonar las instalaciones.",
+      "10": "El material utilizado durante los tratamientos solo es para uso interno y es obligatorio la entrega del mismo en el SPA.",
+      "11": "Se prohíbe la entrada en estado inconveniente.",
+      "12": "Está prohibido su consumo e introducir alimentos y bebidas alcohólicas u otras sustancias que no sean de nuestros centros de consumo.",
+      "13": "El SPA no se responsabiliza, ni civil, ni penalmente, de los daños sufridos por el cliente como consecuencia del uso incorrecto de los espacios/equipamientos o existentes en las instalaciones ni por la pérdida, hurto y/o daño de objetos personales.",
+      "14": "Aconsejamos a nuestros clientes que todos los objetos de adorno sean retirados antes de cualquier tratamiento.",
+      "15": "Una de las características del SPA es su ambiente apacible, tranquilo y sereno; por ello pedimos a nuestros clientes que guarden una actitud mesurada y poder brindarles un ambiente adecuado.",
+      "16": "Prohibido ingresar con comidas y bebidas a la piscina.",
+      "17": "Antes de usar cualquier instalación hay que ducharse.",
+      "18": "El uso de la piscina es bajo exclusivo riesgo del usuario.",
+      "19": "Queda estrictamente prohibido fumar dentro de las instalaciones del SPA.",
+      "20": "Por razones de salud se recomienda no más de 15 minutos en el jacuzzi, vapor y sauna.",
+      "21": "Por razones de salud y seguridad no se puede dar ningún tratamiento bajo la influencia del alcohol o drogas.",
+      "22": "Por su seguridad no se permite caminar descalzo dentro de las instalaciones del SPA.",
+      "23": "Es obligatorio usar el traje de baño en las zonas húmedas.",
+      "24": "Favor de no utilizar productos corporales dentro del jacuzzi, vapor, sauna y alberca.",
+      "25": "Queda prohibido el uso de jacuzzi, sauna o vapor para personas con enfermedades contagiosas o heridas abiertas.",
+      "26": "El gerente del SPA tiene la facultad de negar el uso de las instalaciones a las personas que incumplan con este reglamento o que, a su juicio, puedan resultar perjudiciales para las mismas.",
+      "27": "No se permite el uso de bocinas o de cualquier aparato para poner música.",
+      "28": "Usar audífonos o música muy baja en la zona de la alberca."
+    },
+    "footer": [
+      "Favor de dejar sus objetos personales en la caja de seguridad de su habitación y/ o locker, mantenga la llave consigo en todo momento.El SPA y el hotel no se hace responsable por objetos olvidados o perdidos.",
+      "Si durante la sesión no se menciona ninguna incomodidad al terapeuta se entenderá que todo fue satisfactorio y el cargo total de su tratamiento será aplicado.",
+      "El tratamiento/masaje que usted recibió es de carácter estrictamente profesional, cualquier conducta inapropiada se dará por terminada su sesión y será expulsado de las instalaciones con cargo total a su cuenta.",
+      "Favor de dejar sus objetos personales en la caja de seguridad de su habitación y/o locker, mantenga la llave consigo en todo momento. El SPA y el hotel no se hace responsable por objetos olvidados o perdidos."
+    ],
+    "contact_note": "En caso de tener alguna duda comuníquese a la extensión <strong>207</strong> y con gusto le atenderemos."
   }
 }
