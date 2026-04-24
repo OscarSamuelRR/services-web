@@ -4,10 +4,11 @@ import { Footer } from '../../components/footer/footer';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { HOTEL_DESCRIPTIONS } from '../../data/hotel-description.data';
 import { HotelDescription } from '../../interfaces/hotel-description.interface';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-description',
-  imports: [RouterLink, Footer, HeaderList],
+  imports: [RouterLink, Footer, HeaderList, TranslateModule],
   templateUrl: './description.html',
   styleUrl: './description.css',
 })

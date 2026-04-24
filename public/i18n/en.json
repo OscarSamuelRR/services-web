@@ -19,7 +19,7 @@
   },
   "div_sections_home":{
     "hotel_services": "Hotel services",
-    "food_drinks": "Food and Drinks",
+    "food_drinks": "Food and Beverages",
     "spa_orlane": "Spa Orlane",
     "corporate_events": "Corporate Events",
     "social_events": "Social Events",
@@ -237,5 +237,161 @@
     "tour_title4": "Taxco City",
     "tour_title5": "Cacahuamilpa Caves",
     "tour_title6": "Resiú Nayaá House"
+  },
+  "tours_page": {
+    "cuernavaca": {
+      "palacio_cortes": {
+        "category": "Cuernavaca",
+        "name": "Palacio de Cortés",
+        "description": "A historic monument commissioned by Hernán Cortés during the years following the Conquest of Mexico, built on the remains of the ceremonial and tribute center dedicated to Tláhuac known as Tlatlocayacalli. It is currently the Cuauhnáhuac Regional Museum."
+      },
+      "catedral_cuernavaca": {
+        "category": "Cuernavaca",
+        "name": "Cuernavaca Cathedral",
+        "description": "A 16th-century building, making it one of the oldest cathedrals in the country and the fifth Franciscan foundation in Mexico. It was established in 1525 by the first twelve Franciscan friars who arrived in the country, with the support of a newly arrived group from Spain."
+      },
+      "jardin_borda": {
+        "category": "Cuernavaca",
+        "name": "Jardín Borda",
+        "description": "A historic museum located in what was once the summer residence of wealthy miner José de la Borda from Taxco. Its beautiful gardens, baroque fountains, and wide walkways surrounded by lush trees create a unique setting. Within the garden, there is a lake with small boats, as well as a museum where handicrafts can be found."
+      },
+      "museo_robert_brady": {
+        "category": "Cuernavaca",
+        "name": "Robert Brady Museum",
+        "description": "Former residence of Robert Brady, an American collector who decorated his home with a collection of over 1,300 art pieces, including paintings, sculptures, prints, and handicrafts from around the world. Among the highlights are works by Rufino Tamayo, Frida Kahlo, Diego Rivera, María Izquierdo, Miguel Covarrubias, and many others."
+      }
+    },
+    "tepoztlan": {
+      "tour_tepoztlan": {
+        "category": "Tepoztlán",
+        "name": "Tepoztlán Tour",
+        "description": "5-hour visit and tour of the town of Tepoztlán. It is considered one of the 15 most beautiful places in the country, known for its mystical atmosphere, legends, and traditions still preserved by its inhabitants. Its spectacular mountains will captivate you.\n\nHike up Tepozteco Hill to visit the pyramid dedicated to Ometochtli Tepoztecátl, the god of pulque, where you can enjoy a breathtaking panoramic view. After descending, the tour continues to the Ex-Convent of the Nativity, built by the indigenous people of Tepoztlán and known for its beautiful geometric decorations on ceilings and corridors. The tour includes a visit to the artisan market and concludes at a restaurant where you can enjoy traditional Mexican cuisine."
+      }
+    },
+    "xochicalco": {
+      "tour_xochicalco": {
+        "category": "Xochicalco",
+        "name": "Xochicalco Tour",
+        "description": "4–6 hour visit and tour of the archaeological site. Xochicalco is located in the municipality of Miacatlán in the state of Morelos, Mexico. It was declared a UNESCO World Heritage Site in 1999.\n\nThe archaeological zone includes the main plaza, which houses a shrine and the Great Pyramid; La Malinche, where 20 circular altars are located; the palace; and the southern ball court. The main plaza is the most important space in this sacred city, as it features the Pyramid of the Feathered Serpent. There is also a museum with a collection of archaeological objects discovered in the area, including ceramics and sculptures."
+      }
+    },
+    "taxco": {
+      "tour_taxco": {
+        "category": "Taxco City",
+        "name": "Taxco City Tour",
+        "description": "4–6 hour visit and tour. The tour begins with a visit to a silver workshop, where you will receive an introduction to the different processes used to work silver, inside a simulated mine.\n\nAfterward, we visit the beautiful Parish of Santa Prisca, built in the 16th century, a remarkable example of New Spanish Baroque art. You will have free time to explore and enjoy this colonial city, starting at the main square, continuing through artisan areas and silver museums.\n\nFor lunch, you will have time to visit a traditional restaurant in Taxco."
+      }
+    },
+    "grutas": {
+      "tour_grutas": {
+        "category": "Cacahuamilpa Caves",
+        "name": "Cacahuamilpa Caves",
+        "description": "4–6 hour visit and tour of the caves. These majestic caves are located in the Sierra Madre del Sur, spanning parts of the states of Guerrero and Morelos.\n\nInside, the caves contain an enormous variety of fascinating rock formations that spark the imagination of visitors. The site also features underground rivers that can be explored if desired. More than 90 chambers are open to the public and can be toured in approximately 2 hours. The walk, about 2 kilometers long, is highly rewarding, with guides sharing details and stories that enrich the experience."
+      }
+    },
+    "casaresiu": {
+      "tour_casaresiu": {
+        "category": "Casa Resiú Nayaá Tour",
+        "name": "Casa Resiú Nayaá Tour",
+        "description": "The largest mezcal distillery in Mexico. Experience a tour designed to explore the origin and production process of the finest artisanal mezcal.\n\nAgave piñas are ground using a stone tahona, and the extracted nectar is fermented in wooden vats and double distilled in copper stills, all under the care of master mezcal artisans.\n\n• 2-hour guided tour through agave fields.\n• Guided visit of the distillery.\n• Mexican snacks.\n• Special tasting of up to 4 varieties: Aromas de Guerrero, Weber, Cupreata, and Criollo.\n• 100% cacao chocolate tasting.\n• Bottle of Criollo mezcal (50 ml)."
+      }
+    },
+    "not_found": "Tour not found."
+  },
+  "food_drinks": {
+    "title": "Food and Beverages",
+    "food_drinks_title": "Hotel Food and Beverages",
+
+    "sections": {
+      "restaurant": "Las Mañanitas Restaurant",
+      "bar": "Azalea Bar",
+      "room_service": "Room Service Menu",
+      "atrio": "Atrium",
+      "pool_menu": "Pool Menu",
+      "spa_menu": "Spa Menu"
+    }
+  },
+  "food": {
+    "labels": {
+      "schedules": "Service Hours",
+      "menu": "View our menu",
+      "availability": "Subject to availability.",
+      "not_found": "Information not found."
+    },
+
+    "restaurant": {
+      "title": "Our Service",
+      "name": "Las Mañanitas Restaurant",
+      "description": "Welcome to our restaurant, where culinary excellence blends with a unique dining experience. Every moment of the day is an opportunity to explore a menu that embraces the best of local, national, and international cuisine.\n\nOur outstanding cuisine has been internationally recognized.",
+      "schedule": {
+        "breakfast": "Breakfast",
+        "lunch_week": "Lunch & Dinner (Sun–Thu)",
+        "lunch_weekend": "Lunch & Dinner (Fri–Sat)"
+      }
+    },
+
+    "atrio": {
+      "title": "Exclusive venue for private events at Las Mañanitas.",
+      "name": "Atrio",
+      "description": "This intimate venue for banquets of up to 50 guests preserves the elegance and colonial charm that distinguishes our hotel, offering a warm and sophisticated atmosphere. With architectural details that evoke Mexican heritage and décor that blends contemporary touches with classic elements, Atrio is ideal for special celebrations, private gatherings, or any event of your choice. It will be a pleasure to share this new concept with you.",
+      "schedule": {
+        "contact": "Ext. 205/206"
+      }
+    },
+
+    "bar": {
+      "title": "Open-air bar at Las Mañanitas.",
+      "name": "Azalea Bar",
+      "description": "Azalea, our open-air bar, takes its name from the flowers that beautify our gardens. In this space, tradition is reflected in a selection of classic beverages, served in a natural setting that invites you to relax and enjoy in harmony with the environment that defines us.",
+      "schedule": {
+        "weekend": "Friday - Saturday",
+        "sunday": "Sunday"
+      }
+    },
+
+    "room": {
+      "title": "Room service at Las Mañanitas.",
+      "name": "Room Service",
+      "description": "Enjoy our variety of food options available through our room service.",
+      "schedule": {
+        "breakfast": "Breakfast",
+        "lunch": "Lunch & Dinner",
+        "service": "Room Service"
+      }
+    },
+
+    "pool": {
+      "title": "Pool menu at Las Mañanitas.",
+      "name": "Pool Menu",
+      "description": "Enjoy our variety of food options available at the pool menu.",
+      "schedule": {
+        "service": "Service"
+      }
+    },
+
+    "spa": {
+      "title": "Spa Orlane menu at Las Mañanitas.",
+      "name": "Spa Orlane Menu",
+      "description": "Enjoy our variety of food options available at the Spa Orlane menu.",
+      "schedule": {
+        "service": "Service"
+      }
+    }
+  },
+  "hotel_services": {
+    "title": "Hotel Services",
+    "hotel_services_title": "Hotel Services",
+
+    "sections": {
+      "rooms": "Rooms",
+      "amenities": "Amenities",
+      "reception": "Reception Services",
+      "assistance": "Assistance",
+      "laundry": "Laundry",
+      "tv_channels": "TV Channels",
+      "rules": "Hotel Rules",
+      "pool": "Pool",
+      "loyalty": "Loyalty Program"
+    }
   }
 }

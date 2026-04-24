@@ -1,21 +1,21 @@
 <div class="min-h-screen bg-gray-50 font-sans">
-    <header-list [h1_text]="'Alimentos y bebidas'" [url_site]="''"></header-list>
-    <!-- LISTA DE HABITACIONES [route]="'/room-service'" [route]="'/pool-menu'" [route]="'/spa-menu'"    href="https://lasmananitas.mx/#fh5co-menus"  href="https://lasmananitas.mx/indexdesayunos/#fh5co-menus"-->
+    <header-list [h1_text]="'food_drinks.title' | translate" [url_site]="''"></header-list>
+    <!-- LISTA DE HABITACIONES [route]="'/room-service'" [route]="'/pool-menu'" [route]="'/spa-menu'"  href="https://lasmananitas.mx/indexdesayunos/#fh5co-menus"  href="https://lasmananitas.mx/#fh5co-menus"  href="https://lasmananitas.mx/indexdesayunos/#fh5co-menus"-->
     <!-- GRID DE SECCIONES -->
     <div class="px-4 pb-6">
-        <h2 class="pt-6 text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-800 mb-4">Alimentos y bebidas del hotel</h2>
+        <h2 class="pt-6 text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-800 mb-4">{{ 'food_drinks.food_drinks_title' | translate}}</h2>
         <div class="grid grid-cols-2 gap-3">
-            <div-sections [url_img]="'/images/restaurante.webp'" [isLCP]="true" [span_text]="'Restaurante Las Mañanitas'" [route]="'/food-drinks/description/restaurant-mananitas'"/>
+            <div-sections [url_img]="'/images/restaurante.webp'" [isLCP]="true" [span_text]="'food_drinks.sections.restaurant' | translate" [route]="'/food-drinks/description/restaurant-mananitas'"/>
 
-            <div-sections [url_img]="'/images/menu_bar.webp'" [isLCP]="true" [route]="'/food-drinks/description/bar-azalea-mananitas'" [span_text]="'Bar Azalea'"/>
+            <div-sections [url_img]="'/images/menu_bar.webp'" [isLCP]="true" [route]="'/food-drinks/description/bar-azalea-mananitas'" [span_text]="'food_drinks.sections.bar' | translate"/>
 
-            <div-sections [url_img]="'/images/servicio_habitacion.webp'" [isLCP]="true" href="https://lasmananitas.mx/indexdesayunos/#fh5co-menus" [span_text]="'Menú servicio a la habitación'" />
+            <div-sections [url_img]="'/images/servicio_habitacion.webp'" [isLCP]="true" [span_text]="'food_drinks.sections.room_service' | translate" [route]="'/food-drinks/description/room-service'"/>
 
-            <div-sections [url_img]="'/images/atri2.jpg'" [isLCP]="true" [span_text]="'Atrio'" [route]="'/food-drinks/description/atrio-mananitas'"/>
+            <div-sections [url_img]="'/images/atri2.jpg'" [isLCP]="true" [span_text]="'food_drinks.sections.atrio' | translate" [route]="'/food-drinks/description/atrio-mananitas'"/>
             
-            <div-sections [url_img]="'/images/alberca.webp'" href="https://lasmananitas.mx/indexdesayunos/#fh5co-menus" [span_text]="'Menú Alberca'" />
+            <div-sections [url_img]="'/images/alberca.webp'" [span_text]="'food_drinks.sections.pool_menu' | translate" [route]="'/food-drinks/description/pool-menu'"/>
 
-            <div-sections  [url_img]="'/images/spa_menu.webp'" href="https://lasmananitas.mx/indexdesayunos/#fh5co-menus" [span_text]="'Menú Spa'" />
+            <div-sections  [url_img]="'/images/spa_menu.webp'" [route]="'/food-drinks/description/spa-menu'"  [span_text]="'food_drinks.sections.spa_menu' | translate" [route]="'/food-drinks/description/spa-menu'"/>
         </div>
     </div>
 </div>

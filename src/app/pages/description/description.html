@@ -1,5 +1,5 @@
 <div class="min-h-screen bg-gray-50 font-sans">
-    <header-list [h1_text]="description()!.name?? ''" [url_site]="'/food-drinks'"/>
+    <header-list [h1_text]="description()!.name?? '' | translate" [url_site]="'/food-drinks'"/>
 
     @if (description()) {
         <div class="relative h-64 md:h-96 overflow-hidden">
@@ -9,24 +9,24 @@
         </div>
         <div class="px-4 md:px-12 lg:px-32 xl:px-64 pb-10">
             <div class="bg-white py-6 border-b border-gray-100">
-                <h1 class="text-2xl md:text-3xl font-semibold text-gray-800 leading-snug">{{ description()!.title }}</h1>
+                <h1 class="text-2xl md:text-3xl font-semibold text-gray-800 leading-snug">{{ description()!.title | translate}}</h1>
             </div>
 
             <!-- HORARIOS -->
             @if (description()!.schedules) {
                 <div class="bg-white py-5 border-b border-gray-100">
-                    <h2 class="text-xl font-bold text-gray-800 uppercase tracking-wide mb-3">Horarios de Servicio</h2>
+                    <h2 class="text-xl font-bold text-gray-800 uppercase tracking-wide mb-3">{{'food.labels.schedules' | translate }}</h2>
                     @for (schedule of description()!.schedules!; track schedule.label) {
                         <div class="flex items-center justify-between py-1.5">
-                            <span class="text-gray-700 font-semibold text-base md:text-lg">{{ schedule.label }}</span>
-                            <span class="text-gray-500 text-base md:text-lg">{{ schedule.hours }}</span>
+                            <span class="text-gray-700 font-semibold text-base md:text-lg">{{ schedule.label | translate}}</span>
+                            <span class="text-gray-500 text-base md:text-lg">{{ schedule.hours | translate}}</span>
                         </div>
                     }
                 </div>
             }
             <!-- DESCRIPCIÓN -->
             <div class="bg-white py-6 border-b border-gray-100">
-                <p class="text-gray-600 text-base md:text-lg leading-relaxed text-justify whitespace-pre-line">{{ description()!.description }}</p>
+                <p class="text-gray-600 text-base md:text-lg leading-relaxed text-justify whitespace-pre-line">{{ description()!.description | translate}}</p>
             </div>
             <!-- RECONOCIMIENTOS -->
             @if (description()!.achievements) {
@@ -35,7 +35,7 @@
                     @for (achievement of description()!.achievements; track achievement; let last = $last) {
                         <div class="flex items-start gap-3 py-3" [class.border-b]="!last" [class.border-gray-100]="!last">
                             <span class="w-2 h-2 rounded-full bg-[#00633a] flex-shrink-0 mt-1.5"></span>
-                            <p class="text-gray-600 text-base md:text-lg">{{ achievement }}</p>
+                            <p class="text-gray-600 text-base md:text-lg">{{ achievement | translate}}</p>
                         </div>
                     }
                 </div>
@@ -49,7 +49,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                         </svg>
-                        Consulte nuestro menú
+                        {{'food.labels.menu' | translate }}
                     </a>  
                 }
                 

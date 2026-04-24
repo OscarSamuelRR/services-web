@@ -1,26 +1,26 @@
 <div class="min-h-screen bg-gray-50 font-sans">
-    <header-list [h1_text]="'Servicios del hotel'" [url_site] = "''"></header-list>
+    <header-list [h1_text]="'hotel_services.title' | translate" [url_site] = "''"></header-list>
     <!-- GRID DE SECCIONES -->
     <div class="px-4 pb-6">
-        <h2 class="pt-6 text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-800 mb-4">Servicios del hotel</h2>
+        <h2 class="pt-6 text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-800 mb-4">{{ 'hotel_services.hotel_services_title' | translate}}</h2>
         <div class="grid grid-cols-2 gap-3">
-            <div-sections [url_img]="'/images/habitaciones.webp'" [isLCP]="true" [route]="'/rooms'" [span_text]="'Habitaciones'" [imagePosition]="'object-center'" />
+            <div-sections [url_img]="'/images/habitaciones.webp'" [isLCP]="true" [route]="'/rooms'" [span_text]="'hotel_services.sections.rooms' | translate" [imagePosition]="'object-center'" />
     
-            <div-sections [url_img]="'/images/amen2.webp'" [isLCP]="true" [route]="'/amenities'" [span_text]="'Amenidades'" [imagePosition]="'object-center'" />
+            <div-sections [url_img]="'/images/amen2.webp'" [isLCP]="true" [route]="'/amenities'" [span_text]="'hotel_services.sections.amenities' | translate" [imagePosition]="'object-center'" />
            
-            <div-sections [url_img]="'/images/servr.webp'" [isLCP]="true" [route]="'/services-reception'" [span_text]="'Servicios de recepción'" [imagePosition]="'object-center'" />
+            <div-sections [url_img]="'/images/servr.webp'" [isLCP]="true" [route]="'/services-reception'" [span_text]="'hotel_services.sections.reception' | translate" [imagePosition]="'object-center'" />
     
-            <div-sections [url_img]="'/images/asist.webp'" [isLCP]="true" [route]="'/assistance'" [span_text]="'Asistencia'" [imagePosition]="'object-bottom'" />
+            <div-sections [url_img]="'/images/asist.webp'" [isLCP]="true" [route]="'/assistance'" [span_text]="'hotel_services.sections.assistance' | translate" [imagePosition]="'object-bottom'" />
 
-            <div-sections [url_img]="'/images/naranja.jpg'" [route]="'/laundry'" [span_text]="'Lavanderia'" [imagePosition]="'object-center'" />
+            <div-sections [url_img]="'/images/naranja.jpg'" [route]="'/laundry'" [span_text]="'hotel_services.sections.laundry' | translate" [imagePosition]="'object-center'" />
 
-            <div-sections [url_img]="'/images/pavo1.webp'" [route]="'/tv-channels'" [span_text]="'Canales de TV'" />
+            <div-sections [url_img]="'/images/pavo1.webp'" [route]="'/tv-channels'" [span_text]="'hotel_services.sections.tv_channels' | translate" />
 
-            <div-sections [url_img]="'/images/reglamento3.webp'" [route]="'/hotel-rules'" [span_text]="'Reglamento'" [imagePosition]="'object-center'" />
+            <div-sections [url_img]="'/images/reglamento3.webp'" [route]="'/hotel-rules'" [span_text]="'hotel_services.sections.rules' | translate" [imagePosition]="'object-center'" />
 
-            <div-sections [url_img]="'/images/Piscina.webp'" [route]="'/pool'" [span_text]="'Piscina'" />
+            <div-sections [url_img]="'/images/Piscina.webp'" [route]="'/pool'" [span_text]="'hotel_services.sections.pool' | translate" />
 
-            <div-section-big [url_img]="'/images/recepcion1.jpg'" [route]="'/loyalty-program'" [span_text]="'Programa de lealtad'" />
+            <div-section-big [url_img]="'/images/recepcion1.jpg'" [route]="'/loyalty-program'" [span_text]="'hotel_services.sections.loyalty' | translate" />
         </div>
     </div>
 </div>

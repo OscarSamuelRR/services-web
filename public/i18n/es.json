@@ -235,5 +235,155 @@
       "tour_title4": "Ciudad de Taxco",
       "tour_title5": "Grutas de Cacahuamilpa",
       "tour_title6": "Casa Resiú Nayaá"
+    },
+    "tours_page": {
+      "cuernavaca":{
+        "palacio_cortes": {
+          "category": "Cuernavaca",
+          "name": "Palacio de Cortes",
+          "description": "Monumento histórico ordenado construir por Hernán Cortes en los años intermedios a la Conquista de México, edificado sobre los restos del centro ceremonial y de tributo a Tláhuac llamado Tlatlocayacalli. Actualmente es el museo regional Cuauhnáhuac."
+        },
+        "catedral_cuernavaca": {
+          "category": "Cuernavaca",
+          "name": "Catedral de Cuernavaca",
+          "description": "Es un edificio del siglo XVI, lo que la convierte en una de las catedrales más antiguas del país, es la quinta fundación Franciscana en México. Se estableció en 1525 por los doce primeros frailes franciscanos que llegaron al país, con la ayuda de un nuevo grupo recién llegado de España."
+        },
+        "jardin_borda": {
+          "category": "Cuernavaca",
+          "name": "Jardín Borda",
+          "description": "Museo histórico ubicado en lo que fue la mansión de veraneo del acaudalado minero taxqueño, José de la Borda. Sus maravillosos jardines, sus barrocas fuentes y amplios andadores enmarcados por las extensiones de árboles frondosos de todo tipo, dentro del jardín se encuentra un lago que cuenta con pequeñas embarcaciones, aso como un museo donde se encontraran artesanías."
+        },
+        "museo_robert_brady": {
+          "category": "Cuernavaca",
+          "name": "Museo Robert Brady",
+          "description": "Antigua residencia de Robert Brady, un coleccionista estadounidense que adorno la casa con una colección que comprende más de 1,300 piezas de arte, desde pintura, escultura, grabado y artesanía de todo el mundo. Entre los pequeños tesoros que se pueden admirar destacan obras de Rufino Tamayo, Frida Kahlo, Diego Rivera, María Izquierdo, Miguel Covarrubias, entre muchos otros."
+        }
+      },
+      "tepoztlan":{
+        "tour_tepoztlan": {
+          "category": "Tepoztlán",
+          "name": "Tour Tepoztlán",
+          "description": "Visita y recorrido de 5 horas por el pueblo de Tepoztlán. Es considerado como uno de los 15 lugares más bonitos del país, místico por sus leyendas y tradiciones que aún son respetadas por sus habitantes, sus espectaculares montañas lo cautivaran.\n\n Caminata de ascenso por el cerro de Tepozteco para visitar la pirámide que rendía culto a Ometochtli Tepoztecátl, Dios del pulque, lugar donde se divisa un imponente panorama. Al descender del cerro se realiza un recorrido por el Ex convento de la Natividad, construido por indígenas tepoztecos y que se caracteriza por tener hermosas decoraciones en las bóvedas y corredores, mismas que incluye figuras geométricas. Recorrido por el mercado de artesanías, para concluir en un restaurante y disfrutar de una típica comida mexicana."
+        }
+      },
+      "xochicalco":{
+        "tour_xochicalco": {
+          "category": "xochicalco",
+          "name": "Tour Xochicalco",
+          "description": "Visita y recorrido de 4-6 horas, en el sitio arqueológico. Xochicalco es un sitio arqueológico que se ubica en el municipio de Miacatlán en el estado de Morelos, México. Fue declarado patrimonio de la humanidad por la UNESCO en 1999.\n\nLa zona Arqueológica está conformada por la plaza central, que alberga un adoratorio y la gran pirámide; la Malinche, donde se localiza 20 altares redondos, el palacio y el juego de pelota sur. La plaza principal es el espacio más importante de esta ciudad sagrada, por alojar la pirámide de la serpiente emplumada, además cuenta con el museo donde hay una colección formada por objetos arqueológicos provenientes de las excavaciones en la zona, tales como, la cerámica y la escultura."
+        }
+      },
+      "taxco":{
+        "tour_taxco": {
+          "category": "Ciudad de Taxco",
+          "name": "Tour Ciudad de Taxco",
+          "description": "Visita y recorrido de 4-6 horas. Iniciamos el recorrido con la visita a un taller de plata, en el que se recibirá una pequeña explicación de los diferentes procesos para trabajar la plata, dentro de una mina simulada.\n\nPosteriormente nos dirigimos hacia la hermosa parroquia de Santa Prisca, construida en el siglo XVI, es una muestra del arte barroco novohispano. Se dará un tiempo para recorrer y disfrutar de esta ciudad colonial, empezando por el zócalo, continuando por el área de artesanías y museos de plata.\n\nPara la comida podrá tomar el tiempo necesario para ingresar a algún restaurante típico de Taxco."
+        }
+      },
+      "grutas":{
+        "tour_grutas": {
+          "category": "Grutas de Cacahuamilpa",
+          "name": "Grutas de Cacahuamilpa",
+          "description": "Visita y recorrido de 4-6 horas en las grutas. Estas majestuosas grutas se ubican en la sierra madre del sur, abarcan parte de los estados de Guerrero y Morelos.\n\nEn su interior, las grutas de Cacahuamilpa resguardan una serie vastísima de figuras extrañas que evocan la imaginación de los visitantes, el lugar también cuenta con varios ríos subterráneos que se podrán recorrer si así lo desea. Más de 90 salones están abiertos al público; se recorren en aproximadamente 2 horas. La caminata, de unos 2 kilómetros, es sumamente gratificante; el guía comparte con el público detalles y anécdotas que enriquecen aún más la visita."
+        }
+      },
+      "casaresiu":{
+        "tour_casaresiu": {
+          "category": "Tour Casa Resiú Nayaá",
+          "name": "Tour Casa Resiú Nayaá",
+          "description": "La destilería de mezcal más grande de México. Vive la experiencia de un tour diseñado para conocer el origen y proceso de la elaboración del mejor mezcal artesanal.\n\nLas piñas de agave son molidas en tahona de piedra y el néctar obtenido es fermentado en tina de madera, doblemente destilado en alambique de cobre, todo esto bajo el cuidado de los maestros mezcaleros.\n\n• Recorrido guiado de 2 hrs. por los campos de agave.\n• Visita guiada por la destilería.\n• Antojitos mexicanos.\n• Cata especial de hasta 4 mezcladores: Aromas de Guerrero, Weber, Cupreata y Criollo.\n• Degustación de chocolate de 100% cacao.\n• Botella de mezcal Criollo (50 mil)."
+        }
+      },
+      "not_found": "Tour no encontrado."
+    },
+    "food_drinks": {
+      "title": "Alimentos y bebidas",
+      "food_drinks_title": "Alimentos y bebidas del hotel",
+
+      "sections": {
+        "restaurant": "Restaurante Las Mañanitas",
+        "bar": "Bar Azalea",
+        "room_service": "Menú servicio a la habitación",
+        "atrio": "Atrio",
+        "pool_menu": "Menú Alberca",
+        "spa_menu": "Menú Spa"
+      }
+    },
+  "food": {
+    "labels": {
+      "schedules": "Horarios de Servicio",
+      "menu": "Consulte nuestro menú",
+      "availability": "Sujeto a disponibilidad.",
+      "not_found": "Información no encontrada."
+    },
+    "restaurant": {
+      "title": "Nuestro Servicio",
+      "name": "Restaurante Las Mañanitas",
+      "description": "Bienvenidos a nuestro restaurante, donde la exquisitez culinaria se fusiona con una experiencia gastronómica única. Cada momento del día es una oportunidad para explorar una carta que abraza lo mejor de la cocina local, nacional e internacional.\n\nNuestra grandiosa cocina ha sido reconocida a nivel internacional.",
+      "schedule": {
+        "breakfast": "Desayunos",
+        "lunch_week": "Comidas y cenas (Dom-Jue)",
+        "lunch_weekend": "Comidas y cenas (Vie-Sáb)"
+      }
+    },
+    "atrio": {
+      "title": "Espacio exclusivo para eventos privados en Las Mañanitas.",
+      "name": "Atrio",
+      "description": "Este lugar íntimo para banquetes de hasta 50 personas mantiene la elegancia y el encanto colonial que distingue a nuestro hotel, ofreciendo un ambiente cálido y sofisticado. Con detalles arquitectónicos que evocan la herencia mexicana y una decoración que combina toques contemporáneos con elementos clásicos, Atrio es ideal para celebraciones especiales, reuniones privadas o cualquier evento de su preferencia. Será un placer compartir este nuevo concepto con ustedes.",
+      "schedule": {
+        "contact": "Ext. 205/206"
+      }
+    },
+    "bar": {
+      "title": "Bar al aire libre en Las Mañanitas.",
+      "name": "Bar Azalea",
+      "description": "Azalea, nuestro bar al aire libre, toma su nombre de las flores que embellecen nuestros jardines. En este espacio, la tradición se refleja en una selección de bebidas clásicas, servidas en un entorno natural que invita a disfrutar con calma, en perfecta armonía con el ambiente que nos distingue.",
+      "schedule": {
+        "weekend": "Viernes - Sábados",
+        "sunday": "Domingos"
+      }
+    },
+    "room": {
+      "title": "Servicio a la habitación de Las Mañanitas.",
+      "name": "Servicio a la habitación",
+      "description": "Disfrute de nuestra variedad de alimentos disponibles para nuestro servicio a la habitación.",
+      "schedule": {
+        "breakfast": "Desayunos",
+        "lunch": "Comidas y cenas",
+        "service": "Servicio a la habitación"
+      }
+    },
+    "pool": {
+      "title": "Menú de alberca de Las Mañanitas.",
+      "name": "Menú de alberca",
+      "description": "Disfrute de nuestra variedad de alimentos disponibles en el menú de alberca.",
+      "schedule": {
+        "service": "Servicio"
+      }
+    },
+    "spa": {
+      "title": "Menú del Spa Orlane en Las Mañanitas.",
+      "name": "Menú del Spa Orlane",
+      "description": "Disfrute de nuestra variedad de alimentos disponibles en el menú del Spa Orlane.",
+      "schedule": {
+        "service": "Servicio"
+      }
+    }
+  },
+  "hotel_services": {
+      "title": "Servicios del hotel",
+      "hotel_services_title": "Servicios del hotel",
+
+      "sections": {
+        "rooms": "Habitaciones",
+        "amenities": "Amenidades",
+        "reception": "Servicios de recepción",
+        "assistance": "Asistencia",
+        "laundry": "Lavanderia",
+        "tv_channels": "Canales de TV",
+        "rules": "Reglamento",
+        "pool": "Piscina",
+        "loyalty": "Programa de lealtad"
+      }
     }
 }
