@@ -97,7 +97,9 @@
     "back": "Back",
     "whatsapp": "Whatsapp",
     "not_found": "Not found",
-    "events": "Events"
+    "events": "Events",
+    "contact_note": "If you have any questions, please contact extension",
+    "contact_note_end": "and we will be happy to assist you."
   },
   "spa_rules": {
   "header": {
@@ -142,5 +144,98 @@
       "Please leave your personal belongings in the safety box in your room and/or locker. Keep the key with you at all times. The SPA and the hotel are not responsible for forgotten or lost items."
     ],
     "contact_note": "If you have any questions, please contact extension <strong>207</strong> and we will be happy to assist you."
+  },
+    "spa_aesthetic": {
+    "title": "Spa Orlane Aesthetics",
+    "aesthetic_title": "Spa Orlane Aesthetic Services",
+    "aesthetic_subtitle": "Price List",
+    "spa_footer_note": "Prices in national currency, VAT Included"
+  },
+  "spa_loyalty": {
+    "header": {
+      "title": "Spa Orlane Loyalty Program",
+      "levels": "Levels"
+    },
+    "title": "Spa Orlane",
+    "description": "At Spa Orlane, we appreciate your preference through our Loyalty Program, designed to pamper our guests and frequent clients with exclusive benefits, special experiences, and complimentary treatments. Our goal is to recognize your loyalty and make every visit even more special.",
+    "subtitle": "During the month, each visit to the spa accumulates special benefits:",
+    "levels": {
+      "1": {
+        "name": "Program Benefits",
+        "benefits": {
+          "0": "1st visit.",
+          "1": "2nd visit.",
+          "2": "3rd visit: Welcome reception with a special courtesy amenity.",
+          "3": "4th visit: Enjoy a complimentary 50-minute treatment, to choose from our available service selection."
+        }
+      }
+    },
+    "participation": {
+      "title": "Participation Requirements",
+      "0": "Exclusive program by invitation.",
+      "1": "Must have received an official invitation from Spa Orlane.",
+      "2": "Applies only to treatments carried out within the same month."
+    },
+    "conditions": {
+      "title": "Program Conditions",
+      "0": "Visits must be made within the same calendar month.",
+      "1": "At the end of the month or upon reaching the 4th visit, the count resets automatically.",
+      "2": "Benefits are non-transferable and cannot be combined with other promotions.",
+      "3": "Benefits are subject to availability and prior reservation."
+    }
+  },
+  "offer_experiences": {
+    "main_title": "Offers and experiences",
+    "title1": "Offers",
+    "title2": "Experiences",
+    "title3": "Tours",
+    "card_title1": "Tours",
+    "offers": {
+      "card_title1": "Complimentary Night",
+      "card_subtitle1": "Fourth night complimentary. Enjoy a longer stay in this paradise by receiving your fourth night free.",
+      "card_title2": "Unforgettable Stay",
+      "card_subtitle2": "Stay 7 nights for the price of 5. Book a 7-night stay and enjoy the added benefit of the sixth and seventh nights complimentary.",
+      "card_title3": "Early Booking",
+      "card_subtitle3": ""
+    },
+    "experiences": {
+      "card_title1": "Enjoy a unique stay in this incomparable paradise",
+      "card_category1": "Hotel",
+      "card_title2": "An Experience for Two",
+      "card_category2": "Restaurant",
+      "card_title3": "Picnic Experience at Las Mañanitas",
+      "card_category3": "Hotel"
+    }
+  },
+  "offers_experiences_detail": {
+    "unique_stay": {
+      "title": "Enjoy a unique stay in this incomparable paradise",
+      "description": "Start your experience with a warm breakfast, enjoy the most revitalizing sensation in our spa, and finish with a restful stay in any of our luxury suites. This experience for two includes: one night in the selected room, a $400 MXN breakfast credit, a 50-minute massage, and a relaxing hydrothermal circuit at Spa Orlane Paris.",
+      "whatsapp_url": "https://api.whatsapp.com/send?phone=527773529395&text=Hello,%20I%20would%20like%20to%20receive%20more%20information%20about%20the%20summer%20experience%20in%20the%20luxury%20suites.%20Thank%20you."
+    },
+    "two_experience": {
+      "title": "An experience for two",
+      "description": "Enjoy an unforgettable stay as a couple at Las Mañanitas Hotel. Our romantic experience includes: one night in a luxury suite with romantic decoration, a bottle of French wine Chateaux Bernot, a cheese board, a $400 MXN breakfast credit, ending with a relaxing hydrothermal circuit at Spa Orlane Paris.",
+      "whatsapp_url": "https://api.whatsapp.com/send?phone=527773529395&text=Hello,%20I%20would%20like%20to%20receive%20more%20information%20about%20the%20romantic%20experience%20for%20two%20at%20Las%20Mañanitas.%20Thank%20you."
+    },
+    "picnic_day": {
+      "title": "Picnic Day at Las Mañanitas",
+      "description": "Enjoy nature in a perfect setting for two with our special picnic experiences.\n\nOption 1 (for 2 people)\nCheese platter - Baguette / Panini / Croissant (choose 2 options) - Fresh fruit (2 options) - 355 ml house red wine - water - board game.\n\nOption 2 (for 2 people)\nCheese and cold cuts platter - Baguette / Panini / Croissant (choose 2 options) - Fresh fruit (2 options) - Sweet snacks (2 per person) - 200 ml Moët & Chandon - water - ceramic painting set (gift) - board game.",
+      "whatsapp_url": "https://api.whatsapp.com/send?phone=527773529395&text=Hello,%20I%20would%20like%20to%20receive%20more%20information%20about%20the%20picnic%20experience%20at%20Las%20Mañanitas.%20Thank%20you."
+    },
+    "seasonal_offer": {
+      "title": "Seasonal Special Offer",
+      "description": "UP TO 35% OFF. Enjoy your vacation at an exclusive rate by booking directly with us.\n\nPromotion subject to availability / restrictions apply / cannot be combined with other offers.",
+      "whatsapp_url": "https://api.whatsapp.com/send?phone=527773620000&text=Hello,%20I%20am%20interested%20in%20the%20Easter%20special%20offer%20with%20up%20to%2035%25%20discount.%20Could%20you%20provide%20more%20information%20and%20how%20to%20book,%20please?"
+    },
+    "not_found": "Offer not found."
+  },
+  "experiences_tours": {
+    "tour_title1": "Cuernavaca",
+    "tour_title2": "Tepoztlán",
+    "tour_title3": "Xochicalco",
+    "tour_title4": "Taxco City",
+    "tour_title5": "Cacahuamilpa Caves",
+    "tour_title6": "Resiú Nayaá House"
   }
 }

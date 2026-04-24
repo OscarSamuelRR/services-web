@@ -1,46 +1,43 @@
 <div class="min-h-screen bg-gray-50 font-sans">
-    <header-list [h1_text]="'Programa de lealtad Spa Orlane'" [url_site]="'/spa-orlane'"></header-list>
+    <header-list [h1_text]="'spa_loyalty.header.title' | translate" [url_site]="'/spa-orlane'"></header-list>
     <div class="px-4 md:px-12 lg:px-32 xl:px-64 pb-10">
         <!-- ENCABEZADO -->
         <div class="pt-8 mb-10 text-center">
-            <h2 class="text-3xl font-semibold text-gray-800">Niveles</h2>
+            <h2 class="text-3xl font-semibold text-gray-800">{{ header.levelsTitle | translate }}</h2>
             <div class="w-12 h-px bg-[#00633a] mx-auto mt-3"></div>
         </div>
         <div class="pb-0">
-    
             <!-- TÍTULO -->
             <div class="bg-white py-6 border-b border-gray-100 text-center md:text-justify">
                 <h1 class="text-2xl md:text-3xl font-semibold text-gray-800 leading-snug">
-                    Spa Orlane
+                    {{ 'spa_loyalty.title' | translate }}
                 </h1>
             </div>
     
             <!-- DESCRIPCIÓN -->
             <div class="bg-white py-1 border-b border-gray-100">
                 <p class="text-gray-600 text-base md:text-lg leading-relaxed text-justify">
-                    En Spa Orlane agradecemos su preferencia a través de nuestro Programa de Lealtad, diseñado para consentir a nuestros
-                    huéspedes y clientes frecuentes con beneficios exclusivos, experiencias especiales y tratamientos de cortesía.
-                    Nuestro objetivo es reconocer su fidelidad y hacer de cada visita un momento aún más especial.
+                    {{ 'spa_loyalty.description' | translate }}
                 </p>
             </div>
     
             <div class="bg-white py-6 border-b border-gray-100 text-center md:text-justify">
                 <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 leading-snug">
-                    Requisitos de participación
+                    {{ header.participationTitle | translate }}
                 </h2>
             </div>
     
             <div class="bg-white py-1 border-b border-gray-100">
                 <ul class="text-gray-600 text-base md:text-lg leading-relaxed text-justify">
-                    <li>Programa exclusivo por invitación.</li>
-                    <li>Haber recibido una invitación oficial por parte de Spa Orlane.</li>
-                    <li>Aplica únicamente para tratamientos realizados dentro del mismo mes.</li>
+                    @for (item of participation(); track $index) {
+                        <li>{{ item | translate }}</li>
+                    }
                 </ul>
             </div>
         </div>
         <!-- BADGES -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 [&>*:last-child]:lg:col-start-2">
-            @for (level of levels; track level.id) {
+            @for (level of levels(); track level.id) {
                 <div class="relative flex flex-col items-center">
                     <!-- Imagen flotante -->
                     <img [src]="level.image" [alt]="level.name" class="h-64 w-64 object-contain rounded-full drop-shadow-lg" />
@@ -48,13 +45,13 @@
                     <div class="rounded-2xl min-h-[450px] overflow-hidden border-2 w-full bg-[#002368]">
                         <div class="py-3 text-center bg-[#002368]">
                             <span class="text-white font-bold tracking-widest text-sm font-body italic uppercase">
-                                {{ level.name }}
+                                {{ level.name | translate}}
                             </span>
                         </div>
                         <div class="bg-white py-6 text-center border-b border-gray-100">
                             <!-- <h3 class="uppercase">Requisitos de participación</h3> -->
                             <span class="text-gray-500 text-base ml-1 font-body italic">
-                                Durante el mes, cada visita al spa acumula beneficios especiales:
+                                {{ header.subtitleLevels | translate}}
                             </span>
                             <!-- <p class="text-5xl font-light text-gray-800 font-body italic">
                                 {{ level.nights }} visitas max.
@@ -70,7 +67,7 @@
                             @for (benefit of level.benefits; track benefit; let last = $last) {
                             <div class="px-4 py-3 text-center text-base text-gray-600 tracking-wide" [class.border-b]="!last"
                                 [class.border-gray-100]="!last">
-                                <p>{{ benefit }}</p>
+                                <p>{{ benefit | translate }}</p>
                             </div>
                             }
                         </div>
@@ -82,7 +79,7 @@
         <div class="pb-10">
             <div class="bg-white py-6 border-b border-gray-100 text-center md:text-justify">
                 <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 leading-snug">
-                    Condiciones del programa
+                    {{ header.conditionsTitle | translate }}
                 </h2>
             </div>
     
@@ -91,10 +88,9 @@
                     Para estancias mínimas de 3 noches.
                 </p><br> -->
                 <ul class="text-gray-600 text-base md:text-lg leading-relaxed text-justify">
-                    <li>Las visitas deben realizarse dentro del mismo mes calendario.</li>
-                    <li>Al finalizar el mes o al alcanzar la 4ª visita, el conteo se reinicia automáticamente.</li>
-                    <li>Beneficios no transferibles ni acumulables con otras promociones.</li>
-                    <li>Los beneficios están sujetos a disponibilidad y previa reservación.</li>
+                    @for (item of conditions(); track $index) {
+                        <li>{{ item | translate }}</li>
+                    }
                 </ul>
             </div>
         </div>

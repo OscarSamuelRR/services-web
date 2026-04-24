@@ -95,7 +95,9 @@
     "back": "Regresar",
     "whatsapp": "Whatsapp",
     "not_found": "No encontrado",
-    "events": "Eventos"
+    "events": "Eventos",
+    "contact_note": "En caso de tener alguna duda comuníquese a la extensión",
+    "contact_note_end": "y con gusto le atenderemos."
   },
   "spa_rules": {
     "header": {
@@ -140,5 +142,98 @@
       "Favor de dejar sus objetos personales en la caja de seguridad de su habitación y/o locker, mantenga la llave consigo en todo momento. El SPA y el hotel no se hace responsable por objetos olvidados o perdidos."
     ],
     "contact_note": "En caso de tener alguna duda comuníquese a la extensión <strong>207</strong> y con gusto le atenderemos."
-  }
+  },
+  "spa_aesthetic": {
+    "title": "Estética Spa Orlane",
+    "aesthetic_title": "Servicio de estética del Spa Orlane",
+    "aesthetic_subtitle": "Lista de precios",
+    "spa_footer_note": "Precios en moneda nacional, Incluyen IVA"
+  },
+  "spa_loyalty": {
+    "header": {
+      "title": "Programa de lealtad Spa Orlane",
+      "levels": "Niveles"
+    },
+    "title": "Spa Orlane",
+    "description": "En Spa Orlane agradecemos su preferencia a través de nuestro Programa de Lealtad, diseñado para consentir a nuestros huéspedes y clientes frecuentes con beneficios exclusivos, experiencias especiales y tratamientos de cortesía. Nuestro objetivo es reconocer su fidelidad y hacer de cada visita un momento aún más especial.",
+    "subtitle": "Durante el mes, cada visita al spa acumula beneficios especiales:",
+    "levels": {
+      "1": {
+        "name": "Beneficios del programa",
+        "benefits": {
+          "0": "1ª visita.",
+          "1": "2ª visita.",
+          "2": "3ª visita: Recepción con amenidad especial de bienvenida.",
+          "3": "4ª visita: Disfrute de un tratamiento de 50 minutos en cortesía, a elegir entre nuestra selección de servicios disponibles."
+        }
+      }
+    },
+    "participation": {
+      "title": "Requisitos de participación",
+      "0": "Programa exclusivo por invitación.",
+      "1": "Haber recibido una invitación oficial por parte de Spa Orlane.",
+      "2": "Aplica únicamente para tratamientos realizados dentro del mismo mes."
+    },
+    "conditions": {
+      "title": "Condiciones del programa",
+      "0": "Las visitas deben realizarse dentro del mismo mes calendario.",
+      "1": "Al finalizar el mes o al alcanzar la 4ª visita, el conteo se reinicia automáticamente.",
+      "2": "Beneficios no transferibles ni acumulables con otras promociones.",
+      "3": "Los beneficios están sujetos a disponibilidad y previa reservación."
+    }
+  },
+  "offer_experiences": {
+    "main_title": "Ofertas y experiencias",
+    "title1": "Ofertas",
+    "title2": "Experiencias",
+    "title3": "Tours",
+    "card_title1": "Tours",
+    "offers": {
+      "card_title1": "Noche en cortesía",
+      "card_subtitle1": "Cuarta noche de cortesía. Disfruten de una estadía más larga en este paraíso, obteniendo la cuarta noche en cortesía.",
+      "card_title2": "Estadía inolvidable",
+      "card_subtitle2": "Hospédese 7 noches al precio de 5. Reserve una estadía de 7 noches con el beneficio extra de la sexta y séptima noche en cortesía.",
+      "card_title3": "Compra anticipada",
+      "card_subtitle3": ""
+    },
+    "experiences": {
+      "card_title1": "Disfrute de una estancia única en este paraíso incomparable",
+      "card_category1": "Hotel",
+      "card_title2": "Una experiencia para dos",
+      "card_category2": "Restaurante",
+      "card_title3": "Dia de campo en Las Mañanitas",
+      "card_category3": "Hotel"
+    }
+  },
+    "offers_experiences_detail": {
+      "unique_stay": {
+        "title": "Disfrute de una estancia única en este paraíso incomparable",
+        "description": "Inicie la experiencia con un cálido desayuno, viva la más revitalizante sensación en nuestro spa y finalice con un descanso reparador en cualquiera de nuestras suites de lujo. La experiencia para dos personas incluye: una noche en la habitación seleccionada, crédito de $400 pesos para desayuno, masaje de 50 min y un relajante circuito hidrotermal en Spa Orlane Paris.",
+        "whatsapp_url": "https://api.whatsapp.com/send?phone=527773529395&text=Hola,%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20experiencia%20de%20verano%20en%20las%20suites%20de%20lujo.%20Gracias."
+      },
+      "two_experience": {
+        "title": "Una experiencia para dos",
+        "description": "Viva una estancia inigualable en pareja en el hotel Las Mañanitas. Nuestra experiencia de romance incluye: una noche en suite de lujo con decoración romántica, botella de vino francés Chateaux Bernot, tabla de quesos, crédito de $400 pesos para desayuno, finalizando con un relajante circuito hidrotermal en Spa Orlane Paris.",
+        "whatsapp_url": "https://api.whatsapp.com/send?phone=527773529395&text=Hola,%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20experiencia%20rom%C3%A1ntica%20para%20dos%20en%20Las%20Ma%C3%B1anitas.%20Gracias."
+      },
+      "picnic_day": {
+        "title": "Día de campo en Las Mañanitas",
+        "description": "Disfrute de la naturaleza con un escenario perfecto para dos, con nuestros días especiales de pícnic.\n\nOpción 1 (Para 2 personas)\nPlato de quesos - Baguette / Panini / Croissant (a elegir 2 opciones) - Fruta de mano (2 opciones) - 1 botella de vino tinto de la casa de 355 ml - agua - 1 juego de mesa.\n\nOpción 2 (Para 2 personas)\nPlato de quesos y carnes frías - Baguette / Panini / Croissant (a elegir 2 opciones) - Fruta de mano (2 opciones) - Bocadillos dulces (2 por persona) - 1 botella de Móet & Chandon 200 ml - agua - 1 juego de cerámica para pintar (gift) - 1 juego de mesa.",
+        "whatsapp_url": "https://api.whatsapp.com/send?phone=527773529395&text=Hola,%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20experiencia%20de%20p%C3%ADcnic%20en%20Las%20Ma%C3%B1anitas.%20Gracias."
+      },
+      "seasonal_offer": {
+        "title": "Oferta especial de temporada",
+        "description": "HASTA 35% OFF Disfrute sus vacaciones de Semana Santa a un precio exclusivo reservando directamente con nosotros.\n\nPromoción sujeta a disponibilidad / aplican restricciones / no acumulable con otras ofertas.",
+        "whatsapp_url": "https://api.whatsapp.com/send?phone=527773620000&text=Hola%2C%20me%20interesa%20la%20oferta%20especial%20de%20Semana%20Santa%20con%20hasta%2035%25%20de%20descuento.%20%C2%BFPodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%20y%20c%C3%B3mo%20reservar%2C%20por%20favor%3F"
+      },
+      "not_found": "Oferta no encontrada."
+    },
+    "experiences_tours": {
+      "tour_title1": "Cuernavaca",
+      "tour_title2": "Tepoztlán",
+      "tour_title3": "Xochicalco",
+      "tour_title4": "Ciudad de Taxco",
+      "tour_title5": "Grutas de Cacahuamilpa",
+      "tour_title6": "Casa Resiú Nayaá"
+    }
 }

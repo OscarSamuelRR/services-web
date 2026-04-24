@@ -70,6 +70,5 @@ export const SPA_AESTHETIC_SERVICES: ServiceCategory[] = [
 ];
 
 export const SPA_FOOTER_NOTE = {
-    text: 'Precios en moneda nacional, Incluyen IVA',
-    textEn: 'Prices in national currency, VAT Included'
+    text: 'spa_aesthetic.spa_footer_note',
 };

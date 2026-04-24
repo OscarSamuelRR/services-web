@@ -13,26 +13,25 @@
         </div>
         <!-- GRID DE DESTINOS -->
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3">
-            <div-section-tour [url_img]="'/images/cuernavaca.webp'" [route]="'/tour-page/cuernavaca'" [span_text]="'Cuernavaca'" />
+            <div-section-tour [url_img]="'/images/cuernavaca.webp'" [route]="'/tour-page/cuernavaca'" [span_text]="'experiences_tours.tour_title1' | translate" />
 
-            <div-section-tour [url_img]="'/images/tepoztlan.webp'" [route]="'/tour-page/tepoztlan'" [span_text]="'Tepoztlán'" />
+            <div-section-tour [url_img]="'/images/tepoztlan.webp'" [route]="'/tour-page/tepoztlan'" [span_text]="'experiences_tours.tour_title2' | translate" />
 
-            <div-section-tour [url_img]="'/images/xochicalco.webp'" [route]="'/tour-page/xochicalco'" [span_text]="'Xochicalco'" />
+            <div-section-tour [url_img]="'/images/xochicalco.webp'" [route]="'/tour-page/xochicalco'" [span_text]="'experiences_tours.tour_title3' | translate" />
             
-            <div-section-tour [url_img]="'/images/taxco.webp'" [route]="'/tour-page/taxco'" [span_text]="'Ciudad de Taxco'" />
+            <div-section-tour [url_img]="'/images/taxco.webp'" [route]="'/tour-page/taxco'" [span_text]="'experiences_tours.tour_title4' | translate" />
 
-            <div-section-tour [url_img]="'/images/tours4.webp'" [route]="'/tour-page/grutas'" [span_text]="'Grutas de Cacahuamilpa'" />
+            <div-section-tour [url_img]="'/images/tours4.webp'" [route]="'/tour-page/grutas'" [span_text]="'experiences_tours.tour_title5' | translate" />
 
-            <div-section-tour [url_img]="'/images/nayaa.webp'" [route]="'/tour-page/casaresiu'" [span_text]="'Casa Resiú Nayaá'"/>
+            <div-section-tour [url_img]="'/images/nayaa.webp'" [route]="'/tour-page/casaresiu'" [span_text]="'experiences_tours.tour_title6' | translate"/>
         </div>
         <!-- NOTA INFORMATIVA -->
         <div class="mt-8 bg-[#00633a]/10 rounded-2xl px-6 py-5 flex flex-col items-center text-center gap-3">
             <svg class="w-6 h-6 text-[#00633a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             <p class="text-[#00633a] text-base">
-                Para contratar algún tour comuníquese a la <strong>Ext. 205/206</strong> y con gusto le atenderemos.
+                {{ 'common.contact_note' | translate }}<strong> 205/206 </strong>{{ 'common.contact_note_end' | translate }}
             </p>
         </div>
     </div>

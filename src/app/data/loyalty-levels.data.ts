@@ -76,22 +76,22 @@ export const LOYALTY_LEVELS: LoyaltyLevel[] = [
     }
 ];
 
-export const LOYALTY_LEVELS_SPA: LoyaltyLevel[] = [
-    {
-        id: 1,
-        name: 'Beneficios del programa',
-        nights: 4,
-        color: 'border-blue-700',
-        headerColor: 'bg-blue-700',
-        image: '/images/spaorlane.svg',
-        benefits: [
-            '1ª visita.',
-            '2ª visita.',
-            '3ª visita: Recepción con amenidad especial de bienvenida.',
-            '4ª visita: Disfrute de un tratamiento de 50 minutos en cortesía, a elegir entre nuestra selección de servicios disponibles.',
-        ],
-        requirements: [
-            '',
-        ]
-    },
-];
+// export const LOYALTY_LEVELS_SPA: LoyaltyLevel[] = [
+//     {
+//         id: 1,
+//         name: 'Beneficios del programa',
+//         nights: 4,
+//         color: 'border-blue-700',
+//         headerColor: 'bg-blue-700',
+//         image: '/images/spaorlane.svg',
+//         benefits: [
+//             '1ª visita.',
+//             '2ª visita.',
+//             '3ª visita: Recepción con amenidad especial de bienvenida.',
+//             '4ª visita: Disfrute de un tratamiento de 50 minutos en cortesía, a elegir entre nuestra selección de servicios disponibles.',
+//         ],
+//         requirements: [
+//             '',
+//         ]
+//     },
+// ];

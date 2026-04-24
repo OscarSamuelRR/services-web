@@ -16,7 +16,7 @@ export const appConfig: ApplicationConfig = {
     provideHttpClient(),
     provideTranslateService({
       fallbackLang: 'es',
-      defaultLanguage: localStorage.getItem('lang') ?? 'es',
+      // defaultLanguage: localStorage.getItem('lang') ?? 'es',
     }),
     provideTranslateHttpLoader({
       prefix: '/i18n/',
@@ -24,24 +24,3 @@ export const appConfig: ApplicationConfig = {
     })
   ]
 };
-
-
-
-
-// import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
-// import { provideRouter, withInMemoryScrolling } from '@angular/router';
-
-// import { routes } from './app.routes';
-
-// export const appConfig: ApplicationConfig = {
-//   providers: [
-//     provideZoneChangeDetection({ eventCoalescing: true }),
-//     provideRouter(
-//       routes,
-//       withInMemoryScrolling({
-//         scrollPositionRestoration: 'top', //scroll al top
-//         anchorScrolling: 'enabled'
-//       })
-//     )
-//   ]
-// };
