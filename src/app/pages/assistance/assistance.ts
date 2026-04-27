@@ -3,10 +3,11 @@ import { HeaderList } from '../../components/header-list/header-list';
 import { Footer } from '../../components/footer/footer';
 import { Instruction } from '../../interfaces/instruction.interface';
 import { INSTRUCTIONS_DATA } from '../../data/instructions.data';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-assistance',
-  imports: [HeaderList, Footer],
+  imports: [HeaderList, Footer, TranslateModule],
   templateUrl: './assistance.html',
   styleUrl: './assistance.css',
 })

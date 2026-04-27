@@ -3,10 +3,11 @@ import { HeaderList } from '../../components/header-list/header-list';
 import { Footer } from '../../components/footer/footer';
 import { TvChannel } from '../../interfaces/tv-channel.interface';
 import { TV_CHANNELS } from '../../data/tv-channels.data';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-tv-channels',
-  imports: [HeaderList, Footer],
+  imports: [HeaderList, Footer, TranslateModule],
   templateUrl: './tv-channels.html',
 })
 export class TvChannels {

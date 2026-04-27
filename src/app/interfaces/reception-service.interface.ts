@@ -1,5 +1,6 @@
 export interface ReceptionService {
     id: number;
     name: string;
-    cost: 'Sin costo' | 'Costo adicional' | 'Solicitar';
+    cost: string;
+    // cost: 'Sin costo' | 'Costo adicional' | 'Solicitar';
 }

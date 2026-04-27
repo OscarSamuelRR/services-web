@@ -85,14 +85,6 @@
       ]
     }
   },
-  "rooms": {
-    "title": "Rooms",
-    "size": "Size",
-    "amenities": "Amenities",
-    "see_more": "See more",
-    "see_less": "See less",
-    "more_info": "More information"
-  },
   "common": {
     "back": "Back",
     "whatsapp": "Whatsapp",
@@ -392,6 +384,385 @@
       "rules": "Hotel Rules",
       "pool": "Pool",
       "loyalty": "Loyalty Program"
+    }
+  },
+  "rooms": {
+    "title": "Rooms",
+    "list": {
+      "mananitas_suite": {
+        "title": "Las Mañanitas Suite",
+        "type": "Room"
+      },
+      "garden_suite": {
+        "title": "Garden Suite",
+        "type": "Room"
+      },
+      "patio_suite": {
+        "title": "Patio Suite",
+        "type": "Room"
+      },
+      "terraza_suite": {
+        "title": "Terrace Suite",
+        "type": "Room"
+      },
+      "ventana_suite": {
+        "title": "Ventana Suite",
+        "type": "Room"
+      }
+    }
+  },
+  "room_details": {
+    "not_found": "Room not found.",
+    "no_amenities": "No amenities available.",
+    "more_info": "More information",
+
+    "rooms": {
+      "mananitas-suite": {
+        "title": "Las Mañanitas Suites",
+        "description": "Our grand Las Mañanitas suite is one of a kind; it offers spacious interiors, and its living room with fireplace features a beautiful view of the restaurant's main garden. This suite has two bedrooms, each with 1 King size bed, a bathroom with bathtub, and a closet.",
+        "amenities": [
+          "1 King Size Bed",
+          "Occupancy: 4",
+          "Air conditioning",
+          "Telephone service",
+          "Nespresso coffee machine",
+          "Safe deposit box",
+          "Internet"
+        ]
+      },
+      "garden-suite": {
+        "title": "Garden Suite",
+        "description": "The interiors and exteriors of one of our finest suites guarantee a perfect stay. It features a spacious living room with a fireplace and a terrace with a spectacular view of the pool and private garden, providing the perfect setting for intimate dinners and breakfasts. It includes a beautiful bathroom with bathtub, decorated with Mexican Talavera, a large dressing room, and closet. You may choose between one King size bed or two double beds.",
+        "amenities": [
+          "Bed type: 1 King size or 2 double beds",
+          "Occupancy: 2",
+          "Maximum extra bed: 1 (additional cost)",
+          "Telephone service",
+          "Nespresso coffee machine",
+          "Safe deposit box",
+          "Internet"
+        ]
+      },
+      "patio-suite": {
+        "title": "Patio Suite",
+        "description": "Find the privacy you need in this suite, featuring a spacious private patio and breakfast area for a perfect morning, making your stay unforgettable. It also includes a large bathroom with bathtub, closet, and dressing room. You may choose between one King size bed or 2 double beds, along with a spacious living room with fireplace.",
+        "amenities": [
+          "Option for connecting rooms.",
+          "Air conditioning",
+          "Bed type: 1 King size or 2 double beds.",
+          "Occupancy: 2",
+          "Maximum extra bed: 1 (additional cost)",
+          "Telephone service",
+          "Nespresso coffee machine",
+          "Safe deposit box",
+          "Internet"
+        ]
+      },
+      "terraza-suite": {
+        "title": "Terrace Suite",
+        "description": "Located in the heart of Las Mañanitas. A suite with a private terrace for an unforgettable stay. Enjoy a beautiful view of the restaurant's main garden. You may choose between one King size bed or two double beds, along with a bathroom with bathtub and closet.",
+        "amenities": [
+          "Option for connecting rooms (only for some rooms).",
+          "Air conditioning",
+          "Bed type: 1 King size or 2 double beds.",
+          "Occupancy: 2",
+          "Maximum extra bed: N/A",
+          "Telephone service",
+          "Nespresso coffee machine",
+          "Safe deposit box",
+          "Internet"
+        ]
+      },
+      "ventana-suite": {
+        "title": "Ventana Suite",
+        "description": "Decorated with the signature style of Las Mañanitas, combining colonial charm, elegance, and refined taste. Enjoy our standard suite, full of comfort. It features two double beds, a bathroom with shower, and a closet.",
+        "amenities": [
+          "Air conditioning",
+          "Bed type: 2 double beds",
+          "Occupancy: 2",
+          "Maximum extra bed: N/A",
+          "Telephone service",
+          "Nespresso coffee machine",
+          "Safe deposit box",
+          "Internet"
+        ]
+      }
+    }
+  },
+  "amenities_page": {
+    "title": "Hotel Amenities",
+    "subtitle": "Available amenities",
+    "order_text": "We will take your order.",
+    "extension": "Ext. 201",
+    "note": "To order any amenity, please contact extension <strong>201</strong> and we will gladly assist you.",
+
+    "items": {
+      "1": "Bottle of water",
+      "2": "Nespresso coffee pod",
+      "3": "Dental kit",
+      "4": "Razor",
+      "5": "Maya repellent",
+      "6": "Sanitary pads",
+      "7": "Tampons"
+    }
+  },
+  "reception_services": {
+    "title": "Reception Services",
+    "subtitle": "Reception Services",
+    "order_note": "We will take your order.",
+    "contact_note": "To request any service, please contact extension <strong>201</strong> and we will be happy to assist you.",
+
+    "costs": {
+      "free": "Free of charge",
+      "extra": "Additional cost",
+      "request": "Upon request"
+    },
+
+    "items": {
+      "baby_crib": "Baby crib",
+      "extra_guest": "Additional guest",
+      "extra_bed": "Extra bed",
+      "iron_kit": "Iron kit",
+      "extra_pillow": "Extra pillow",
+      "body_towel": "Body towel",
+      "face_towel": "Face towel",
+      "robe": "Robe",
+      "slippers": "Slippers",
+      "hangers": "Hangers",
+      "wake_up_call": "Wake-up call",
+      "late_checkout": "Late check-out",
+      "extend_stay": "Extend stay",
+      "upgrade_room": "Room upgrade",
+      "babysitting": "Babysitting service"
+    }
+  },
+  "assistance": {
+    "title": "Assistance",
+    "subtitle": "Assistance Services",
+    "order_note": "We're at your order."
+  },
+  "laundry_page": {
+    "title": "Laundry",
+    "subtitle": "Laundry service",
+    "info": "More information at",
+    "description": "The following laundry form must be filled out with the requested services. It can be found in your room closet along with a laundry bag to place your clothes and hand them over to housekeeping."
+  },
+  "tv_channels": {
+    "title": "TV Channels",
+    "subtitle": "Available TV Channels",
+    "more_info": "More information at",
+    "categories": {
+      "mananitas": "Mañanitas",
+      "news": "News & Information",
+      "sports": "Sports",
+      "culture": "Culture",
+      "movies": "Movies",
+      "kids": "Kids"
+    },
+    "items": {
+      "mananitas_channel": "Canal Mañanitas",
+      "canal_once": "Canal Once",
+      "azteca_uno": "Azteca Uno",
+      "azteca_7": "Azteca 7",
+      "estrellas": "Canal de las Estrellas",
+      "cnn_es": "CNN en Español",
+      "adn_40": "ADN 40",
+      "foro_tv": "Foro TV",
+      "imagen": "Imagen",
+      "milenio": "Milenio TV",
+      "fox_news": "FOX News",
+      "cnn": "CNN",
+      "al_jazeera": "Al Jazeera",
+      "bbc": "BBC News",
+      "tudn": "TUDN",
+      "nfl": "NFL Network",
+      "espn": "ESPN",
+      "espn_2": "ESPN 2",
+      "espn_3": "ESPN 3",
+      "fox_sports": "FOX Sports",
+      "fox_sports_2": "FOX Sports 2",
+      "golf": "Golf",
+      "adrenalina": "Adrenalina TV",
+      "discovery": "Discovery Channel",
+      "turbo": "Discovery Turbo",
+      "theater": "Discovery Theater",
+      "animal": "Animal Planet",
+      "history": "History Channel",
+      "natgeo": "NatGeo",
+      "world": "Discovery World",
+      "tnt": "TNT",
+      "ae": "A&E",
+      "star_tve": "Star TVE",
+      "hola": "Hola TV",
+      "fx": "FX Channel",
+      "telehit": "Telehit",
+      "comedy": "Comedy Central",
+      "food": "Food Network",
+      "curiosity": "Curiosity",
+      "sony": "Sony Channel",
+      "axn": "AXN",
+      "unicable": "Unicable",
+      "universal": "Universal TV",
+      "warner": "Warner TV",
+      "amc": "AMC",
+      "hbo": "HBO",
+      "hbo_plus": "HBO+",
+      "hbo_xtreme": "HBO Xtreme",
+      "hbo_signature": "HBO Signature",
+      "hbo_2": "HBO 2",
+      "hbo_pop": "HBO Pop",
+      "hbo_family": "HBO Family",
+      "sony_movies": "Sony Movies",
+      "golden": "Golden Plus",
+      "pelicula": "De Película",
+      "studio": "Studio Universal",
+      "baby": "Baby TV",
+      "cartoonito": "Cartoonito",
+      "dreamworks": "DreamWorks",
+      "disney": "Disney Channel"
+    }
+  },
+  "hotel_rules": {
+    "title": "Hotel Rules",
+    "subtitle": "Hotel Rules",
+    "more_info": "More information at",
+    "final_note": "Help us preserve the prestige of Las Mañanitas.",
+
+    "rules": {
+      "rule_1": "The hotel is not responsible for valuables, documents, jewelry, money, etc. left in the room. Please deposit them in the safety boxes located in the closet.",
+      "rule_2": "Check-out time is at 12:00 PM. An additional hour may be granted subject to availability.",
+      "rule_3": "The electrical current in your room is 60-cycle alternating current at 110/120 volts. Please do not use devices that are not compatible and avoid overloading circuits.",
+      "rule_4": "Damage caused by the guest to furniture and decoration will be the guest's responsibility.",
+      "rule_5": "The hotel has liability insurance.",
+      "rule_6": "All persons occupying a room must be registered at the front desk.",
+      "rule_7": "The hotel reserves the right of admission.",
+      "rule_8": "The hotel prohibits making noise or disturbances in rooms and/or hallways. Please contact reception.",
+      "rule_9": "Due to government regulations, the use of irons or external appliances inside the rooms is prohibited. Please contact reception.",
+      "rule_10": "Due to government regulations and to prevent accidents or incidents, smoking inside the rooms is prohibited. The only designated area is the terrace.",
+      "rule_11": "There are third-party services available, such as babysitting and taxi services. Management appreciates your feedback about our hotel."
+    }
+  },
+  "pool": {
+    "title": "Pool",
+    "subtitle": "Pool Usage Rules",
+    "section_title": "Pool Regulations",
+    "more_info": "More information at",
+
+    "rules": {
+      "rule_1": "Pool Schedule is from 8:00 am to 06:00 pm.",
+      "rule_2": "Pool are exclusive to Hotel Guests.",
+      "rule_3": "Proper swimming attire required.",
+      "rule_4": "Children under the age of 12, should not use the pool without an adult in attendance.",
+      "rule_5": "No food, drinks or smoking inside the pool.",
+      "rule_6": "No glassware allowed in the pool area.",
+      "rule_7": "Any kind of diving is forbidden.",
+      "rule_8": "No running in pool area.",
+      "rule_9": "No lifeguard on duty. Sweem at your own risk.",
+      "rule_10": "This pool is meant for relaxation. Be considerate.",
+      "rule_11": "No throwing of any objects: Balls, frisbees, etc.",
+      "rule_12": "Not floats allowed.",
+      "rule_13": "After using the pool, shoes and towels or robes must be used when returning to be building.",
+      "rule_14": "For your own safety, do not use the pool in case of rain or thunder."
+    }
+  },
+  "loyalty_program": {
+    "title": "Loyalty Program",
+    "levels_title": "Levels",
+
+    "intro_title": "Las Mañanitas Hotel, Garden, Restaurant & Spa",
+    "intro_description": "At Las Mañanitas, we recognize and appreciate your preference through our Loyalty Program, designed to offer exclusive benefits to our most distinguished guests.",
+
+    "requirements_title": "Participation Requirements",
+    "requirements_list": {
+      "invitation_only": "Exclusive program by invitation.",
+      "official_invitation": "Must have received an official invitation from the hotel.",
+      "level_benefits": "Benefits apply according to the level achieved."
+    },
+
+    "labels": {
+      "requirements": "Requirements",
+      "benefits": "Benefits",
+      "nights": "Accumulated room-nights per year"
+    },
+
+    "levels": {
+      "classic": {
+        "name": "Classic Guest",
+        "benefits": [
+          "Early check-in and late check-out subject to availability."
+        ],
+        "requirements": [
+          "Possibility to upgrade level based on stay frequency."
+        ]
+      },
+      "vip": {
+        "name": "VIP Guest",
+        "benefits": [
+          "Early check-in and late check-out subject to availability",
+          "Room upgrade subject to availability.",
+          "Preferential rate (lower than contracted rate).",
+          "Preferential rate",
+          "5% discount at Spa Orlane"
+        ],
+        "requirements": [
+          "Possibility to upgrade level."
+        ]
+      },
+      "select": {
+        "name": "Select Guest",
+        "benefits": [
+          "Bottle of Las Mañanitas wine per stay.",
+          "Early check-in and late check-out subject to availability.",
+          "Room upgrade subject to availability.",
+          "Preferential rate",
+          "10% discount at Spa Orlane",
+          "10% discount at Las Mañanitas Restaurant (general consumption).",
+          "10% discount on social events."
+        ],
+        "requirements": [
+          "Possibility to upgrade level."
+        ]
+      },
+      "mananitas": {
+        "name": "Las Mañanitas Guest",
+        "benefits": [
+          "Bottle of Las Mañanitas wine per stay.",
+          "Early check-in and late check-out subject to availability.",
+          "Room upgrade subject to availability.",
+          "Preferential rate.",
+          "Annual certificate for 2 free nights (subject to availability, not valid on holidays or long weekends).",
+          "15% discount at Spa Orlane",
+          "10% discount at Las Mañanitas Restaurant (general consumption).",
+          "10% discount on social events and preferential rate for garden rental."
+        ],
+        "requirements": [
+          "Possibility to upgrade level based on stay frequency"
+        ]
+      }
+    },
+
+    "extras": {
+      "title": "Amenities and Courtesies",
+      "subtitle": "For stays of at least 3 nights.",
+      "items": {
+        "cap": "Las Mañanitas cap.",
+        "mask": "Handmade face masks.",
+        "rattle": "Rattles (for children).",
+        "welcome_dessert": "“Welcome Home” dessert (frequent guests).",
+        "celebration_dessert": "Celebration dessert for special occasions (birthdays, anniversaries or other events)."
+      }
+    },
+
+    "cancellation": {
+      "title": "Cancellation Policy",
+      "description": "In order to provide better service and guarantee availability during high-demand periods, the Las Mañanitas Loyalty Program establishes the following cancellation policy:",
+      "low_season": "Low season:",
+      "low_season_text": "Cancellations must be made at least 3 days prior to the arrival date to avoid penalties.",
+      "high_season": "High season (holidays and long weekends):",
+      "high_season_text": "Cancellations must be made at least 7 days prior to the arrival date.",
+      "penalty": "Penalty:",
+      "penalty_text": "Failure to comply with these deadlines will result in a charge equivalent to the first night's stay.",
+      "note": "This policy applies to all loyalty program levels and is subject to change without prior notice, depending on hotel availability and operations."
     }
   }
 }

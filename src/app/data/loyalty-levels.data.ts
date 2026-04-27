@@ -3,78 +3,154 @@ import { LoyaltyLevel } from '../interfaces/loyalty-level.interface';
 export const LOYALTY_LEVELS: LoyaltyLevel[] = [
     {
         id: 1,
-        name: 'Invitado Clásico',
+        name: 'loyalty_program.levels.classic.name',
         nights: 2,
         color: '#002368',
         headerColor: '#002368',
         image: '/images/vip.webp',
         benefits: [
-            'Early check-in y late check-out sujetos a disponibilidad.',
+            'loyalty_program.levels.classic.benefits.0'
         ],
         requirements: [
-            'Posibilidad de ascender de nivel conforme a su frecuencia de hospedaje.',
+            'loyalty_program.levels.classic.requirements.0'
         ]
     },
     {
         id: 2,
-        name: 'Invitado VIP',
+        name: 'loyalty_program.levels.vip.name',
         nights: 10,
-        color: '#808080',// gray-400
+        color: '#808080',
         headerColor: '#808080',
         image: '/images/premium.webp',
         benefits: [
-            'Early check-in y late check-out sujetos a disponibilidad',
-            'Upgrade de habitación sujeto a disponibilidad.',
-            'Tarifa preferencial (menor a la tarifa contratada).',
-            'Tarifa Preferencial',
-            '5% de descuento en Spa Orlane',
+            'loyalty_program.levels.vip.benefits.0',
+            'loyalty_program.levels.vip.benefits.1',
+            'loyalty_program.levels.vip.benefits.2',
+            'loyalty_program.levels.vip.benefits.3',
+            'loyalty_program.levels.vip.benefits.4'
         ],
         requirements: [
-            'Posibilidad de ascender de nivel.',
+            'loyalty_program.levels.vip.requirements.0'
         ]
     },
     {
         id: 3,
-        name: 'Invitado Selecto ',
+        name: 'loyalty_program.levels.select.name',
         nights: 15,
         color: '#b29d5f',
         headerColor: '#b29d5f',
         image: '/images/elite.webp',
         benefits: [
-            'Botella de vino Las Mañanitas por cada estancia.',
-            'Early check-in y late check-out sujetos a disponibilidad.',
-            'Upgrade de habitación sujeto a disponibilidad.',
-            'Tarifa Preferencial',
-            '10% de descuento en Spa Orlane',
-            '10% de descuento en Restaurante Las Mañanitas (consumo general).',
-            '10% de descuento en eventos sociales.',
+            'loyalty_program.levels.select.benefits.0',
+            'loyalty_program.levels.select.benefits.1',
+            'loyalty_program.levels.select.benefits.2',
+            'loyalty_program.levels.select.benefits.3',
+            'loyalty_program.levels.select.benefits.4',
+            'loyalty_program.levels.select.benefits.5',
+            'loyalty_program.levels.select.benefits.6'
         ],
         requirements: [
-            'Posibilidad de ascender de nivel.',
+            'loyalty_program.levels.select.requirements.0'
         ]
     },
     {
         id: 4,
-        name: 'Invitado Mañanitas',
+        name: 'loyalty_program.levels.mananitas.name',
         nights: 20,
         color: '#00633a',
         headerColor: '#00633a',
         image: '/images/invitado_mananitas.webp',
         benefits: [
-            'Botella de vino Las Mañanitas por cada estancia.',
-            'Early check-in y late check-out sujetos a disponibilidad.',
-            'Upgrade de habitación sujeto a disponibilidad.',
-            'Tarifa preferencial.',
-            'Certificado anual para 2 noches gratis (sujeto a disponibilidad, no aplica en puentes ni días festivos).',
-            '15% de descuento en Spa Orlane',
-            '10% de descuento en Restaurante Las Mañanitas (consumo general).',
-            '10% de descuento en eventos sociales y tarifa preferencial en renta de jardín.',
+            'loyalty_program.levels.mananitas.benefits.0',
+            'loyalty_program.levels.mananitas.benefits.1',
+            'loyalty_program.levels.mananitas.benefits.2',
+            'loyalty_program.levels.mananitas.benefits.3',
+            'loyalty_program.levels.mananitas.benefits.4',
+            'loyalty_program.levels.mananitas.benefits.5',
+            'loyalty_program.levels.mananitas.benefits.6',
+            'loyalty_program.levels.mananitas.benefits.7'
         ],
         requirements: [
-            'Posibilidad de ascender de nivel conforme a su frecuencia de hospedaje',
+            'loyalty_program.levels.mananitas.requirements.0'
         ]
     }
 ];
+
+// export const LOYALTY_LEVELS: LoyaltyLevel[] = [
+//     {
+//         id: 1,
+//         name: 'Invitado Clásico',
+//         nights: 2,
+//         color: '#002368',
+//         headerColor: '#002368',
+//         image: '/images/vip.webp',
+//         benefits: [
+//             'Early check-in y late check-out sujetos a disponibilidad.',
+//         ],
+//         requirements: [
+//             'Posibilidad de ascender de nivel conforme a su frecuencia de hospedaje.',
+//         ]
+//     },
+//     {
+//         id: 2,
+//         name: 'Invitado VIP',
+//         nights: 10,
+//         color: '#808080',// gray-400
+//         headerColor: '#808080',
+//         image: '/images/premium.webp',
+//         benefits: [
+//             'Early check-in y late check-out sujetos a disponibilidad',
+//             'Upgrade de habitación sujeto a disponibilidad.',
+//             'Tarifa preferencial (menor a la tarifa contratada).',
+//             'Tarifa Preferencial',
+//             '5% de descuento en Spa Orlane',
+//         ],
+//         requirements: [
+//             'Posibilidad de ascender de nivel.',
+//         ]
+//     },
+//     {
+//         id: 3,
+//         name: 'Invitado Selecto ',
+//         nights: 15,
+//         color: '#b29d5f',
+//         headerColor: '#b29d5f',
+//         image: '/images/elite.webp',
+//         benefits: [
+//             'Botella de vino Las Mañanitas por cada estancia.',
+//             'Early check-in y late check-out sujetos a disponibilidad.',
+//             'Upgrade de habitación sujeto a disponibilidad.',
+//             'Tarifa Preferencial',
+//             '10% de descuento en Spa Orlane',
+//             '10% de descuento en Restaurante Las Mañanitas (consumo general).',
+//             '10% de descuento en eventos sociales.',
+//         ],
+//         requirements: [
+//             'Posibilidad de ascender de nivel.',
+//         ]
+//     },
+//     {
+//         id: 4,
+//         name: 'Invitado Mañanitas',
+//         nights: 20,
+//         color: '#00633a',
+//         headerColor: '#00633a',
+//         image: '/images/invitado_mananitas.webp',
+//         benefits: [
+//             'Botella de vino Las Mañanitas por cada estancia.',
+//             'Early check-in y late check-out sujetos a disponibilidad.',
+//             'Upgrade de habitación sujeto a disponibilidad.',
+//             'Tarifa preferencial.',
+//             'Certificado anual para 2 noches gratis (sujeto a disponibilidad, no aplica en puentes ni días festivos).',
+//             '15% de descuento en Spa Orlane',
+//             '10% de descuento en Restaurante Las Mañanitas (consumo general).',
+//             '10% de descuento en eventos sociales y tarifa preferencial en renta de jardín.',
+//         ],
+//         requirements: [
+//             'Posibilidad de ascender de nivel conforme a su frecuencia de hospedaje',
+//         ]
+//     }
+// ];
 
 // export const LOYALTY_LEVELS_SPA: LoyaltyLevel[] = [
 //     {

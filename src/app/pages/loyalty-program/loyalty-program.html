@@ -1,9 +1,9 @@
 <div class="min-h-screen bg-gray-50 font-sans">
-    <header-list [h1_text]="'Programa de lealtad'" [url_site]="'/hotel-services'"></header-list>
+    <header-list [h1_text]="'loyalty_program.title' | translate" [url_site]="'/hotel-services'"></header-list>
     <div class="px-4 md:px-12 lg:px-32 xl:px-64 pb-10">
         <!-- ENCABEZADO -->
         <div class="pt-8 mb-10 text-center">
-            <h2 class="text-3xl font-semibold text-gray-800">Niveles</h2>
+            <h2 class="text-3xl font-semibold text-gray-800">{{ 'loyalty_program.levels_title' | translate }}</h2>
             <div class="w-12 h-px bg-[#00633a] mx-auto mt-3"></div>
         </div>
         <div class="pb-0">
@@ -11,29 +11,28 @@
             <!-- TÍTULO -->
             <div class="bg-white py-6 border-b border-gray-100 text-center md:text-justify">
                 <h1 class="text-2xl md:text-3xl font-semibold text-gray-800 leading-snug">
-                    Las Mañanitas Hotel, Garden, Restaurant & Spa
+                    {{ 'loyalty_program.intro_title' | translate }}
                 </h1>
             </div>
         
             <!-- DESCRIPCIÓN -->
             <div class="bg-white py-1 border-b border-gray-100">
                 <p class="text-gray-600 text-base md:text-lg leading-relaxed text-justify">
-                    En Las Mañanitas reconocemos y agradecemos su preferencia a través de nuestro Programa de Lealtad, diseñado para ofrecer
-                    beneficios exclusivos a nuestros invitados más distinguidos.
+                    {{ 'loyalty_program.intro_description' | translate }}
                 </p>
             </div>
 
             <div class="bg-white py-6 border-b border-gray-100 text-center md:text-justify">
                 <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 leading-snug">
-                    Requisitos de participación
+                    {{ 'loyalty_program.requirements_title' | translate }}
                 </h2>
             </div>
 
             <div class="bg-white py-1 border-b border-gray-100">
                 <ul class="text-gray-600 text-base md:text-lg leading-relaxed text-justify">
-                    <li>Programa exclusivo por invitación.</li>
-                    <li>Haber recibido invitación oficial por parte del hotel.</li>
-                    <li>Los beneficios aplican de acuerdo con el nivel alcanzado.</li>
+                    <li>{{ 'loyalty_program.requirements_list.invitation_only' | translate }}</li>
+                    <li>{{ 'loyalty_program.requirements_list.official_invitation' | translate }}</li>
+                    <li>{{ 'loyalty_program.requirements_list.level_benefits' | translate }}</li>
                 </ul>
             </div>
         </div>
@@ -47,28 +46,28 @@
                     <div class="rounded-2xl min-h-[450px] overflow-hidden border-2 w-full" [style.border-color]="level.color">
                         <div class="py-3 text-center" [style.background-color]="level.headerColor">
                             <span class="text-white font-bold tracking-widest text-sm font-body italic uppercase">
-                                {{ level.name }}
+                                {{ level.name | translate }}
                             </span>
                         </div>
                         <div class="bg-white py-6 text-center border-b border-gray-100">
-                            <h3 class="uppercase">Requisitos</h3>
+                            <h3 class="uppercase">{{ 'loyalty_program.labels.requirements' | translate }}</h3>
                             <span class="text-4xl font-light text-gray-800 font-body italic">
                                 {{ level.nights }}
                             </span>
                             <span class="text-gray-500 text-base ml-1 font-body italic">
-                                Cuartos-noches acumuladas al año
+                                {{ 'loyalty_program.labels.nights' | translate }}
                             </span>
                             @for (requirement of level.requirements; track requirement; let last = $last) {
                                 <p class="text-gray-500 text-base ml-1 font-body italic">
-                                   {{ requirement }}
+                                    {{ requirement | translate }}
                                 </p>
                             }   
                         </div>
                         <div class="bg-white">
-                            <h3 class="uppercase text-center">Beneficios</h3>
+                            <h3 class="uppercase text-center">{{ 'loyalty_program.labels.benefits' | translate }}</h3>
                             @for (benefit of level.benefits; track benefit; let last = $last) {
                                 <div class="px-4 py-3 text-center text-base text-gray-600 tracking-wide" [class.border-b]="!last" [class.border-gray-100]="!last">
-                                    <p>{{ benefit }}</p>
+                                    <p>{{ benefit | translate }}</p>
                                 </div>
                             }
                         </div>
@@ -80,51 +79,46 @@
         <div class="pb-0">
             <div class="bg-white py-6 border-b border-gray-100 text-center md:text-justify">
                 <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 leading-snug">
-                    Amenidades y cortesías
+                    {{ 'loyalty_program.extras.title' | translate }}
                 </h2>
             </div>
         
             <div class="bg-white py-1 border-b border-gray-100">
                 <p class="text-gray-600 text-base md:text-lg leading-relaxed text-justify">
-                    Para estancias mínimas de 3 noches.
+                    {{ 'loyalty_program.extras.subtitle' | translate }}
                 </p><br>
                 <ul class="text-gray-600 text-base md:text-lg leading-relaxed text-justify">
-                    <li>Gorra Las Mañanitas.</li>
-                    <li>Cubrebocas artesanales.</li>
-                    <li>Sonajas (en caso de niños).</li>
-                    <li>Postre de “Bienvenido a Casa” (clientes frecuentes).</li>
-                    <li>Cubrebocas artesanales.</li>
-                    <li>Postre de celebración para ocasiones especiales
-                    (cumpleaños, aniversarios u otros festejos).</li>
+                    <li>{{ 'loyalty_program.extras.items.cap' | translate }}</li>
+                    <li>{{ 'loyalty_program.extras.items.mask' | translate }}</li>
+                    <li>{{ 'loyalty_program.extras.items.rattle' | translate }}</li>
+                    <li>{{ 'loyalty_program.extras.items.welcome_dessert' | translate }}</li>
+                    <li>{{ 'loyalty_program.extras.items.celebration_dessert' | translate }}</li>
                 </ul>
             </div>
  
             <div class="bg-white py-6 border-b border-gray-100 text-center md:text-justify">
                 <h1 class="text-2xl md:text-3xl font-semibold text-gray-800 leading-snug">
-                    Política de Cancelación
+                    {{ 'loyalty_program.cancellation.title' | translate }}
                 </h1>
             </div>
 
             <div class="bg-white py-1 border-b border-gray-100">
                 <p class="text-gray-600 text-base md:text-lg leading-relaxed text-justify">
-                    Con el fin de brindar un mejor servicio y garantizar la disponibilidad durante periodos de alta demanda, <strong>el Programa de
-                    Lealtad Las Mañanitas</strong> establece la siguiente política de cancelación:
+                    {{ 'loyalty_program.cancellation.description' | translate }}
                 </p><br>
                 <ul class="text-gray-600 text-base md:text-lg leading-relaxed text-justify">
-                    <li><strong>Temporada baja:</strong><br>
-                        Las cancelaciones deberán realizarse con un mínimo de <strong>3 días de anticipación</strong> a la fecha de llegada para evitar
-                        penalización.
+                    <li><strong>{{ 'loyalty_program.cancellation.low_season' | translate }}</strong><br>
+                        {{ 'loyalty_program.cancellation.low_season_text' | translate }}
                     </li>
-                    <li><strong>Temporada alta (días festivos y puentes):</strong><br>
-                        Las cancelaciones deberán realizarse con un mínimo de <strong>7 días de anticipación</strong> a la fecha de llegada.
+                    <li><strong>{{ 'loyalty_program.cancellation.high_season' | translate }}</strong><br>
+                        {{ 'loyalty_program.cancellation.high_season_text' | translate }}
                     </li>
-                    <li><strong>Penalización:</strong><br>
-                        En caso de no respetar los plazos establecidos, se aplicará el <strong>cargo correspondiente a la primera noche de hospedaje.</strong>
+                    <li><strong>{{ 'loyalty_program.cancellation.penalty' | translate }}</strong><br>
+                        {{ 'loyalty_program.cancellation.penalty_text' | translate }}
                     </li>
                 </ul><br>
                 <p class="text-gray-600 text-base md:text-lg leading-relaxed text-justify">
-                    Esta política aplica para todos los niveles del programa de lealtad y está sujeta a cambios sin previo aviso, de acuerdo
-                    con la disponibilidad y operación del hotel.
+                    {{ 'loyalty_program.cancellation.note' | translate }}
                 </p>
             </div>
         </div>

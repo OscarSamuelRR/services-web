@@ -5,10 +5,11 @@ import { Footer } from '../../components/footer/footer';
 import { HeaderList } from '../../components/header-list/header-list';
 import { AmenitieData } from '../../interfaces/amenitie-data.interface';
 import { AMENITIE } from '../../data/amenities.data';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-amenities',
-  imports: [HeaderList, Footer, DivSections, DivSectionBig],
+  imports: [HeaderList, Footer, DivSections, DivSectionBig, TranslateModule],
   templateUrl: './amenities.html',
   styleUrl: './amenities.css',
 })

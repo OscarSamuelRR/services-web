@@ -3,10 +3,12 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 import { Footer } from '../../components/footer/footer';
 import { RoomData } from '../../interfaces/room-data.interface';
 import { ROOMS } from '../../data/rooms.data';
+import { TranslateModule } from '@ngx-translate/core';
+import { LangSwitcher } from '../../components/lang-switcher/lang-switcher';
 
 @Component({
   selector: 'app-details',
-  imports: [RouterLink, Footer],
+  imports: [RouterLink, Footer, TranslateModule, LangSwitcher],
   templateUrl: './details-room.html',
   styleUrl: './details-room.css',
 })

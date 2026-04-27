@@ -5,6 +5,6 @@ export interface RoomData {
     description: string;
     descriptionExtra?: string; // opcional
     size?: string;
-    amenities: string[];
+    amenities: string;
     moreInfoUrl?: string;
 }
