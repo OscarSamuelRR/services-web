@@ -757,5 +757,26 @@
         "penalty_text": "En caso de no respetar los plazos establecidos, se aplicará el cargo correspondiente a la primera noche de hospedaje.",
         "note": "Esta política aplica para todos los niveles del programa de lealtad y está sujeta a cambios sin previo aviso, de acuerdo con la disponibilidad y operación del hotel."
       }
+    },
+    "search_routes": {
+      "rooms": "Habitaciones",
+      "food_drinks": "Alimentos y Bebidas",
+      "spa_orlane": "Spa Orlane",
+      "hotel_services": "Servicios del hotel",
+      "amenities": "Amenidades",
+      "services_reception": "Servicios de Recepción",
+      "assistance": "Asistencia",
+      "laundry": "Lavandería",
+      "tv_channels": "Canales de TV",
+      "hotel_rules": "Reglamento",
+      "pool": "Alberca",
+      "offers_experiences": "Ofertas y Experiencias",
+      "tours": "Tours y Excursiones",
+      "loyalty_program": "Programa de Lealtad",
+      "loyalty_program_spa": "Programa de Lealtad Spa",
+      "spa_rules": "Reglamento Spa",
+      "spa_aesthetic": "Estética Spa",
+      "room_service": "Room Service",
+      "spa_menu": "Menú Spa"
     }
   }

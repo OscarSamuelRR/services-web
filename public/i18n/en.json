@@ -764,5 +764,26 @@
       "penalty_text": "Failure to comply with these deadlines will result in a charge equivalent to the first night's stay.",
       "note": "This policy applies to all loyalty program levels and is subject to change without prior notice, depending on hotel availability and operations."
     }
+  },
+    "search_routes": {
+      "rooms": "Rooms",
+      "food_drinks": "Food & Drinks",
+      "spa_orlane": "Spa Orlane",
+      "hotel_services": "Hotel Services",
+      "amenities": "Amenities",
+      "services_reception": "Reception Services",
+      "assistance": "Assistance",
+      "laundry": "Laundry",
+      "tv_channels": "TV Channels",
+      "hotel_rules": "Hotel Rules",
+      "pool": "Swimming Pool",
+      "offers_experiences": "Offers & Experiences",
+      "tours": "Tours & Excursions",
+      "loyalty_program": "Loyalty Program",
+      "loyalty_program_spa": "Spa Loyalty Program",
+      "spa_rules": "Spa Rules",
+      "spa_aesthetic": "Spa Aesthetics",
+      "room_service": "Room Service",
+      "spa_menu": "Spa Menu"
   }
 }
