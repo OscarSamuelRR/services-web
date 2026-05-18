@@ -87,7 +87,7 @@ export const HOTEL_DESCRIPTIONS: HotelDescription[] = [
         schedules: [
             { label: 'food.spa.schedule.service', hours: '08:00 a.m. - 08:00 p.m.' },
         ],
-        urlMenu: 'https://lasmananitas.mx/#fh5co-menus'
+        urlMenu: 'https://lasmananitas.mx/spa-menu/#fh5co-menus'
     },
 ];
 
