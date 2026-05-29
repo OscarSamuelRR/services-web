@@ -59,7 +59,7 @@ export const HOTEL_DESCRIPTIONS: HotelDescription[] = [
             { label: 'food.room.schedule.lunch', hours: '12:00 p.m. - 10:00 p.m.' },
             { label: 'food.room.schedule.service', hours: '08:00 a.m. - 10:00 p.m.' },
         ],
-        urlMenu: 'https://lasmananitas.mx/indexdesayunos/#fh5co-menus'
+        urlMenu: 'https://lasmananitas.mx/room-service/#fh5co-menus'
     },
     {
         id: 'pool-menu',
