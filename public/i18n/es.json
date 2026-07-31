@@ -179,7 +179,10 @@
     "title1": "Ofertas",
     "title2": "Experiencias",
     "title3": "Tours",
+    "title4": "Descubra Morelos",
     "card_title1": "Tours",
+    "card_title2": "Descubra Morelos",
+    "card_subtitle2": "Cada estancia puede convertirse en una experiencia inolvidable.",
     "offers": {
       "card_title1": "Noche en cortesía",
       "card_subtitle1": "Cuarta noche de cortesía. Disfruten de una estadía más larga en este paraíso, obteniendo la cuarta noche en cortesía.",
@@ -288,19 +291,37 @@
       },
       "not_found": "Tour no encontrado."
     },
-    "food_drinks": {
-      "title": "Alimentos y bebidas",
-      "food_drinks_title": "Alimentos y bebidas del hotel",
+  "discover_morelos": {
+    "main_title": "Descubra Morelos",
+    "subtitle": "Permita que Las Mañanitas le guíe a través de los destinos, sabores y experiencias más memorables del estado.",
+    "title1": "Naturaleza",
+    "title2": "Aventura",
+    "title3": "Historia y Cultura",
+    "title4": "Descubra Morelos",
+    "card_title1": "Tours",
+    "card_title2": "Descubra Morelos",
+    "sections": {
+      "card_title1": "Naturaleza",
+      "card_subtitle1": "Bosques, ríos, montañas y paisajes que invitan a descubrir la riqueza natural de Morelos.",
+      "card_title2": "Aventura",
+      "card_subtitle2": "Experiencias para quienes desean vivir Morelos desde una perspectiva llena de emoción y paisajes extraordinarios.",
+      "card_title3": "Historia y Cultura",
+      "card_subtitle3": "Recorra los escenarios que dieron identidad a Morelos y descubra su riqueza histórica, cultural y gastronómica."
+    }
+  },
+  "food_drinks": {
+    "title": "Alimentos y bebidas",
+    "food_drinks_title": "Alimentos y bebidas del hotel",
 
-      "sections": {
-        "restaurant": "Restaurante Las Mañanitas",
-        "bar": "Bar Azalea",
-        "room_service": "Menú servicio a la habitación",
-        "atrio": "Atrio",
-        "pool_menu": "Menú Alberca",
-        "spa_menu": "Menú Spa"
-      }
-    },
+    "sections": {
+      "restaurant": "Restaurante Las Mañanitas",
+      "bar": "Bar Azalea",
+      "room_service": "Menú servicio a la habitación",
+      "atrio": "Atrio",
+      "pool_menu": "Menú Alberca",
+      "spa_menu": "Menú Spa"
+    }
+  },
   "food": {
     "labels": {
       "schedules": "Horarios de Servicio",

@@ -14,6 +14,7 @@ export class DivSectionBig {
   url_img = input.required<string>();
   route = input.required<string>();
   span_text = input.required<string>();
+  sub_text = input<string>('');
   imagePosition = input<string>();
   isLCP = input<boolean>(false);
 }
