@@ -52,7 +52,7 @@ export const routes: Routes = [
     { path: 'experiences-tours', component: ExperiencesTours },
     { path: 'offers-experiences-content/:id', component: OffersExperiencesContent },
     { path: 'discover-morelos', component: DiscoverMorelos },
-    { path: 'discover-morelos-content/:id', component: DiscoverMorelosContent },
+    { path: 'discover-morelos-content/:section', component: DiscoverMorelosContent },
     { path: 'rooms/:id', component: DetailsRoom },
     { path: 'tour-page/:id', component: TourPage },
     { path: 'events/:id', component: Events },

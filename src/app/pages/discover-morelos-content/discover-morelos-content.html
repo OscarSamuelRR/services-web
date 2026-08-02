@@ -1,14 +1,14 @@
 <!-- experiences-tour.component.html -->
 
 <div class="min-h-screen bg-gray-50 font-sans">
-    <header-list [h1_text]="'discover_morelos.main_title' | translate" [url_site]="'/offers-experiences'"></header-list>
+    <header-list [h1_text]="'discover_morelos.main_title' | translate" [url_site]="'/discover-morelos'"></header-list>
 
     <div class="px-4 md:px-12 lg:px-20 xl:px-32 pb-10">
         <!-- ENCABEZADO -->
         <div class="pt-8 mb-6 text-center">
-            <h2 class="text-3xl md:text-3xl lg:text-4xl font-semibold text-gray-800">{{ 'discover_morelos.main_title' |
+            <h2 class="text-3xl md:text-3xl lg:text-4xl font-semibold text-gray-800">{{ sectionTitleKey() |
                 translate }}</h2>
-            <p class="text-gray-600 text-xl mt-2 mb-5">{{ 'discover_morelos.subtitle' | translate }}</p>
+            <p class="text-gray-600 text-xl mt-2 mb-5">{{ sectionSubTitleKey() | translate }}</p>
             <!-- <p><strong>Ext. 205/206</strong></p> -->
             <div class="w-12 h-px bg-[#00633a] mx-auto mt-3"></div>
         </div>
@@ -16,19 +16,13 @@
           <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
             <!-- <h3 class="text-2xl md:text-2xl lg:text-3xl font-semibold text-gray-800 text-center mb-6">{{
                 'discover_morelos.title1' | translate}}</h3> -->
-            <div-sections [url_img]="'/images/nature.jpg'" [route]="'/tour-page/cuernavaca'"
-                [span_text]="'discover_morelos.sections.card_title1' | translate"
-                [sub_text]="'discover_morelos.sections.card_subtitle1' | translate" />
+            @for (content of discoverMorelosContent(); track content.id) {
+                <div-sections [url_img]="'/images/nature.jpg'" [route]="'/tour-page/cuernavaca'"
+                    [span_text]="content.title | translate"
+                    [sub_text]="content.description | translate" />
+            }
             <!-- <h3 class="text-2xl md:text-2xl lg:text-3xl font-semibold text-gray-800 text-center mb-6">{{
                 'discover_morelos.title2' | translate}}</h3> -->
-            <div-sections [url_img]="'/images/chapultepec.jpg'" [route]="'/tour-page/tepoztlan'"
-                [span_text]="'discover_morelos.sections.card_title2' | translate"
-                [sub_text]="'discover_morelos.sections.card_subtitle2' | translate" />
-            <!-- <h3 class="text-2xl md:text-2xl lg:text-3xl font-semibold text-gray-800 text-center mb-6">{{
-                'discover_morelos.title3' | translate}}</h3> -->
-            <div-sections [url_img]="'/images/palacio2.jpg'" [route]="'/tour-page/xochicalco'"
-                [span_text]="'discover_morelos.sections.card_title3' | translate"
-                [sub_text]="'discover_morelos.sections.card_subtitle3' | translate" />
         </div>
         <!-- </div> -->
         <!-- NOTA INFORMATIVA -->
