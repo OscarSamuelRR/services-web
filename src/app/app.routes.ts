@@ -27,6 +27,7 @@ import { Events } from './pages/events/events';
 import { Description } from './pages/description/description';
 import { DiscoverMorelos } from './pages/discover-morelos/discover-morelos';
 import { DiscoverMorelosContent } from './pages/discover-morelos-content/discover-morelos-content';
+import { DiscoverMorelosContentPlace } from './pages/discover-morelos-content-place/discover-morelos-content-place';
 
 export const routes: Routes = [
     { path: '', component: Index },
@@ -53,6 +54,7 @@ export const routes: Routes = [
     { path: 'offers-experiences-content/:id', component: OffersExperiencesContent },
     { path: 'discover-morelos', component: DiscoverMorelos },
     { path: 'discover-morelos-content/:section', component: DiscoverMorelosContent },
+    { path: 'discover-morelos-content-place/:id', component: DiscoverMorelosContentPlace },
     { path: 'rooms/:id', component: DetailsRoom },
     { path: 'tour-page/:id', component: TourPage },
     { path: 'events/:id', component: Events },

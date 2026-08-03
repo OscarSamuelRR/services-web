@@ -4,13 +4,19 @@ export const DISCOVER_MORELOS_CONTENT: DiscoverMorelosCont[] = [
 
     // HISTORIA Y CULTURA
     {
-        id: 'cuernavaca-historia',
+        id: 'cuernavaca-history',
         section: 'history_culture',
         title: 'discover_morelos_sections.history_culture.cuernavaca.title',
         description: 'discover_morelos_sections.history_culture.cuernavaca.subtitle',
         itinerary: 'discover_morelos_sections.history_culture.cuernavaca.itinerary',
-        image: '/images/cuernavaca.jpg',
-        imagePosition: 'object-center'
+        image: '/images/palacio2.jpg',
+        images: [
+            '/images/palacio2.jpg',
+            '/images/nature.jpg',
+            '/images/chapultepec.jpg',
+        ],
+        imagePosition: 'object-center',
+        route: '/discover-morelos-content-place/cuernavaca-history'
     },
     {
         id: 'tlaltizapan',
@@ -18,8 +24,14 @@ export const DISCOVER_MORELOS_CONTENT: DiscoverMorelosCont[] = [
         title: 'discover_morelos_sections.history_culture.tlaltizapan.title',
         description: 'discover_morelos_sections.history_culture.tlaltizapan.subtitle',
         itinerary: 'discover_morelos_sections.history_culture.tlaltizapan.itinerary',
-        image: '/images/tlaltizapan.jpg',
-        imagePosition: 'object-center'
+        image: '/images/palacio2.jpg',
+        images: [
+            '/images/palacio2.jpg',
+            '/images/palacio2.jpg',
+            '/images/palacio2.jpg',
+        ],
+        imagePosition: 'object-center',
+        route: '/discover-morelos-content-place/tlaltizapan'
     },
     {
         id: 'cuautla',
@@ -27,17 +39,29 @@ export const DISCOVER_MORELOS_CONTENT: DiscoverMorelosCont[] = [
         title: 'discover_morelos_sections.history_culture.cuautla.title',
         description: 'discover_morelos_sections.history_culture.cuautla.subtitle',
         itinerary: 'discover_morelos_sections.history_culture.cuautla.itinerary',
-        image: '/images/cuautla.jpg',
-        imagePosition: 'object-center'
+        image: '/images/palacio2.jpg',
+        images: [
+            '/images/palacio2.jpg',
+            '/images/palacio2.jpg',
+            '/images/palacio2.jpg',
+        ],
+        imagePosition: 'object-center',
+        route: '/discover-morelos-content-place/cuautla'
     },
     {
-        id: 'zempoala-historia',
+        id: 'zempoala-history',
         section: 'history_culture',
         title: 'discover_morelos_sections.history_culture.zempoala.title',
         description: 'discover_morelos_sections.history_culture.zempoala.subtitle',
         itinerary: 'discover_morelos_sections.history_culture.zempoala.itinerary',
-        image: '/images/zempoala.jpg',
-        imagePosition: 'object-center'
+        image: '/images/palacio2.jpg',
+        images: [
+            '/images/palacio2.jpg',
+            '/images/palacio2.jpg',
+            '/images/palacio2.jpg',
+        ],
+        imagePosition: 'object-center',
+        route: '/discover-morelos-content-place/zempoala-history'
     },
 
     // NATURALEZA
@@ -47,8 +71,14 @@ export const DISCOVER_MORELOS_CONTENT: DiscoverMorelosCont[] = [
         title: 'discover_morelos_sections.nature.barranca.title',
         description: 'discover_morelos_sections.nature.barranca.subtitle',
         itinerary: 'discover_morelos_sections.nature.barranca.itinerary',
-        image: '/images/barranca.jpg',
-        imagePosition: 'object-bottom'
+        image: '/images/nature.jpg',
+        images: [
+            '/images/nature.jpg',
+            '/images/nature.jpg',
+            '/images/nature.jpg',
+        ],
+        imagePosition: 'object-bottom',
+        route: '/discover-morelos-content-place/barranca-chapultepec'
     },
     {
         id: 'zempoala-huitzilac',
@@ -56,8 +86,14 @@ export const DISCOVER_MORELOS_CONTENT: DiscoverMorelosCont[] = [
         title: 'discover_morelos_sections.nature.zempoala_huitzilac.title',
         description: 'discover_morelos_sections.nature.zempoala_huitzilac.subtitle',
         itinerary: 'discover_morelos_sections.nature.zempoala_huitzilac.itinerary',
-        image: '/images/zempoala.jpg',
-        imagePosition: 'object-center'
+        image: '/images/nature.jpg',
+        images: [
+            '/images/nature.jpg',
+            '/images/nature.jpg',
+            '/images/nature.jpg',
+        ],
+        imagePosition: 'object-center',
+        route: '/discover-morelos-content-place/zempoala-huitzilac'
     },
     {
         id: 'manantiales',
@@ -65,8 +101,14 @@ export const DISCOVER_MORELOS_CONTENT: DiscoverMorelosCont[] = [
         title: 'discover_morelos_sections.nature.manantiales.title',
         description: 'discover_morelos_sections.nature.manantiales.subtitle',
         itinerary: 'discover_morelos_sections.nature.manantiales.itinerary',
-        image: '/images/manantiales.jpg',
-        imagePosition: 'object-center'
+        image: '/images/nature.jpg',
+        images: [
+            '/images/nature.jpg',
+            '/images/nature.jpg',
+            '/images/nature.jpg',
+        ],
+        imagePosition: 'object-center',
+        route: '/discover-morelos-content-place/manantiales'
     },
     {
         id: 'texcal',
@@ -74,8 +116,14 @@ export const DISCOVER_MORELOS_CONTENT: DiscoverMorelosCont[] = [
         title: 'discover_morelos_sections.nature.texcal.title',
         description: 'discover_morelos_sections.nature.texcal.subtitle',
         itinerary: 'discover_morelos_sections.nature.texcal.itinerary',
-        image: '/images/texcal.jpg',
-        imagePosition: 'object-center'
+        image: '/images/nature.jpg',
+        images: [
+            '/images/nature.jpg',
+            '/images/nature.jpg',
+            '/images/nature.jpg',
+        ],
+        imagePosition: 'object-center',
+        route: '/discover-morelos-content-place/texcal'
     },
     {
         id: 'hongos-azules',
@@ -83,8 +131,14 @@ export const DISCOVER_MORELOS_CONTENT: DiscoverMorelosCont[] = [
         title: 'discover_morelos_sections.nature.hongos_azules.title',
         description: 'discover_morelos_sections.nature.hongos_azules.subtitle',
         itinerary: 'discover_morelos_sections.nature.hongos_azules.itinerary',
-        image: '/images/hongos.jpg',
-        imagePosition: 'object-center'
+        image: '/images/nature.jpg',
+        images: [
+            '/images/nature.jpg',
+            '/images/nature.jpg',
+            '/images/nature.jpg',
+        ],
+        imagePosition: 'object-center',
+        route: '/discover-morelos-content-place/hongos-azules'
     },
 
     // AVENTURA
@@ -94,8 +148,14 @@ export const DISCOVER_MORELOS_CONTENT: DiscoverMorelosCont[] = [
         title: 'discover_morelos_sections.adventure.tepoztlan.title',
         description: 'discover_morelos_sections.adventure.tepoztlan.subtitle',
         itinerary: 'discover_morelos_sections.adventure.tepoztlan.itinerary',
-        image: '/images/tepoztlan.jpg',
-        imagePosition: 'object-center'
+        image: '/images/chapultepec.jpg',
+        images: [
+            '/images/chapultepec.jpg',
+            '/images/chapultepec.jpg',
+            '/images/chapultepec.jpg',
+        ],
+        imagePosition: 'object-center',
+        route: '/discover-morelos-content-place/tepoztlan'
     },
     {
         id: 'las-estacas',
@@ -103,8 +163,14 @@ export const DISCOVER_MORELOS_CONTENT: DiscoverMorelosCont[] = [
         title: 'discover_morelos_sections.adventure.las_estacas.title',
         description: 'discover_morelos_sections.adventure.las_estacas.subtitle',
         itinerary: 'discover_morelos_sections.adventure.las_estacas.itinerary',
-        image: '/images/estacas.jpg',
-        imagePosition: 'object-center'
+        image: '/images/chapultepec.jpg',
+        images: [
+            '/images/chapultepec.jpg',
+            '/images/chapultepec.jpg',
+            '/images/chapultepec.jpg',
+        ],
+        imagePosition: 'object-center',
+        route: '/discover-morelos-content-place/las-estacas'
     },
     {
         id: 'tlayacapan',
@@ -112,8 +178,14 @@ export const DISCOVER_MORELOS_CONTENT: DiscoverMorelosCont[] = [
         title: 'discover_morelos_sections.adventure.tlayacapan.title',
         description: 'discover_morelos_sections.adventure.tlayacapan.subtitle',
         itinerary: 'discover_morelos_sections.adventure.tlayacapan.itinerary',
-        image: '/images/tlayacapan.jpg',
-        imagePosition: 'object-center'
+        image: '/images/chapultepec.jpg',
+        images: [
+            '/images/chapultepec.jpg',
+            '/images/chapultepec.jpg',
+            '/images/chapultepec.jpg',
+        ],
+        imagePosition: 'object-center',
+        route: '/discover-morelos-content-place/tlayacapan'
     },
     {
         id: 'tequesquitengo',
@@ -121,8 +193,14 @@ export const DISCOVER_MORELOS_CONTENT: DiscoverMorelosCont[] = [
         title: 'discover_morelos_sections.adventure.tequesquitengo.title',
         description: 'discover_morelos_sections.adventure.tequesquitengo.subtitle',
         itinerary: 'discover_morelos_sections.adventure.tequesquitengo.itinerary',
-        image: '/images/tequesquitengo.jpg',
-        imagePosition: 'object-center'
+        image: '/images/chapultepec.jpg',
+        images: [
+            '/images/chapultepec.jpg',
+            '/images/chapultepec.jpg',
+            '/images/chapultepec.jpg',
+        ],
+        imagePosition: 'object-center',
+        route: '/discover-morelos-content-place/tequesquitengo'
     },
     {
         id: 'amacuzac',
@@ -130,7 +208,13 @@ export const DISCOVER_MORELOS_CONTENT: DiscoverMorelosCont[] = [
         title: 'discover_morelos_sections.adventure.amacuzac.title',
         description: 'discover_morelos_sections.adventure.amacuzac.subtitle',
         itinerary: 'discover_morelos_sections.adventure.amacuzac.itinerary',
-        image: '/images/amacuzac.jpg',
-        imagePosition: 'object-center'
+        image: '/images/chapultepec.jpg',
+        images: [
+            '/images/chapultepec.jpg',
+            '/images/chapultepec.jpg',
+            '/images/chapultepec.jpg',
+        ],
+        imagePosition: 'object-center',
+        route: '/discover-morelos-content-place/amacuzac'
     },
 ];

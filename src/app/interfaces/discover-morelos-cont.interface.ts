@@ -6,5 +6,7 @@ export interface DiscoverMorelosCont {
     itinerary: string;
     whatsappUrl?:string;
     image: string;
+    images?: string[];
     imagePosition?: string;
+    route?: string;
 }

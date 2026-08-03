@@ -17,7 +17,7 @@
             <!-- <h3 class="text-2xl md:text-2xl lg:text-3xl font-semibold text-gray-800 text-center mb-6">{{
                 'discover_morelos.title1' | translate}}</h3> -->
             @for (content of discoverMorelosContent(); track content.id) {
-                <div-sections [url_img]="'/images/nature.jpg'" [route]="'/tour-page/cuernavaca'"
+                <div-sections [url_img]="content.image" [route]="content.route"
                     [span_text]="content.title | translate"
                     [sub_text]="content.description | translate" />
             }
