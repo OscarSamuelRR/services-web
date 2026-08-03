@@ -90,7 +90,9 @@
     "events": "Eventos",
     "contact_note": "En caso de tener alguna duda comuníquese a la extensión",
     "contact_note_end": "y con gusto le atenderemos.",
-    "how_to_get": "Comó llegar"
+    "how_to_get": "Comó llegar",
+    "quick_info": "Información rápida",
+    "itinerary": "itinerario"
   },
   "spa_rules": {
     "header": {
@@ -201,97 +203,97 @@
       "card_category3": "Hotel"
     }
   },
-    "offers_experiences_detail": {
-      "unique_stay": {
-        "title": "Disfrute de una estancia única en este paraíso incomparable",
-        "description": "Inicie la experiencia con un cálido desayuno, viva la más revitalizante sensación en nuestro spa y finalice con un descanso reparador en cualquiera de nuestras suites de lujo. La experiencia para dos personas incluye: una noche en la habitación seleccionada, crédito de $400 pesos para desayuno, masaje de 50 min y un relajante circuito hidrotermal en Spa Orlane Paris.",
-        "whatsapp_url": "https://api.whatsapp.com/send?phone=527773529395&text=Hola,%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20experiencia%20de%20verano%20en%20las%20suites%20de%20lujo.%20Gracias."
-      },
-      "two_experience": {
-        "title": "Una experiencia para dos",
-        "description": "Viva una estancia inigualable en pareja en el hotel Las Mañanitas. Nuestra experiencia de romance incluye: una noche en suite de lujo con decoración romántica, botella de vino francés Chateaux Bernot, tabla de quesos, crédito de $400 pesos para desayuno, finalizando con un relajante circuito hidrotermal en Spa Orlane Paris.",
-        "whatsapp_url": "https://api.whatsapp.com/send?phone=527773529395&text=Hola,%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20experiencia%20rom%C3%A1ntica%20para%20dos%20en%20Las%20Ma%C3%B1anitas.%20Gracias."
-      },
-      "picnic_day": {
-        "title": "Día de campo en Las Mañanitas",
-        "description": "Disfrute de la naturaleza con un escenario perfecto para dos, con nuestros días especiales de pícnic.\n\nOpción 1 (Para 2 personas)\nPlato de quesos - Baguette / Panini / Croissant (a elegir 2 opciones) - Fruta de mano (2 opciones) - 1 botella de vino tinto de la casa de 355 ml - agua - 1 juego de mesa.\n\nOpción 2 (Para 2 personas)\nPlato de quesos y carnes frías - Baguette / Panini / Croissant (a elegir 2 opciones) - Fruta de mano (2 opciones) - Bocadillos dulces (2 por persona) - 1 botella de Móet & Chandon 200 ml - agua - 1 juego de cerámica para pintar (gift) - 1 juego de mesa.",
-        "whatsapp_url": "https://api.whatsapp.com/send?phone=527773529395&text=Hola,%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20experiencia%20de%20p%C3%ADcnic%20en%20Las%20Ma%C3%B1anitas.%20Gracias."
-      },
-      "seasonal_offer": {
-        "title": "Oferta especial de temporada",
-        "description": "HASTA 35% OFF Disfrute sus vacaciones de Semana Santa a un precio exclusivo reservando directamente con nosotros.\n\nPromoción sujeta a disponibilidad / aplican restricciones / no acumulable con otras ofertas.",
-        "whatsapp_url": "https://api.whatsapp.com/send?phone=527773620000&text=Hola%2C%20me%20interesa%20la%20oferta%20especial%20de%20Semana%20Santa%20con%20hasta%2035%25%20de%20descuento.%20%C2%BFPodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%20y%20c%C3%B3mo%20reservar%2C%20por%20favor%3F"
-      },
-      "not_found": "Oferta no encontrada."
+  "offers_experiences_detail": {
+    "unique_stay": {
+      "title": "Disfrute de una estancia única en este paraíso incomparable",
+      "description": "Inicie la experiencia con un cálido desayuno, viva la más revitalizante sensación en nuestro spa y finalice con un descanso reparador en cualquiera de nuestras suites de lujo. La experiencia para dos personas incluye: una noche en la habitación seleccionada, crédito de $400 pesos para desayuno, masaje de 50 min y un relajante circuito hidrotermal en Spa Orlane Paris.",
+      "whatsapp_url": "https://api.whatsapp.com/send?phone=527773529395&text=Hola,%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20experiencia%20de%20verano%20en%20las%20suites%20de%20lujo.%20Gracias."
     },
-    "experiences_tours": {
-      "tour_title1": "Cuernavaca",
-      "tour_title2": "Tepoztlán",
-      "tour_title3": "Xochicalco",
-      "tour_title4": "Ciudad de Taxco",
-      "tour_title5": "Grutas de Cacahuamilpa",
-      "tour_title6": "Casa Resiú Nayaá"
+    "two_experience": {
+      "title": "Una experiencia para dos",
+      "description": "Viva una estancia inigualable en pareja en el hotel Las Mañanitas. Nuestra experiencia de romance incluye: una noche en suite de lujo con decoración romántica, botella de vino francés Chateaux Bernot, tabla de quesos, crédito de $400 pesos para desayuno, finalizando con un relajante circuito hidrotermal en Spa Orlane Paris.",
+      "whatsapp_url": "https://api.whatsapp.com/send?phone=527773529395&text=Hola,%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20experiencia%20rom%C3%A1ntica%20para%20dos%20en%20Las%20Ma%C3%B1anitas.%20Gracias."
     },
-    "tours_page": {
-      "cuernavaca":{
-        "palacio_cortes": {
-          "category": "Cuernavaca",
-          "name": "Palacio de Cortes",
-          "description": "Monumento histórico ordenado construir por Hernán Cortes en los años intermedios a la Conquista de México, edificado sobre los restos del centro ceremonial y de tributo a Tláhuac llamado Tlatlocayacalli. Actualmente es el museo regional Cuauhnáhuac."
-        },
-        "catedral_cuernavaca": {
-          "category": "Cuernavaca",
-          "name": "Catedral de Cuernavaca",
-          "description": "Es un edificio del siglo XVI, lo que la convierte en una de las catedrales más antiguas del país, es la quinta fundación Franciscana en México. Se estableció en 1525 por los doce primeros frailes franciscanos que llegaron al país, con la ayuda de un nuevo grupo recién llegado de España."
-        },
-        "jardin_borda": {
-          "category": "Cuernavaca",
-          "name": "Jardín Borda",
-          "description": "Museo histórico ubicado en lo que fue la mansión de veraneo del acaudalado minero taxqueño, José de la Borda. Sus maravillosos jardines, sus barrocas fuentes y amplios andadores enmarcados por las extensiones de árboles frondosos de todo tipo, dentro del jardín se encuentra un lago que cuenta con pequeñas embarcaciones, aso como un museo donde se encontraran artesanías."
-        },
-        "museo_robert_brady": {
-          "category": "Cuernavaca",
-          "name": "Museo Robert Brady",
-          "description": "Antigua residencia de Robert Brady, un coleccionista estadounidense que adorno la casa con una colección que comprende más de 1,300 piezas de arte, desde pintura, escultura, grabado y artesanía de todo el mundo. Entre los pequeños tesoros que se pueden admirar destacan obras de Rufino Tamayo, Frida Kahlo, Diego Rivera, María Izquierdo, Miguel Covarrubias, entre muchos otros."
-        }
-      },
-      "tepoztlan":{
-        "tour_tepoztlan": {
-          "category": "Tepoztlán",
-          "name": "Tour Tepoztlán",
-          "description": "Visita y recorrido de 5 horas por el pueblo de Tepoztlán. Es considerado como uno de los 15 lugares más bonitos del país, místico por sus leyendas y tradiciones que aún son respetadas por sus habitantes, sus espectaculares montañas lo cautivaran.\n\n Caminata de ascenso por el cerro de Tepozteco para visitar la pirámide que rendía culto a Ometochtli Tepoztecátl, Dios del pulque, lugar donde se divisa un imponente panorama. Al descender del cerro se realiza un recorrido por el Ex convento de la Natividad, construido por indígenas tepoztecos y que se caracteriza por tener hermosas decoraciones en las bóvedas y corredores, mismas que incluye figuras geométricas. Recorrido por el mercado de artesanías, para concluir en un restaurante y disfrutar de una típica comida mexicana."
-        }
-      },
-      "xochicalco":{
-        "tour_xochicalco": {
-          "category": "xochicalco",
-          "name": "Tour Xochicalco",
-          "description": "Visita y recorrido de 4-6 horas, en el sitio arqueológico. Xochicalco es un sitio arqueológico que se ubica en el municipio de Miacatlán en el estado de Morelos, México. Fue declarado patrimonio de la humanidad por la UNESCO en 1999.\n\nLa zona Arqueológica está conformada por la plaza central, que alberga un adoratorio y la gran pirámide; la Malinche, donde se localiza 20 altares redondos, el palacio y el juego de pelota sur. La plaza principal es el espacio más importante de esta ciudad sagrada, por alojar la pirámide de la serpiente emplumada, además cuenta con el museo donde hay una colección formada por objetos arqueológicos provenientes de las excavaciones en la zona, tales como, la cerámica y la escultura."
-        }
-      },
-      "taxco":{
-        "tour_taxco": {
-          "category": "Ciudad de Taxco",
-          "name": "Tour Ciudad de Taxco",
-          "description": "Visita y recorrido de 4-6 horas. Iniciamos el recorrido con la visita a un taller de plata, en el que se recibirá una pequeña explicación de los diferentes procesos para trabajar la plata, dentro de una mina simulada.\n\nPosteriormente nos dirigimos hacia la hermosa parroquia de Santa Prisca, construida en el siglo XVI, es una muestra del arte barroco novohispano. Se dará un tiempo para recorrer y disfrutar de esta ciudad colonial, empezando por el zócalo, continuando por el área de artesanías y museos de plata.\n\nPara la comida podrá tomar el tiempo necesario para ingresar a algún restaurante típico de Taxco."
-        }
-      },
-      "grutas":{
-        "tour_grutas": {
-          "category": "Grutas de Cacahuamilpa",
-          "name": "Grutas de Cacahuamilpa",
-          "description": "Visita y recorrido de 4-6 horas en las grutas. Estas majestuosas grutas se ubican en la sierra madre del sur, abarcan parte de los estados de Guerrero y Morelos.\n\nEn su interior, las grutas de Cacahuamilpa resguardan una serie vastísima de figuras extrañas que evocan la imaginación de los visitantes, el lugar también cuenta con varios ríos subterráneos que se podrán recorrer si así lo desea. Más de 90 salones están abiertos al público; se recorren en aproximadamente 2 horas. La caminata, de unos 2 kilómetros, es sumamente gratificante; el guía comparte con el público detalles y anécdotas que enriquecen aún más la visita."
-        }
-      },
-      "casaresiu":{
-        "tour_casaresiu": {
-          "category": "Tour Casa Resiú Nayaá",
-          "name": "Tour Casa Resiú Nayaá",
-          "description": "La destilería de mezcal más grande de México. Vive la experiencia de un tour diseñado para conocer el origen y proceso de la elaboración del mejor mezcal artesanal.\n\nLas piñas de agave son molidas en tahona de piedra y el néctar obtenido es fermentado en tina de madera, doblemente destilado en alambique de cobre, todo esto bajo el cuidado de los maestros mezcaleros.\n\n• Recorrido guiado de 2 hrs. por los campos de agave.\n• Visita guiada por la destilería.\n• Antojitos mexicanos.\n• Cata especial de hasta 4 mezcladores: Aromas de Guerrero, Weber, Cupreata y Criollo.\n• Degustación de chocolate de 100% cacao.\n• Botella de mezcal Criollo (50 mil)."
-        }
-      },
-      "not_found": "Tour no encontrado."
+    "picnic_day": {
+      "title": "Día de campo en Las Mañanitas",
+      "description": "Disfrute de la naturaleza con un escenario perfecto para dos, con nuestros días especiales de pícnic.\n\nOpción 1 (Para 2 personas)\nPlato de quesos - Baguette / Panini / Croissant (a elegir 2 opciones) - Fruta de mano (2 opciones) - 1 botella de vino tinto de la casa de 355 ml - agua - 1 juego de mesa.\n\nOpción 2 (Para 2 personas)\nPlato de quesos y carnes frías - Baguette / Panini / Croissant (a elegir 2 opciones) - Fruta de mano (2 opciones) - Bocadillos dulces (2 por persona) - 1 botella de Móet & Chandon 200 ml - agua - 1 juego de cerámica para pintar (gift) - 1 juego de mesa.",
+      "whatsapp_url": "https://api.whatsapp.com/send?phone=527773529395&text=Hola,%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20experiencia%20de%20p%C3%ADcnic%20en%20Las%20Ma%C3%B1anitas.%20Gracias."
     },
+    "seasonal_offer": {
+      "title": "Oferta especial de temporada",
+      "description": "HASTA 35% OFF Disfrute sus vacaciones de Semana Santa a un precio exclusivo reservando directamente con nosotros.\n\nPromoción sujeta a disponibilidad / aplican restricciones / no acumulable con otras ofertas.",
+      "whatsapp_url": "https://api.whatsapp.com/send?phone=527773620000&text=Hola%2C%20me%20interesa%20la%20oferta%20especial%20de%20Semana%20Santa%20con%20hasta%2035%25%20de%20descuento.%20%C2%BFPodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%20y%20c%C3%B3mo%20reservar%2C%20por%20favor%3F"
+    },
+    "not_found": "Oferta no encontrada."
+  },
+  "experiences_tours": {
+    "tour_title1": "Cuernavaca",
+    "tour_title2": "Tepoztlán",
+    "tour_title3": "Xochicalco",
+    "tour_title4": "Ciudad de Taxco",
+    "tour_title5": "Grutas de Cacahuamilpa",
+    "tour_title6": "Casa Resiú Nayaá"
+  },
+  "tours_page": {
+    "cuernavaca":{
+      "palacio_cortes": {
+        "category": "Cuernavaca",
+        "name": "Palacio de Cortes",
+        "description": "Monumento histórico ordenado construir por Hernán Cortes en los años intermedios a la Conquista de México, edificado sobre los restos del centro ceremonial y de tributo a Tláhuac llamado Tlatlocayacalli. Actualmente es el museo regional Cuauhnáhuac."
+      },
+      "catedral_cuernavaca": {
+        "category": "Cuernavaca",
+        "name": "Catedral de Cuernavaca",
+        "description": "Es un edificio del siglo XVI, lo que la convierte en una de las catedrales más antiguas del país, es la quinta fundación Franciscana en México. Se estableció en 1525 por los doce primeros frailes franciscanos que llegaron al país, con la ayuda de un nuevo grupo recién llegado de España."
+      },
+      "jardin_borda": {
+        "category": "Cuernavaca",
+        "name": "Jardín Borda",
+        "description": "Museo histórico ubicado en lo que fue la mansión de veraneo del acaudalado minero taxqueño, José de la Borda. Sus maravillosos jardines, sus barrocas fuentes y amplios andadores enmarcados por las extensiones de árboles frondosos de todo tipo, dentro del jardín se encuentra un lago que cuenta con pequeñas embarcaciones, aso como un museo donde se encontraran artesanías."
+      },
+      "museo_robert_brady": {
+        "category": "Cuernavaca",
+        "name": "Museo Robert Brady",
+        "description": "Antigua residencia de Robert Brady, un coleccionista estadounidense que adorno la casa con una colección que comprende más de 1,300 piezas de arte, desde pintura, escultura, grabado y artesanía de todo el mundo. Entre los pequeños tesoros que se pueden admirar destacan obras de Rufino Tamayo, Frida Kahlo, Diego Rivera, María Izquierdo, Miguel Covarrubias, entre muchos otros."
+      }
+    },
+    "tepoztlan":{
+      "tour_tepoztlan": {
+        "category": "Tepoztlán",
+        "name": "Tour Tepoztlán",
+        "description": "Visita y recorrido de 5 horas por el pueblo de Tepoztlán. Es considerado como uno de los 15 lugares más bonitos del país, místico por sus leyendas y tradiciones que aún son respetadas por sus habitantes, sus espectaculares montañas lo cautivaran.\n\n Caminata de ascenso por el cerro de Tepozteco para visitar la pirámide que rendía culto a Ometochtli Tepoztecátl, Dios del pulque, lugar donde se divisa un imponente panorama. Al descender del cerro se realiza un recorrido por el Ex convento de la Natividad, construido por indígenas tepoztecos y que se caracteriza por tener hermosas decoraciones en las bóvedas y corredores, mismas que incluye figuras geométricas. Recorrido por el mercado de artesanías, para concluir en un restaurante y disfrutar de una típica comida mexicana."
+      }
+    },
+    "xochicalco":{
+      "tour_xochicalco": {
+        "category": "xochicalco",
+        "name": "Tour Xochicalco",
+        "description": "Visita y recorrido de 4-6 horas, en el sitio arqueológico. Xochicalco es un sitio arqueológico que se ubica en el municipio de Miacatlán en el estado de Morelos, México. Fue declarado patrimonio de la humanidad por la UNESCO en 1999.\n\nLa zona Arqueológica está conformada por la plaza central, que alberga un adoratorio y la gran pirámide; la Malinche, donde se localiza 20 altares redondos, el palacio y el juego de pelota sur. La plaza principal es el espacio más importante de esta ciudad sagrada, por alojar la pirámide de la serpiente emplumada, además cuenta con el museo donde hay una colección formada por objetos arqueológicos provenientes de las excavaciones en la zona, tales como, la cerámica y la escultura."
+      }
+    },
+    "taxco":{
+      "tour_taxco": {
+        "category": "Ciudad de Taxco",
+        "name": "Tour Ciudad de Taxco",
+        "description": "Visita y recorrido de 4-6 horas. Iniciamos el recorrido con la visita a un taller de plata, en el que se recibirá una pequeña explicación de los diferentes procesos para trabajar la plata, dentro de una mina simulada.\n\nPosteriormente nos dirigimos hacia la hermosa parroquia de Santa Prisca, construida en el siglo XVI, es una muestra del arte barroco novohispano. Se dará un tiempo para recorrer y disfrutar de esta ciudad colonial, empezando por el zócalo, continuando por el área de artesanías y museos de plata.\n\nPara la comida podrá tomar el tiempo necesario para ingresar a algún restaurante típico de Taxco."
+      }
+    },
+    "grutas":{
+      "tour_grutas": {
+        "category": "Grutas de Cacahuamilpa",
+        "name": "Grutas de Cacahuamilpa",
+        "description": "Visita y recorrido de 4-6 horas en las grutas. Estas majestuosas grutas se ubican en la sierra madre del sur, abarcan parte de los estados de Guerrero y Morelos.\n\nEn su interior, las grutas de Cacahuamilpa resguardan una serie vastísima de figuras extrañas que evocan la imaginación de los visitantes, el lugar también cuenta con varios ríos subterráneos que se podrán recorrer si así lo desea. Más de 90 salones están abiertos al público; se recorren en aproximadamente 2 horas. La caminata, de unos 2 kilómetros, es sumamente gratificante; el guía comparte con el público detalles y anécdotas que enriquecen aún más la visita."
+      }
+    },
+    "casaresiu":{
+      "tour_casaresiu": {
+        "category": "Tour Casa Resiú Nayaá",
+        "name": "Tour Casa Resiú Nayaá",
+        "description": "La destilería de mezcal más grande de México. Vive la experiencia de un tour diseñado para conocer el origen y proceso de la elaboración del mejor mezcal artesanal.\n\nLas piñas de agave son molidas en tahona de piedra y el néctar obtenido es fermentado en tina de madera, doblemente destilado en alambique de cobre, todo esto bajo el cuidado de los maestros mezcaleros.\n\n• Recorrido guiado de 2 hrs. por los campos de agave.\n• Visita guiada por la destilería.\n• Antojitos mexicanos.\n• Cata especial de hasta 4 mezcladores: Aromas de Guerrero, Weber, Cupreata y Criollo.\n• Degustación de chocolate de 100% cacao.\n• Botella de mezcal Criollo (50 mil)."
+      }
+    },
+    "not_found": "Tour no encontrado."
+  },
   "discover_morelos": {
     "main_title": "Descubra Morelos",
     "subtitle": "Permita que Las Mañanitas le guíe a través de los destinos, sabores y experiencias más memorables del estado.",
@@ -392,6 +394,24 @@
         "subtitle": "ENTRE RÍOS, CASCADAS Y NATURALEZA",
         "itinerary": "1.- Inicie la jornada con un desayuno en Las Mañanitas, donde la serenidad de nuestros jardines y la excelencia gastronómica ofrecen el comienzo ideal antes de descubrir una de las regiones naturales más sorprendentes del sur de Morelos.\n\n2.- A su llegada a Amacuzac, la experiencia comienza navegando por el río a bordo de un kayak o durante un paseo en bote. Mientras recorre sus aguas cristalinas, podrá admirar la vegetación tropical, observar diversas especies de aves y disfrutar de un entorno que invita a desconectarse por completo del ritmo cotidiano.\n\nDato de interés: El río Amacuzac forma parte de una de las cuencas hidrológicas más importantes del centro de México y, desde tiempos prehispánicos, ha sido una fuente esencial para el desarrollo de las comunidades de la región.\n\n3.- Continúe el recorrido explorando sus senderos naturales. Las rutas de ecoturismo permiten descubrir una extraordinaria biodiversidad y ofrecen excelentes oportunidades para la observación de flora y fauna, así como para contemplar algunos de los paisajes más representativos del sur del estado.\n\n4.- Para el almuerzo, le sugerimos El Faro de Amacuzac, un restaurante reconocido por rescatar la cocina tradicional morelense. No deje de probar el chito, elaborado con carne de chivo, acompañado de tortillas hechas a mano, salsas artesanales y otros platillos preparados con ingredientes frescos de la región.\n\n5.- Por la tarde, visite los miradores y cascadas que distinguen este destino. La tranquilidad del entorno, el sonido del agua y las vistas panorámicas convierten este recorrido en una experiencia ideal para disfrutar de la naturaleza y admirar algunos de los paisajes más auténticos de Morelos.\n\n6.- Antes de emprender el regreso, permita que los últimos paisajes de Amacuzac sean el broche de oro de una jornada dedicada al ecoturismo y la aventura. De vuelta en Las Mañanitas, podrá relajarse entre nuestros jardines o disfrutar de una cena donde la cocina mexicana contemporánea y el servicio personalizado complementarán perfectamente su experiencia.\n\nRecomendación de Las Mañanitas: Si desea una experiencia más cómoda, nuestro equipo de concierge podrá apoyarle con la organización del recorrido, recomendaciones adicionales y servicios de transporte privado para que disfrute cada momento con total tranquilidad."
       }
+    }
+  },
+  "discover_morelos_quick_info_labels": {
+    "travel_time": "Tiempo desde Las Mañanitas",
+    "duration": "Duración aproximada",
+    "ideal_for": "Ideal para",
+    "activity_level": "Nivel de actividad",
+    "recommended_time": "Horario recomendado",
+    "experience_type": "Tipo de experiencia"
+  },
+  "discover_morelos_quick_info": {
+    "barranca": {
+        "travel_time": "10 minutos",
+        "duration": "3 a 4 horas",
+        "ideal_for": "Familias, parejas, viajeros en solitario",
+        "activity_level": "Bajo — caminata ligera",
+        "recommended_time": "Mañana (8:00 a.m. – 12:00 p.m.)",
+        "experience_type": "Naturaleza urbana"
     }
   },
   "food_drinks": {

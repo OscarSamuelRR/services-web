@@ -92,7 +92,9 @@
     "events": "Events",
     "contact_note": "If you have any questions, please contact extension",
     "contact_note_end": "and we will be happy to assist you.",
-    "how_to_get": "How to Get"
+    "how_to_get": "How to Get",
+    "quick_info": "Quick info",
+    "itinerary": "itinerary"
   },
   "spa_rules": {
   "header": {
@@ -394,6 +396,24 @@
             "subtitle": "BETWEEN RIVERS, WATERFALLS AND NATURE",
             "itinerary": "1.- Begin the day with breakfast at Las Mañanitas, where the serenity of our gardens and gastronomic excellence offer the ideal start before discovering one of the most surprising natural regions in southern Morelos.\n\n2.- Upon arriving in Amacuzac, the experience begins by navigating the river on a kayak or during a boat ride. While exploring its crystal-clear waters, you can admire tropical vegetation, observe various bird species and enjoy an environment that invites you to completely disconnect from everyday life.\n\nFact of interest: The Amacuzac River is part of one of the most important hydrological basins in central Mexico and, since pre-Hispanic times, has been an essential source for the development of communities in the region.\n\n3.- Continue the tour exploring its natural trails. Ecotourism routes allow you to discover extraordinary biodiversity and offer excellent opportunities for flora and fauna observation, as well as contemplating some of the most representative landscapes in southern Morelos.\n\n4.- For lunch, we suggest El Faro de Amacuzac, a restaurant recognized for rescuing traditional Morelos cuisine. Do not miss the chito, made with goat meat, accompanied by handmade tortillas, artisanal salsas and other dishes prepared with fresh regional ingredients.\n\n5.- In the afternoon, visit the viewpoints and waterfalls that distinguish this destination. The tranquility of the surroundings, the sound of water and the panoramic views make this tour an ideal experience for enjoying nature and admiring some of the most authentic landscapes of Morelos.\n\n6.- Before setting out on the return journey, let the last landscapes of Amacuzac be the crowning jewel of a day dedicated to ecotourism and adventure. Back at Las Mañanitas, you can relax in our gardens or enjoy dinner where contemporary Mexican cuisine and personalized service will perfectly complement your experience.\n\nLas Mañanitas Recommendation: If you would like a more comfortable experience, our concierge team can assist you with tour organization, additional recommendations and private transportation services so you can enjoy every moment with complete peace of mind."
         }
+    }
+  },
+  "discover_morelos_quick_info_labels": {
+    "travel_time": "Travel time from Las Mañanitas",
+    "duration": "Approximate duration",
+    "ideal_for": "Ideal for",
+    "activity_level": "Activity level",
+    "recommended_time": "Recommended schedule",
+    "experience_type": "Experience type"
+  },
+  "discover_morelos_quick_info": {
+    "barranca": {
+        "travel_time": "10 minutos",
+        "duration": "3 a 4 horas",
+        "ideal_for": "Familias, parejas, viajeros en solitario",
+        "activity_level": "Bajo — caminata ligera",
+        "recommended_time": "Mañana (8:00 a.m. – 12:00 p.m.)",
+        "experience_type": "Naturaleza urbana"
     }
   },
   "food_drinks": {

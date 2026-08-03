@@ -1,3 +1,12 @@
+export interface QuickInfo {
+    travelTime: string;
+    duration: string;
+    idealFor: string;
+    activityLevel: string;
+    recommendedTime: string;
+    experienceType: string;
+}
+
 export interface DiscoverMorelosCont {
     id: string;
     section: string;
@@ -10,4 +19,6 @@ export interface DiscoverMorelosCont {
     imagePosition?: string;
     route?: string;
     mapsUrl?: string;
+    quickInfo?: QuickInfo;
 }
+
