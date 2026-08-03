@@ -16,7 +16,8 @@ export const DISCOVER_MORELOS_CONTENT: DiscoverMorelosCont[] = [
             '/images/chapultepec.jpg',
         ],
         imagePosition: 'object-center',
-        route: '/discover-morelos-content-place/cuernavaca-history'
+        route: '/discover-morelos-content-place/cuernavaca-history',
+        mapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15096.908519830456!2d-99.24498593787824!3d18.921338116024387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdde4baa709c73%3A0x4172e3edff7a1f8d!2sCuernavaca%20Centro%2C%20Centro%2C%20Cuernavaca%2C%20Mor.!5e0!3m2!1ses!2smx!4v1785773442947!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin'
     },
     {
         id: 'tlaltizapan',
@@ -27,11 +28,12 @@ export const DISCOVER_MORELOS_CONTENT: DiscoverMorelosCont[] = [
         image: '/images/palacio2.jpg',
         images: [
             '/images/palacio2.jpg',
-            '/images/palacio2.jpg',
-            '/images/palacio2.jpg',
+            '/images/nature.jpg',
+            '/images/chapultepec.jpg',
         ],
         imagePosition: 'object-center',
-        route: '/discover-morelos-content-place/tlaltizapan'
+        route: '/discover-morelos-content-place/tlaltizapan',
+        mapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7559.064718342681!2d-99.12624608740175!3d18.684969572855813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce794a1220a3bd%3A0x8f74a79aff8fe994!2sCentro%2C%20Tlaltizap%C3%A1n%2C%20Mor.!5e0!3m2!1ses!2smx!4v1785774679550!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin'
     },
     {
         id: 'cuautla',
@@ -42,11 +44,12 @@ export const DISCOVER_MORELOS_CONTENT: DiscoverMorelosCont[] = [
         image: '/images/palacio2.jpg',
         images: [
             '/images/palacio2.jpg',
-            '/images/palacio2.jpg',
-            '/images/palacio2.jpg',
+            '/images/nature.jpg',
+            '/images/chapultepec.jpg',
         ],
         imagePosition: 'object-center',
-        route: '/discover-morelos-content-place/cuautla'
+        route: '/discover-morelos-content-place/cuautla',
+        mapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15106.671869139545!2d-98.95690773749925!3d18.81294486392309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce6f16ba8b1b27%3A0xb029b8fdce196323!2sCentro%2C%20Cuautla%2C%20Mor.!5e0!3m2!1ses!2smx!4v1785774857242!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin'
     },
     {
         id: 'zempoala-history',
@@ -57,11 +60,12 @@ export const DISCOVER_MORELOS_CONTENT: DiscoverMorelosCont[] = [
         image: '/images/palacio2.jpg',
         images: [
             '/images/palacio2.jpg',
-            '/images/palacio2.jpg',
-            '/images/palacio2.jpg',
+            '/images/nature.jpg',
+            '/images/chapultepec.jpg',
         ],
         imagePosition: 'object-center',
-        route: '/discover-morelos-content-place/zempoala-history'
+        route: '/discover-morelos-content-place/zempoala-history',
+        mapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15085.198922541354!2d-99.32474415594933!3d19.050554964377515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cde428fe60a287%3A0xd13ad049e0c30086!2sLagunas%20de%20Zempoala!5e0!3m2!1ses!2smx!4v1785774918822!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin'
     },
 
     // NATURALEZA
@@ -74,11 +78,12 @@ export const DISCOVER_MORELOS_CONTENT: DiscoverMorelosCont[] = [
         image: '/images/nature.jpg',
         images: [
             '/images/nature.jpg',
-            '/images/nature.jpg',
-            '/images/nature.jpg',
+            '/images/palacio2.jpg',
+            '/images/chapultepec.jpg',
         ],
         imagePosition: 'object-bottom',
-        route: '/discover-morelos-content-place/barranca-chapultepec'
+        route: '/discover-morelos-content-place/barranca-chapultepec',
+        mapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.4622032060447!2d-99.21198592523955!3d18.910924982259964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cddf0052924d4b%3A0xac6b26dd608dff5b!2sParque%20en%20Cuernavaca%2C%20Morelos!5e0!3m2!1ses!2smx!4v1785775055700!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin'
     },
     {
         id: 'zempoala-huitzilac',
@@ -89,11 +94,12 @@ export const DISCOVER_MORELOS_CONTENT: DiscoverMorelosCont[] = [
         image: '/images/nature.jpg',
         images: [
             '/images/nature.jpg',
-            '/images/nature.jpg',
-            '/images/nature.jpg',
+            '/images/palacio2.jpg',
+            '/images/chapultepec.jpg',
         ],
         imagePosition: 'object-center',
-        route: '/discover-morelos-content-place/zempoala-huitzilac'
+        route: '/discover-morelos-content-place/zempoala-huitzilac',
+        mapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15085.198922541354!2d-99.32474415594933!3d19.050554964377515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cde428fe60a287%3A0xd13ad049e0c30086!2sLagunas%20de%20Zempoala!5e0!3m2!1ses!2smx!4v1785775245248!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin'
     },
     {
         id: 'manantiales',
@@ -104,11 +110,12 @@ export const DISCOVER_MORELOS_CONTENT: DiscoverMorelosCont[] = [
         image: '/images/nature.jpg',
         images: [
             '/images/nature.jpg',
-            '/images/nature.jpg',
-            '/images/nature.jpg',
+            '/images/palacio2.jpg',
+            '/images/chapultepec.jpg',
         ],
         imagePosition: 'object-center',
-        route: '/discover-morelos-content-place/manantiales'
+        route: '/discover-morelos-content-place/manantiales',
+        mapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.1059514363005!2d-99.15707102525133!3d18.478859382606615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce822e50b4b635%3A0x96f017526f7cf1eb!2sLos%20Manantiales!5e0!3m2!1ses!2smx!4v1785775893499!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin'
     },
     {
         id: 'texcal',
@@ -119,11 +126,12 @@ export const DISCOVER_MORELOS_CONTENT: DiscoverMorelosCont[] = [
         image: '/images/nature.jpg',
         images: [
             '/images/nature.jpg',
-            '/images/nature.jpg',
-            '/images/nature.jpg',
+            '/images/palacio2.jpg',
+            '/images/chapultepec.jpg',
         ],
         imagePosition: 'object-center',
-        route: '/discover-morelos-content-place/texcal'
+        route: '/discover-morelos-content-place/texcal',
+        mapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.8137017095996!2d-99.1459545909091!3d18.895344198459632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce744bafd0a4ed%3A0xa1f5ae6d5e6c520d!2sParque%20Estatal%20El%20Texcal!5e0!3m2!1ses!2smx!4v1785776047348!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin'
     },
     {
         id: 'hongos-azules',
@@ -134,11 +142,12 @@ export const DISCOVER_MORELOS_CONTENT: DiscoverMorelosCont[] = [
         image: '/images/nature.jpg',
         images: [
             '/images/nature.jpg',
-            '/images/nature.jpg',
-            '/images/nature.jpg',
+            '/images/palacio2.jpg',
+            '/images/chapultepec.jpg',
         ],
         imagePosition: 'object-center',
-        route: '/discover-morelos-content-place/hongos-azules'
+        route: '/discover-morelos-content-place/hongos-azules',
+        mapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1586.261549082162!2d-99.27148382862042!3d18.985010213415528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cde0cebd049bed%3A0xa3dbf72fbee7388f!2sCentro%20Ecol%C3%B3gico%20El%20Bosque%20De%20Los%20Hongos%20Azules!5e0!3m2!1ses!2smx!4v1785776208184!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin'
     },
 
     // AVENTURA
@@ -151,11 +160,12 @@ export const DISCOVER_MORELOS_CONTENT: DiscoverMorelosCont[] = [
         image: '/images/chapultepec.jpg',
         images: [
             '/images/chapultepec.jpg',
-            '/images/chapultepec.jpg',
-            '/images/chapultepec.jpg',
+            '/images/nature.jpg',
+            '/images/palacio2.jpg',
         ],
         imagePosition: 'object-center',
-        route: '/discover-morelos-content-place/tepoztlan'
+        route: '/discover-morelos-content-place/tepoztlan',
+        mapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30181.95177256643!2d-99.11348640883135!3d18.986911310733465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0b61dd582b75%3A0x400d7f380728b20!2s62520%20Tepoztl%C3%A1n%2C%20Mor.!5e0!3m2!1ses!2smx!4v1785776289794!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin'
     },
     {
         id: 'las-estacas',
@@ -166,11 +176,12 @@ export const DISCOVER_MORELOS_CONTENT: DiscoverMorelosCont[] = [
         image: '/images/chapultepec.jpg',
         images: [
             '/images/chapultepec.jpg',
-            '/images/chapultepec.jpg',
-            '/images/chapultepec.jpg',
+            '/images/nature.jpg',
+            '/images/palacio2.jpg',
         ],
         imagePosition: 'object-center',
-        route: '/discover-morelos-content-place/las-estacas'
+        route: '/discover-morelos-content-place/las-estacas',
+        mapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8986.947301752567!2d-99.12007634617869!3d18.72913843049723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce799ae5af9029%3A0xcab19f2a3210db76!2s62774%20Estacas%2C%20Mor.!5e0!3m2!1ses!2smx!4v1785776455203!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin'
     },
     {
         id: 'tlayacapan',
@@ -181,11 +192,12 @@ export const DISCOVER_MORELOS_CONTENT: DiscoverMorelosCont[] = [
         image: '/images/chapultepec.jpg',
         images: [
             '/images/chapultepec.jpg',
-            '/images/chapultepec.jpg',
-            '/images/chapultepec.jpg',
+            '/images/nature.jpg',
+            '/images/palacio2.jpg',
         ],
         imagePosition: 'object-center',
-        route: '/discover-morelos-content-place/tlayacapan'
+        route: '/discover-morelos-content-place/tlayacapan',
+        mapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15093.668505228909!2d-98.9888758818938!3d18.95717696403425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce6d305e226485%3A0x5652464b90add91!2s62540%20Tlayacapan%2C%20Mor.!5e0!3m2!1ses!2smx!4v1785776512465!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin'
     },
     {
         id: 'tequesquitengo',
@@ -196,11 +208,12 @@ export const DISCOVER_MORELOS_CONTENT: DiscoverMorelosCont[] = [
         image: '/images/chapultepec.jpg',
         images: [
             '/images/chapultepec.jpg',
-            '/images/chapultepec.jpg',
-            '/images/chapultepec.jpg',
+            '/images/nature.jpg',
+            '/images/palacio2.jpg',
         ],
         imagePosition: 'object-center',
-        route: '/discover-morelos-content-place/tequesquitengo'
+        route: '/discover-morelos-content-place/tequesquitengo',
+        mapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30247.94461046115!2d-99.2890431094779!3d18.619381179551755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdd4ec0df888a3%3A0x46bdbc3e3b433871!2s62915%20Tequesquitengo%2C%20Mor.!5e0!3m2!1ses!2smx!4v1785776580754!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin'
     },
     {
         id: 'amacuzac',
@@ -211,10 +224,11 @@ export const DISCOVER_MORELOS_CONTENT: DiscoverMorelosCont[] = [
         image: '/images/chapultepec.jpg',
         images: [
             '/images/chapultepec.jpg',
-            '/images/chapultepec.jpg',
-            '/images/chapultepec.jpg',
+            '/images/nature.jpg',
+            '/images/palacio2.jpg',
         ],
         imagePosition: 'object-center',
-        route: '/discover-morelos-content-place/amacuzac'
+        route: '/discover-morelos-content-place/amacuzac',
+        mapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15125.522224988552!2d-99.38624120614602!3d18.601945320116283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdcd3a772fc6fd%3A0x91ac2f0f0f5ad6d!2sAmacuzac%2C%20Mor.!5e0!3m2!1ses!2smx!4v1785776616183!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin'
     },
 ];

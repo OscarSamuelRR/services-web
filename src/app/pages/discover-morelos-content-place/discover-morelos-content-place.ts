@@ -5,10 +5,11 @@ import { Footer } from '../../components/footer/footer';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { DiscoverMorelosCont } from '../../interfaces/discover-morelos-cont.interface';
 import { DISCOVER_MORELOS_CONTENT } from '../../data/discover-morelos.data';
+import { SafeUrlPipe } from '../../pipes/safe-url-pipe';
 
 @Component({
   selector: 'app-discover-morelos-content-place',
-  imports: [RouterLink, Footer, HeaderList, TranslateModule],
+  imports: [RouterLink, Footer, HeaderList, TranslateModule, SafeUrlPipe],
   templateUrl: './discover-morelos-content-place.html',
   styleUrl: './discover-morelos-content-place.css',
 })

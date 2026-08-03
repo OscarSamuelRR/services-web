@@ -9,4 +9,5 @@ export interface DiscoverMorelosCont {
     images?: string[];
     imagePosition?: string;
     route?: string;
+    mapsUrl?: string;
 }
