@@ -3,8 +3,10 @@ export interface QuickInfo {
     duration: string;
     idealFor: string;
     activityLevel: string;
-    recommendedTime: string;
+    recommendedTime?: string;
     experienceType: string;
+    description?: string;
+    subtitle?: string;
 }
 
 export interface DiscoverMorelosCont {

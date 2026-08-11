@@ -11,28 +11,27 @@
     </div> -->
     <!-- CONTENIDO -->
     <div class="px-4 md:px-12 lg:px-32 xl:px-64 pb-10">
-        <!-- TÍTULO -->
-        <div class="bg-white py-6 border-b border-gray-100">
-            <h1 class="text-2xl md:text-3xl font-semibold text-gray-800 leading-snug">
+        <!-- TÍTULO border-b -->
+        <div class="bg-white py-6 border-gray-100">
+            <h1 class="text-2xl md:text-3xl font-semibold text-gray-800 leading-snug text-center">
                 {{ discoverMorelosContent()!.title | translate}}
             </h1>
         </div>
-        <!-- DESCRIPCIÓN -->
-        <div class="bg-white py-6 border-b border-gray-100">
-            <p class="text-gray-600 text-md md:text-lg leading-relaxed text-justify">
-                {{ discoverMorelosContent()!.description | translate}}
+        <!-- DESCRIPCIÓN border-b -->
+        <div class="bg-white py-6 border-gray-100">
+            <p class="text-gray-600 text-xl md:text-2xl leading-relaxed text-center">
+                {{ discoverMorelosContent()!.quickInfo!.subtitle | translate }}
             </p>
         </div>
         <!-- FICHA INFORMATIVA -->
-        <!-- @if (discoverMorelosContent()!.quickInfo) { -->
-            <!-- <div class="bg-white py-6 border-b border-gray-100"> -->
-                <!-- <h2 class="text-lg font-bold text-gray-800 uppercase tracking-widest mb-4">
+        @if (discoverMorelosContent()!.quickInfo) {
+            <div class="bg-white py-6 border-b border-gray-100">
+                <h2 class="text-lg font-bold text-gray-800 uppercase tracking-widest mb-4 text-center">
                     {{ 'common.quick_info' | translate }}
                 </h2>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4"> -->
-            
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:justify-items-center">
                     <!-- Tiempo desde Las Mañanitas -->
-                    <!-- <div class="flex items-start gap-3 bg-gray-50 rounded-xl px-4 py-3">
+                    <div class="flex items-start gap-3 bg-gray-50 rounded-xl px-4 py-3">
                         <svg class="w-5 h-5 text-[#00633a] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
                             viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -48,10 +47,10 @@
                                 {{ discoverMorelosContent()!.quickInfo!.travelTime | translate }}
                             </p>
                         </div>
-                    </div> -->
+                    </div>
             
                     <!-- Duración -->
-                    <!-- <div class="flex items-start gap-3 bg-gray-50 rounded-xl px-4 py-3">
+                    <div class="flex items-start gap-3 bg-gray-50 rounded-xl px-4 py-3">
                         <svg class="w-5 h-5 text-[#00633a] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
                             viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -65,10 +64,10 @@
                                 {{ discoverMorelosContent()!.quickInfo!.duration | translate }}
                             </p>
                         </div>
-                    </div> -->
+                    </div>
             
                     <!-- Ideal para -->
-                    <!-- <div class="flex items-start gap-3 bg-gray-50 rounded-xl px-4 py-3">
+                    <div class="flex items-start gap-3 bg-gray-50 rounded-xl px-4 py-3">
                         <svg class="w-5 h-5 text-[#00633a] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
                             viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -82,10 +81,10 @@
                                 {{ discoverMorelosContent()!.quickInfo!.idealFor | translate }}
                             </p>
                         </div>
-                    </div> -->
+                    </div>
             
                     <!-- Nivel de actividad -->
-                    <!-- <div class="flex items-start gap-3 bg-gray-50 rounded-xl px-4 py-3">
+                    <div class="flex items-start gap-3 bg-gray-50 rounded-xl px-4 py-3">
                         <svg class="w-5 h-5 text-[#00633a] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
                             viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -98,29 +97,11 @@
                                 {{ discoverMorelosContent()!.quickInfo!.activityLevel | translate }}
                             </p>
                         </div>
-                    </div> -->
-            
-                    <!-- Horario recomendado -->
-                    <!-- <div class="flex items-start gap-3 bg-gray-50 rounded-xl px-4 py-3">
-                        <svg class="w-5 h-5 text-[#00633a] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 6.343l-.707-.707m12.728 12.728l-.707-.707M6.343 17.657l-.707.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
-                        </svg>
-                        <div>
-                            <p class="text-md text-gray-400 uppercase tracking-wide">
-                                {{ 'discover_morelos_quick_info_labels.recommended_time' | translate }}
-                            </p>
-                            <p class="text-lg font-medium text-gray-700">
-                                {{ discoverMorelosContent()!.quickInfo!.recommendedTime | translate }}
-                            </p>
-                        </div>
-                    </div> -->
-            
+                    </div>
+
                     <!-- Tipo de experiencia -->
-                    <!-- <div class="flex items-start gap-3 bg-gray-50 rounded-xl px-4 py-3">
-                        <svg class="w-5 h-5 text-[#00633a] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24">
+                    <div class="flex items-start gap-3 bg-gray-50 rounded-xl px-4 py-3 sm:col-span-2 sm:w-fit sm:mx-auto sm:px-8">
+                        <svg class="w-5 h-5 text-[#00633a] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
                         </svg>
@@ -132,12 +113,32 @@
                                 {{ discoverMorelosContent()!.quickInfo!.experienceType | translate }}
                             </p>
                         </div>
+                    </div>
+            
+                    <!-- Horario recomendado -->
+                    <!-- <div class="flex items-start gap-3 bg-gray-50 rounded-xl px-4 py-3">
+                        <svg class="w-5 h-5 text-[#00633a] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 6.343l-.707-.707m12.728 12.728l-.707-.707M6.343 17.657l-.707.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
+                        </svg> 
+                        <div>
+                            <p class="text-md text-gray-400 uppercase tracking-wide">
+                                {{ 'discover_morelos_quick_info_labels.recommended_time' | translate }}
+                            </p>
+                             <p class="text-lg font-medium text-gray-700">
+                                {{ discoverMorelosContent()!.quickInfo!.description | translate }}
+                            </p>
+                        </div>
                     </div> -->
-                <!-- </div>
-            </div> -->
-        <!-- } -->
-        <div class="bg-white py-6 border-b border-gray-100">
-            <h2 class="text-lg font-bold text-gray-800 uppercase tracking-widest mb-4">
+                </div>
+            </div>
+        }
+        <div class="bg-white py-6 px-6 border-b border-gray-100 ">
+            <p class="text-xl font-medium text-gray-700 text-center mb-10">
+                {{ discoverMorelosContent()!.quickInfo!.description | translate }}
+            </p>
+            <h2 class="text-lg font-bold text-gray-800 uppercase tracking-widest mb-4 text-center">
                 {{ 'common.itinerary' | translate }}
             </h2>
             <p class="text-gray-600 text-lg md:text-xl leading-relaxed text-justify whitespace-pre-line">
@@ -145,16 +146,16 @@
             </p>
         </div>
         @if (discoverMorelosContent()!.images && discoverMorelosContent()!.images!.length > 0) {
-            <div class="relative h-64 md:h-96 overflow-hidden">
+            <div class="relative h-80 md:h-180 overflow-hidden">
                 <!-- Imagen activa -->
                 <img [src]="discoverMorelosContent()!.images![currentImageIndex()]" loading="eager"
                     [class]="'w-full h-full object-cover transition-opacity duration-500 ' + (discoverMorelosContent()!.imagePosition ?? 'object-center')"
                     alt="" />
-                <div class="absolute inset-0 bg-black/40"></div>
+                <!-- <div class="absolute inset-0 bg-black/40"></div> Oscuro-->
             
                 <!-- Flecha izquierda -->
                 <button (click)="prevImage()"
-                    class="absolute left-3 top-1/2 -translate-y-1/2 bg-white/20 backdrop-blur-sm hover:bg-white/40 text-white rounded-full p-2 transition-colors">
+                    class="absolute left-3 top-1/2 -translate-y-1/2 backdrop-blur-sm bg-black/30 hover:bg-black/50 text-white rounded-full p-2 transition-colors">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
                     </svg>
@@ -162,7 +163,7 @@
             
                 <!-- Flecha derecha -->
                 <button (click)="nextImage()"
-                    class="absolute right-3 top-1/2 -translate-y-1/2 bg-white/20 backdrop-blur-sm hover:bg-white/40 text-white rounded-full p-2 transition-colors">
+                    class="absolute right-3 top-1/2 -translate-y-1/2 backdrop-blur-sm bg-black/30 hover:bg-black/50 text-white rounded-full p-2 transition-colors">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                     </svg>
@@ -183,12 +184,12 @@
             <div class="relative h-64 md:h-96 overflow-hidden">
                 <img [src]="discoverMorelosContent()!.image" loading="eager"
                     [class]="'w-full h-full object-cover ' + (discoverMorelosContent()!.imagePosition ?? 'object-center')" alt="" />
-                <div class="absolute inset-0 bg-black/40"></div>
+                <!-- <div class="absolute inset-0 bg-black/40"></div> -->
             </div>
         }
         @if (discoverMorelosContent()!.mapsUrl) {
             <div class="bg-white py-6 border-b border-gray-100">
-                <h2 class="text-lg font-semibold text-gray-800 mb-4 uppercase tracking-wide">
+                <h2 class="text-lg font-semibold text-gray-800 mb-4 uppercase tracking-wide text-center">
                     {{ 'common.how_to_get' | translate }}
                 </h2>
                 <div class="rounded-2xl overflow-hidden shadow-sm h-64 md:h-96 w-full">
