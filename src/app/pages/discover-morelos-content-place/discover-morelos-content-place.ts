@@ -17,6 +17,7 @@ export class DiscoverMorelosContentPlace {
   discoverMorelosContent = signal<DiscoverMorelosCont | undefined>(undefined);
   backRoute = signal<string>('');
   currentImageIndex = signal<number>(0);
+  showItinerary = signal<boolean>(false);
 
   constructor(private route: ActivatedRoute) { }
 

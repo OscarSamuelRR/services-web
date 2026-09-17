@@ -94,7 +94,9 @@
     "contact_note_end": "and we will be happy to assist you.",
     "how_to_get": "How to Get",
     "quick_info": "Quick info",
-    "itinerary": "itinerary"
+    "itinerary": "itinerary",
+    "view_itinerary": "View itinerary",
+    "hide_itinerary": "Hide itinerary"
   },
   "spa_rules": {
   "header": {

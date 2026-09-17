@@ -92,7 +92,9 @@
     "contact_note_end": "y con gusto le atenderemos.",
     "how_to_get": "Comó llegar",
     "quick_info": "Información rápida",
-    "itinerary": "itinerario"
+    "itinerary": "itinerario",
+    "view_itinerary": "Ver itinerario",
+    "hide_itinerary": "Ocultar itinerario"
   },
   "spa_rules": {
     "header": {
@@ -183,9 +185,12 @@
     "title2": "Experiencias",
     "title3": "Tours",
     "title4": "Descubra Morelos",
+    "title5": "Galerias",
     "card_title1": "Tours",
     "card_title2": "Descubra Morelos",
+    "card_title3": "Casa Amarilla",
     "card_subtitle2": "Cada estancia puede convertirse en una experiencia inolvidable.",
+    "card_subtitle3": "Studio Barrault",
     "offers": {
       "card_title1": "Noche en cortesía",
       "card_subtitle1": "Cuarta noche de cortesía. Disfruten de una estadía más larga en este paraíso, obteniendo la cuarta noche en cortesía.",

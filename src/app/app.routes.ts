@@ -28,6 +28,7 @@ import { Description } from './pages/description/description';
 import { DiscoverMorelos } from './pages/discover-morelos/discover-morelos';
 import { DiscoverMorelosContent } from './pages/discover-morelos-content/discover-morelos-content';
 import { DiscoverMorelosContentPlace } from './pages/discover-morelos-content-place/discover-morelos-content-place';
+import { YellowHouse } from './pages/yellow-house/yellow-house';
 
 export const routes: Routes = [
     { path: '', component: Index },
@@ -59,5 +60,6 @@ export const routes: Routes = [
     { path: 'tour-page/:id', component: TourPage },
     { path: 'events/:id', component: Events },
     { path: 'food-drinks/description/:id', component: Description },
+    { path: 'yellow-house', component: YellowHouse },
     { path: '**', redirectTo: '' }
 ];
