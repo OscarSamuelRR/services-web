@@ -1037,5 +1037,26 @@
       "spa_aesthetic": "Spa Aesthetics",
       "room_service": "Room Service",
       "spa_menu": "Spa Menu"
+  },
+  "yellow_house": {
+    "title": "Casa Amarilla",
+    "subtitle": "Studio Barrault",
+    "gallery": "Casa Amarilla Gallery",
+    "p1": "Casa Amarilla is the permanent space where the work of artist Federico Barrault lives: sculptures in resin, fiberglass and fabric that evoke the gesture of classical textile folding, fixed forever in a material that does not age.",
+    "p2": "It is installed in a building with its own history of deterioration and permanence, and the work is exhibited in direct dialogue with that architecture — not as a conventional white-cube gallery.",
+    "p3": "It functions as a space for contemplation and research on matter, time and memory — meant to be visited unhurriedly, not as a quick stop.",
+    "title2": "Information",
+    "title3": "What is it?",
+    "info1": "Hours:",
+    "info1_li": "Tuesday to Saturday, 11:00 to 18:00. Sunday, 10:00 to 14:00. Closed on Mondays.",
+    "info2": "Location:",
+    "info2_li": "Across the street from the hotel, on Pasaje Las Rosas.",
+    "info3": "Admission:",
+    "info3_li": "Free of charge.",
+    "info4": "Suggested visit duration:",
+    "info4_li": "Brief tour of 15-20 min / free time.",
+    "p4": "Access is free during opening hours — you can enter directly, no reservation or prior notice required.",
+    "p5": "The visit is self-guided: no hotel staff accompaniment is needed. If you would like more context on a particular piece, you can ask directly in the space.",
+    "p6": "Please do not touch the artwork — photos are freely allowed."
   }
 }

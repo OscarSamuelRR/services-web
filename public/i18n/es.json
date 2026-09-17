@@ -1033,5 +1033,26 @@
       "spa_aesthetic": "Estética Spa",
       "room_service": "Room Service",
       "spa_menu": "Menú Spa"
-    }
+    },
+    "yellow_house": {
+      "title": "Casa Amarilla",
+      "subtitle": "Studio Barrault",
+      "gallery": "Galería Casa Amarilla",
+      "p1": "Casa Amarilla es el espacio permanente donde vive la obra del artista Federico Barrault: esculturas de resina, fibra de vidrio y tela que citan el gesto del pliegue textil clásico, fijado para siempre en un material que no envejece.",
+      "p2": "Está instalada en un edificio con su propia historia de deterioro y permanencia, y la obra se exhibe en diálogo directo con esa arquitectura — no como una galería de sala blanca convencional.",
+      "p3": "Funciona como un espacio de contemplación e investigación sobre la materia, el tiempo y la memoria — pensado para visitarse con calma, no como una parada rápida.",
+      "title2": "Información",
+      "title3": "¿Qué es?",
+      "info1": "Horario:",
+      "info1_li": "Martes a sábado, 11:00 a 18:00 hs. Domingo, 10:00 a 14:00 hs. Cerrado los lunes.",
+      "info2": "Ubicación:",
+      "info2_li": "Cruzando la calle del hotel, sobre el Pasaje Las Rosas.",
+      "info3": "Costo de entrada:",
+      "info3_li": "Sin costo.",
+      "info4": "Duración sugerida de la visita:",
+      "info4_li": "Recorrido breve de 15-20 min / con tiempo libre.",
+      "p4": "El acceso es libre durante el horario de apertura — Se puede entrar directamente, sin necesidad de reserva ni de avisar previamente.",
+      "p5": "La visita es autoguiada: no hace falta acompañamiento del personal del hotel. Si se quiere más contexto sobre una pieza en particular, puede preguntar directamente en el espacio.",
+      "p6": "No tocar la obra — se pueden tomar fotos libremente."
+  }
   }
